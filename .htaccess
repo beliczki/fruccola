@@ -1,0 +1,22 @@
+Options +FollowSymLinks
+Header add Access-Control-Allow-Origin "*"
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^fruccola.hu
+RewriteRule ^allergens.html$ http://fruccola.hu/menu.html [L]
+RewriteRule ^allergenek.html$ http://fruccola.hu/etlap-itallap.html [L]
+
+
+RewriteRule ^daily-menu$ http://fruccola.hu/daily-menu.html [L]
+RewriteRule ^napi-menu$ http://fruccola.hu/napi-menu.html [L]
+RewriteRule ^happiness-card$ http://fruccola.hu/happiness-card.html [L]
+RewriteRule ^happiness-kartya$ http://fruccola.hu/happiness-kartya.html [L]
+
+RewriteRule ^daily-menu/$ http://fruccola.hu/daily-menu.html [R]
+RewriteRule ^napi-menu/$ http://fruccola.hu/napi-menu.html [R]
+RewriteRule ^happiness-card/$ http://fruccola.hu/happiness-card.html [R]
+RewriteRule ^happiness-kartya/$ http://fruccola.hu/happiness-kartya.html [R]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /$1.html [QSA]
