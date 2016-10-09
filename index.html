@@ -82,7 +82,7 @@
 
     <ul>
 
-        <li class="cake">
+        <!--<li class="cake">
             <p>Nice to sweet you</p>
             <h2>
                 Gofri
@@ -97,7 +97,7 @@
             <div class="container new">
                 <img width="640" height="400" src="img/cake@2x.jpg">
             </div>
-        </li>
+        </li>-->
 
         <li class="salad">
             <p>Heti saláta  (<span class="date-from"></span> - <span class="date-until"></span>)</p>
@@ -227,7 +227,7 @@
                 </li>
             </ul>
             <p class="price">
-                <strong>1790</strong>
+                <strong id='menu-price'>1890</strong>
             </p>
         </li>
 
@@ -280,7 +280,7 @@
             </div>
         </li>-->
 
-        <li class="juice narrow">
+        <!--<li class="juice narrow">
             <p>Szezonális:</p>
             <h2>Hűsítőd</h2>
             <ul class="options">
@@ -294,10 +294,10 @@
             <div class="container">
                 <img width="640" height="400" src="img/lemondaes@2x.jpg">
             </div>
-        </li>
+        </li>-->
 
 
-        <!--<li class="hotdrink narrow">
+        <li class="hotdrink narrow">
             <p>Szezonális</p>
             <h2>Forró italok</h2>
             <ul class="options">
@@ -311,7 +311,7 @@
             <div class="container">
                 <img width="640" height="400" src="img/seasonalhot@2x.jpg">
             </div>
-        </li>-->
+        </li>
 
         <li class="cake narrow">
             <p>16 óra után minden délután</p>
@@ -463,6 +463,7 @@
             /*if (nData.getDay() === 3) $('.dailymenu').addClass('beef');*/
             if (nData.getDay() === 5) $('.dailymenu').addClass('fish');
             if (nData.getDay() === 5) $('.dailymenu h2 a').text('Ha péntek, akkor hal - Napi menü');
+            if (nData.getDay() === 5) $('#menu-price').text('2190');
 
             if (nData.getDay() === 6 || nData.getDay() === 0) $('.dailymenu .price').remove(); /*szombat vasárnap brunch ár nem full*/
             if (nData.getDay() === 7 || nData.getDay() === 0) $('.dailymenu .price').remove(); /*szombat vasárnap brunch ár nem full*/

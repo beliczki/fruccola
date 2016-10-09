@@ -186,11 +186,11 @@
 
     <ul class="items">
 
-        <li><h2>Soup</h2>                                             <p></p><p class="price"><strong>690</strong></p></li>
-        <li><h2>Main dish</h2>                                        <p></p><p class="price"><strong>1470</strong></p></li>
-        <li><h2>Soup + main dish</h2>                                 <p></p><p class="price"><strong>1790</strong></p></li>
-        <li><h2>Ask your favourite sandwich with our daily soup</h2>  <p></p><p class="price"><strong>+450</strong></p></li>
-        <li><h2>Ask your main dish with 0.2 l fresh fruit frizz</h2>  <p></p><p class="price"><strong>+190</strong></p></li>
+        <li><h2>Soup</h2>                                             <p></p><p class="price"><strong id="soup-price">790</strong></p></li>
+        <li><h2>Main dish</h2>                                        <p></p><p class="price"><strong id="dish-price">1570</strong></p></li>
+        <li><h2>Soup + main dish</h2>                                 <p></p><p class="price"><strong id="menu-price">1890</strong></p></li>
+        <li><h2>Ask your favourite sandwich with our daily soup</h2>  <p></p><p class="price"><strong>+540</strong></p></li>
+        <li><h2>Ask your main dish with 0.2 l fresh fruit frizz</h2>  <p></p><p class="price"><strong>+290</strong></p></li>
         <!--<li class="meatfree"><h2>Meat Free main dish</h2>             <p>on mondays only</p><p class="price"><strong>1390</strong></p></li>-->
         <!--<li class="meatfree"><h2>Soup + Meat Free main dish </h2>     <p>on mondays only</p><p class="price"><strong>1690</strong></p></li>-->
 
@@ -335,6 +335,9 @@
             /*if (nData.getDay() === 3) $('.offer').addClass('beef');*/
             if (nData.getDay() === 5) $('.dailymenu').addClass('fish');
             if (nData.getDay() === 5) $('.dailymenu h1').text('Daily menu on fish fridays');
+            if (nData.getDay() === 5) $('#dish-price').text('1780');
+            if (nData.getDay() === 5) $('#menu-price').text('2190');
+          
 
             if(typeof data[1] != 'undefined') $('.offer .arany .soup span').html(data[1].soup_en);
             if(typeof data[1] != 'undefined') $('.offer .arany .main span').html(data[1].dish_en);

@@ -81,7 +81,7 @@
 
     <ul>
 
-        <li class="cake">
+        <!--<li class="cake">
             <p>Nice to sweet you</p>
             <h2>
                 Waffle
@@ -96,7 +96,7 @@
             <div class="container new">
                 <img width="640" height="400" src="img/cake@2x.jpg">
             </div>
-        </li>
+        </li>-->
 
         <li class="salad">
             <p>Weekly salad (<span class="date-from"></span> - <span class="date-until"></span>)</p>
@@ -199,14 +199,16 @@
 
 
 
+        
+      
         <li class="dailymenu" style="margin-bottom: 60px;">
-            <p class="date"> - </p>
-            <h2>Daily menu</h2>
+            <p class="date">-</p>
+            <h2><a href="daily-menu">Napi menü</a></h2>
             <a href="daily-menu-subscribe" class="button">Subscribe to daily notification</a>
-
-            <h3 class="location arany">@ Arany János str.</h3><!-- Daily menu Brunch Meat Free -->
-            <ul class="offer"><!-- meatfree -->
+            <h3 class="location arany">@ Arany János str.</h3>
+            <ul class="offer "><!-- meatfree -->
                 <li class="arany">
+
                     <p class="soup">
                         soup: <span>-</span>
                     </p>
@@ -215,8 +217,8 @@
                     </p>
                 </li>
             </ul>
-            <h3 class="location">@ Kristóf sqr.</h3><!-- Daily menu Brunch Meat Free -->
-            <ul class="offer clearfix"><!-- meatfree -->
+            <h3 class="location kristof">@ Kristóf sqr.</h3>
+            <ul class="offer "><!-- meatfree -->
                 <li class="kristof">
                     <p class="soup">
                         soup: <span>-</span>
@@ -226,9 +228,11 @@
                     </p>
                 </li>
             </ul>
+            <p class="price">
+                <strong id='menu-price'>1890</strong>
+            </p>
         </li>
-
-
+      
 
         <li class="brunch">
             <p>On saturdays and sunday on Kristóf square</p>
@@ -278,7 +282,7 @@
             </div>
         </li>-->
 
-        <li class="juice narrow">
+        <!--<li class="juice narrow">
             <p>Seasonal:</p>
             <h2>YOU COOL LEMONADES</h2>
             <ul class="options">
@@ -292,9 +296,9 @@
             <div class="container">
                 <img width="640" height="400" src="img/lemondaes@2x.jpg">
             </div>
-        </li>
+        </li>-->
 
-        <!--<li class="hotdrink narrow">
+        <li class="hotdrink narrow">
             <p>Seasonal</p>
             <h2>HOT DRINKS</h2>
             <ul class="options">
@@ -308,7 +312,7 @@
             <div class="container">
                 <img width="640" height="400" src="img/seasonalhot@2x.jpg">
             </div>
-        </li>-->
+        </li>
 
         <li class="cake narrow">
             <p>After 4:00 p.m.</p>
@@ -491,6 +495,7 @@
             /*if (nData.getDay() === 3) $('.dailymenu').addClass('beef');*/
             if (nData.getDay() === 5) $('.dailymenu').addClass('fish');
             if (nData.getDay() === 5) $('.dailymenu h2').text('Daily menu on fish fridays');
+            if (nData.getDay() === 5) $('#menu-price').text('2190');
 
             if (nData.getDay() === 6 || nData.getDay() === 0) $('.dailymenu .price').remove(); /*szombat vasárnap brunch ár nem full*/
             if (nData.getDay() === 7 || nData.getDay() === 0) $('.dailymenu .price').remove(); /*szombat vasárnap brunch ár nem full*/

@@ -186,11 +186,11 @@
 
       <ul class="items">
 
-          <li><h2>Menüleves</h2>                                         <p></p><p class="price"><strong>690</strong></p></li>
-          <li><h2>Menüfőétel</h2>                                        <p></p><p class="price"><strong>1470</strong></p></li>
-          <li><h2>Leves + főétel</h2>                                     <p></p><p class="price"><strong>1790</strong></p></li>
-          <li><h2>Kérj kedvenc szendvicsedhez napi levest!</h2>            <p></p><p class="price"><strong>+450</strong></p></li>
-          <li><h2>Kérj a főételed mellé 0.2l friss gyümölcsfröccsöt!</h2>  <p></p><p class="price"><strong>+190</strong></p></li>
+          <li><h2>Menüleves</h2>                                         <p></p><p class="price"><strong>790</strong></p></li>
+          <li><h2>Menüfőétel</h2>                                        <p></p><p class="price"><strong id="dish-price">1570</strong></p></li>
+          <li><h2>Leves + főétel</h2>                                     <p></p><p class="price"><strong id="menu-price">1890</strong></p></li>
+          <li><h2>Kérj kedvenc szendvicsedhez napi levest!</h2>            <p></p><p class="price"><strong>+540</strong></p></li>
+          <li><h2>Kérj a főételed mellé 0.2l friss gyümölcsfröccsöt!</h2>  <p></p><p class="price"><strong>+290</strong></p></li>
           <!--<li class="meatfree"><h2>Húsmentes főétel</h2>                  <p></p><p class="price"><strong>1390</strong></p></li>-->
           <!--<li class="meatfree"><h2>Leves + főétel /hétfőnként</h2>        <p></p><p class="price"><strong>1690</strong></p></li>-->
       </ul>
@@ -333,6 +333,8 @@
             /*if (nData.getDay() === 3) $('.offer').addClass('beef');*/
             if (nData.getDay() === 5) $('.dailymenu').addClass('fish');
             if (nData.getDay() === 5) $('.dailymenu h1').text('Ha péntek, akkor hal - Napi menü');
+            if (nData.getDay() === 5) $('#dish-price').text('1780');
+            if (nData.getDay() === 5) $('#manu-price').text('2190');
 
 
             if(typeof data[1] != 'undefined') $('.offer .arany .soup span').html(data[1].soup_hu);
