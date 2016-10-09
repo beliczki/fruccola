@@ -2129,23 +2129,19 @@ button:hover, .button:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.A4 .content .offer strong {
-  font-size: 62px;
-  line-height: 68px;
-}
+.A4 .content .offer strong {   font-size: 62px;  line-height: 68px;}
 .A4 .content.menu li.dailymenu { margin-top:5cm; border-top: 1px dashed #555; border-bottom: 1px dashed #555; }
 .A4 .content.menu {padding: 0;}
 .A4 .content.menu ul.offer:after {content: ''; display:block; clear: both; margin-top: 1cm;}
-.A4 .content.menu em {height: 54px; width: 54px;  margin-right: 3px;  margin-bottom: -3px; }
-.A4 .content.menu em:before {font-size: 64px;  line-height: 64px;  margin-left: -6px;  margin-top: 0px;}
+.A4 .content.menu em {height: 80px;    width: 80px;    margin-right: 3px;     margin-bottom: -15px;} 
+.A4 .content.menu em:before {font-size: 104px;    line-height: 94px;    margin-left: -10px;    margin-top: -3px;}
 .A4 .offer:before {content:'';}
 .A4 .content.menu .offer:before {content:inherit; display:block; font-size: 4cm; width: 4cm; height:4cm; margin:1cm 2cm 6cm 0cm; float: left;}
 .A4 .content.menu .offer {padding: 0; margin: 0;}
 .A4 .content.menu p {margin: 1cm 0 0 0;}
 .A4 .content.menu .offer p:before { position: static; margin: 0; font-size: 46px;}
 .A4.eng {text-align: right;}
-.A4.eng .content.menu .offer:before {float:right; margin: 1cm 0cm 6cm 2cm;}
-
+.A4.eng .content.menu .offer:before {float:right; margin: 1cm 0cm 6cm 2cm;} 
 
 @page {
     size: A4, landscape;
