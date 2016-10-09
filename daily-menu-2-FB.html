@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fruccola</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/vendor/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+<body>
+
+
+<main>
+<section class="content menu">
+  <ul>
+      <li class="dailymenu">
+          <ul class="offer">
+
+              Mai menü (http://fruccola.hu/napi-menu.html)
+              <li class="kristof hun">
+                  <p class="soup"><!--soup:-->╠ <strong>-</strong></p>
+                  <p class="main"><!--main dish:-->╚ <strong>-</strong></p>
+              </li>
+
+              Daily menu (http://fruccola.hu/daily-menu.html)
+              <li class="kristof eng">
+                  <p class="soup"><!--soup:-->╠ <strong>-</strong></p>
+                  <p class="main"><!--main dish:-->╚ <strong>-</strong></p>
+              </li>
+
+              ‪‪<p class="allergenes">
+              <em>#‎dailymenu‬</em>
+              <em>#‎fruccola</em>
+              <em>#kristof</em>
+
+              </p>
+          </ul>
+      </li>
+  </ul>
+</section>
+</main>
+
+
+<script>
+    (function() {
+        var fruccolaAPI = "http://fruccola.hu/admin/api/daily_menu";
+        $.getJSON( fruccolaAPI ).done(function( data ) {
+
+            var dayNames = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+            var monthNames = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+
+            var nData = new Date() ;
+            $('section.dailymenu h1').html("DAILY MENU /" + nData.getDate() + ". "  + monthNames[nData.getMonth()] + " " + dayNames[nData.getDay()]);
+            if (nData.getDay() === 1) $('.dailymenu').addClass('meatfree');
+            if (nData.getDay() === 3) $('.dailymenu').addClass('beef');
+            if (nData.getDay() === 5) $('.dailymenu').addClass('fish');
+
+            if(typeof data[2] != 'undefined') $('.kristof.eng .soup strong').html(data[2].soup_en);
+            if(typeof data[2] != 'undefined') $('.kristof.eng .main strong').html(data[2].dish_en);
+
+            if (typeof data[2] != 'undefined' && $.inArray (1,data[2].dish_allergen_ids)>= 0) $('.dailymenu .allergenes').append( $( '<em title="Flour free">#flourfreemaincourse</em>') ).append(" ");
+            if (typeof data[2] != 'undefined' && $.inArray (2,data[2].dish_allergen_ids)>= 0) $('.dailymenu .allergenes').append( $( '<em title="Lactose free">#lactosefreemaincourse</em>') ).append(" ");
+            if (typeof data[2] != 'undefined' && $.inArray (3,data[2].dish_allergen_ids)>= 0) $('.dailymenu .allergenes').append( $( '<em title="Vegetarian">#vegetarianmaincourse</em>') ).append(" ");
+            if (typeof data[2] != 'undefined' && $.inArray (4,data[2].dish_allergen_ids)>= 0) $('.dailymenu .allergenes').append( $( '<em title="Vegetarian">#veganmaincourse</em>') ).append(" ");
+            /* $('.eng .offer  .kristof .soup strong').html(data[2].soup_en);
+            $('.eng .offer .kristof .main strong').html(data[2].dish_en); */
+
+        });
+    })();
+</script>
+<script>
+    (function() {
+        var fruccolaAPI = "http://fruccola.hu/admin/api/daily_menu";
+        $.getJSON( fruccolaAPI ).done(function( data ) {
+
+            var dayNames = new Array('Vasárnap','Hétfő','Kedd','Szerda','Csütörtök','Péntek','Szombat');
+            var monthNames = new Array('Január','Február','Március','Április','Május','Június','Július','Augusztus','Szeptember','Október','November','December');
+
+            var nData = new Date() ;
+            $('.dailymenu .date').html(monthNames[nData.getMonth()] + " " + nData.getDate() + ". " + dayNames[nData.getDay()]);
+            if (nData.getDay() === 1) $('.dailymenu').addClass('meatfree');
+            if (nData.getDay() === 3) $('.dailymenu').addClass('beef');
+            if (nData.getDay() === 5) $('.dailymenu').addClass('fish');
+
+            if(typeof data[2] != 'undefined') $('.kristof.hun .soup strong').html(data[2].soup_hu);
+            if(typeof data[2] != 'undefined') $('.kristof.hun .main strong').html(data[2].dish_hu);
+            /*  $('.hun .offer .kristof .soup strong').html(data[2].soup_hu);
+            $('.hun .offer .kristof .main strong').html(data[2].dish_hu);*/
+
+        });
+    })();
+</script>
+</body>
+</html>
