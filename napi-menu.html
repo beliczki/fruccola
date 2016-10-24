@@ -189,6 +189,10 @@
           <li><h2>Menüleves</h2>                                         <p></p><p class="price"><strong>790</strong></p></li>
           <li><h2>Menüfőétel</h2>                                        <p></p><p class="price"><strong id="dish-price">1570</strong></p></li>
           <li><h2>Leves + főétel</h2>                                     <p></p><p class="price"><strong id="menu-price">1890</strong></p></li>
+							
+          <li><h2>Halas főétel</h2>                                        <p></p><p class="price"><strong id="dish-price">1780</strong></p></li>
+          <li><h2>Leves + Halas főétel</h2>                                     <p></p><p class="price"><strong id="menu-price">2190</strong></p></li>
+        
           <li><h2>Kérj kedvenc szendvicsedhez napi levest!</h2>            <p></p><p class="price"><strong>+540</strong></p></li>
           <li><h2>Kérj a főételed mellé 0.2l friss gyümölcsfröccsöt!</h2>  <p></p><p class="price"><strong>+290</strong></p></li>
           <!--<li class="meatfree"><h2>Húsmentes főétel</h2>                  <p></p><p class="price"><strong>1390</strong></p></li>-->
@@ -341,6 +345,16 @@
             if(typeof data[1] != 'undefined') $('.offer .arany .main span').html(data[1].dish_hu);
             if(typeof data[2] != 'undefined') $('.offer .kristof .soup span').html(data[2].soup_hu);
             if(typeof data[2] != 'undefined') $('.offer .kristof .main span').html(data[2].dish_hu);
+          
+            if ($.inArray (1,data[1].soup_allergen_ids)>= 0) $('.offer .arany .soup').append( $( '<em class="flourfree" title="Lisztmentes">Lisztmentes</em>') );
+            if ($.inArray (2,data[1].soup_allergen_ids)>= 0) $('.offer .arany .soup').append( $( '<em class="lactosefree" title="Laktózmentes">Laktózmentes</em>') );
+            if ($.inArray (3,data[1].soup_allergen_ids)>= 0) $('.offer .arany .soup').append( $( '<em class="vegetarian" title="Vegetáriánus">Vegetáriánus</em>') );
+            if ($.inArray (4,data[1].soup_allergen_ids)>= 0) $('.offer .arany .soup').append( $( '<em class="vegan" title="Vegetáriánus">Vegán</em>') );
+
+            if ($.inArray (1,data[1].dish_allergen_ids)>= 0) $('.offer .arany .main').append( $( '<em class="flourfree" title="Lisztmentes">Lisztmentes</em>') );
+            if ($.inArray (2,data[1].dish_allergen_ids)>= 0) $('.offer .arany .main').append( $( '<em class="lactosefree" title="Laktózmentes">Laktózmentes</em>') );
+            if ($.inArray (3,data[1].dish_allergen_ids)>= 0) $('.offer .arany .main').append( $( '<em class="vegetarian" title="Vegetáriánus">Vegetáriánus</em>') );
+            if ($.inArray (4,data[1].dish_allergen_ids)>= 0) $('.offer .arany .main').append( $( '<em class="vegan" title="Vegetáriánus">Vegán</em>') );
 
         });
     })();

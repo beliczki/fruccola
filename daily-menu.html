@@ -189,6 +189,10 @@
         <li><h2>Soup</h2>                                             <p></p><p class="price"><strong id="soup-price">790</strong></p></li>
         <li><h2>Main dish</h2>                                        <p></p><p class="price"><strong id="dish-price">1570</strong></p></li>
         <li><h2>Soup + main dish</h2>                                 <p></p><p class="price"><strong id="menu-price">1890</strong></p></li>
+      
+        <li><h2>Main dish with fish</h2>                              <p></p><p class="price"><strong id="dish-price">1780</strong></p></li>
+        <li><h2>Soup + main dish with fish</h2>                       <p></p><p class="price"><strong id="menu-price">2190</strong></p></li>
+      
         <li><h2>Ask your favourite sandwich with our daily soup</h2>  <p></p><p class="price"><strong>+540</strong></p></li>
         <li><h2>Ask your main dish with 0.2 l fresh fruit frizz</h2>  <p></p><p class="price"><strong>+290</strong></p></li>
         <!--<li class="meatfree"><h2>Meat Free main dish</h2>             <p>on mondays only</p><p class="price"><strong>1390</strong></p></li>-->
@@ -343,9 +347,22 @@
             if(typeof data[1] != 'undefined') $('.offer .arany .main span').html(data[1].dish_en);
             if(typeof data[2] != 'undefined') $('.offer .kristof .soup span').html(data[2].soup_en);
             if(typeof data[2] != 'undefined') $('.offer .kristof .main span').html(data[2].dish_en);
+          
+            if ($.inArray (1,data[1].soup_allergen_ids)>= 0) $('.offer .arany .soup').append( $( '<em class="flourfree" title="Flour free">Flour free</em>') );
+            if ($.inArray (2,data[1].soup_allergen_ids)>= 0) $('.offer .arany .soup').append( $( '<em class="lactosefree" title="Lactose free">Lactose free</em>') );
+            if ($.inArray (3,data[1].soup_allergen_ids)>= 0) $('.offer .arany .soup').append( $( '<em class="vegetarian" title="Vegetarian">Vegetarian</em>') );
+            if ($.inArray (4,data[1].soup_allergen_ids)>= 0) $('.offer .arany .soup').append( $( '<em class="vegan" title="Vegetarian">Vegan</em>') );
+
+            if ($.inArray (1,data[1].dish_allergen_ids)>= 0) $('.offer .arany .main').append( $( '<em class="flourfree" title="Flour free">Flour free</em>') );
+            if ($.inArray (2,data[1].dish_allergen_ids)>= 0) $('.offer .arany .main').append( $( '<em class="lactosefree" title="Lactose free">Lactose free</em>') );
+            if ($.inArray (3,data[1].dish_allergen_ids)>= 0) $('.offer .arany .main').append( $( '<em class="vegetarian" title="Vegetarian">Vegetarian</em>') );
+            if ($.inArray (4,data[1].dish_allergen_ids)>= 0) $('.offer .arany .main').append( $( '<em class="vegan" title="Vegetarian">Vegan</em>') );
+          
 
         });
     })();
+</script>
+  
 </script>
 </body>
 </html>

@@ -1,5 +1,4 @@
 Options +FollowSymLinks
-Header add Access-Control-Allow-Origin "*"
 
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^fruccola.hu
