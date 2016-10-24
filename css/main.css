@@ -1254,7 +1254,7 @@ button:hover, .button:hover {
 }
 
 .offer p {
-  padding-left: 25px;
+  left: 25px;
   position: relative;
 }
 .offer p:before {
@@ -2061,7 +2061,7 @@ button:hover, .button:hover {
     width: 136px;
     height: 136px;
     float:left;
-    margin: 15px 30px 25px 0px;
+    margin: 15px 15px 30px 0px;
   }
   /*content .beef .offer:before,
   .content.menu .offer.beef:before {
