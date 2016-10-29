@@ -33,6 +33,7 @@
 }
 .icon,
 .new,
+.new:before,
 .site-header .logo a:before,
 .site-header .main-navigation .mobile-navigation:before,
 .social a:before,
@@ -288,12 +289,26 @@
   content: '\E02A';
 }
 
-.new:before {
+.conteniner.new:before {
   color: #f58220;
   position: absolute;
   font-size: 40px;
   height: 40px;
   padding: 10px;
+}
+h2.new:before {
+  color: #f58220;
+  position: relative;
+  float:left;
+  display: block;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 16px;
+  left:-3px;
+  bottom: 2px;
+  /*height: 40px;
+  padding: 10px;*/
 }
 
 .icon-settings,
@@ -1642,7 +1657,10 @@ button:hover, .button:hover {
 .clearfix:after {
   clear: both;
 }
-
+.break-float {
+  float:none;
+  clear:both;
+}
 
 
 
