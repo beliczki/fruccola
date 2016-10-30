@@ -1365,6 +1365,11 @@ button:hover, .button:hover {
 .content .dailymenu.fish {
     color: #40ae49;
 }
+.content.menu.dailymenu li.fish {
+  color: #40ae49;
+  border-top-color: #40ae49;
+}
+
 
 .content.menu.juice {
   color: #d7182a;
