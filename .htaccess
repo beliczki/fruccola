@@ -6,7 +6,10 @@ RewriteRule ^allergens.html$ http://fruccola.hu/menu.html [L]
 RewriteRule ^allergenek.html$ http://fruccola.hu/etlap-itallap.html [L]
 RewriteRule ^sutik.html$ http://fruccola.hu/edessegek [L]
 RewriteRule ^cakes.html$ http://fruccola.hu/treats [L]
-
+RewriteRule ^levek.html$ http://fruccola.hu/italok [L]
+RewriteRule ^levek$ http://fruccola.hu/italok [L]
+RewriteRule ^juices.html$ http://fruccola.hu/drinks [L]
+RewriteRule ^juices$ http://fruccola.hu/drinks [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
