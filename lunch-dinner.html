@@ -161,180 +161,76 @@
 
 
     <ul class="items">
-      <li>
-        <h2 class="new">Sechuan Duck Soup with summer roll</h2>
-        <p></p>
-        <p class="price">
-          <strong>1190</strong>
-        </p>
-          <!--<em class="flourfree" title="Flour free">Flour free</em>-->
-          <em class="lactosefree" title="Lactose free">Lactose free</em>
-          <em class="calories" title="Energy content">237 kcal</em>
-      </li>
+      <script>
+          (function() {
+              var lang = 'en';
+              var fruccolaAPI = 'http://fruccola.hu/admin/api/menu/lunch-dinner';
+              var ff = '<em class="flourfree" title="Flour free">Flour free</em>';
+              var l = '<em class="lactosefree" title="Lactose free">Lactose free</em>';
+              var vr = '<em class="vegetarian" title="Vegetarian">Vegetarian</em>'
+              var vn = '<em class="vegan" title="Vegan">Vegan</em>';
+              var cc = '<em class="calories" title="Energy content"></em>';
+              var item;
+              var h2;
+            
+              $.getJSON( fruccolaAPI ).done(function( data ) {
+                  $.each(data, function(index, value){
 
-      <li>
-        <h2 class="new">Split pea and Eggplant Curry </h2>
-        <p>Split peas, eggplant, coriander, coconut milk, pita bread</p>
-        <p class="price">
-          <strong>1490</strong>
-        </p>
-          <!--<em class="flourfree" title="Flour free">Flour free</em>-->
-          <em class="lactosefree" title="Lactose free">Lactose free</em>
-          <em class="vegetarian" title="Vegetarian">Vegetarian</em>
-          <em class="vegan" title="Vegan">Vegan</em>
-          <em class="calories" title="Energy content">826 kcal</em>
-      </li>
+                    item = $('<li></li>');
+                    $('.content .items').append(item);
 
-      <li>
-        <h2 class="new">Cauliflower and Cottage Cheese Dumplings </h2>
-        <p></p>
-        <p class="price">
-          <strong>1570</strong>
-        </p>
-          <!--<em class="flourfree" title="Flour free">Flour free</em>-->
-          <!--<em class="lactosefree" title="Lactose free">Lactose free</em>-->
-          <em class="vegetarian" title="Vegetarian">Vegetarian</em>
-          <!--<em class="vegan" title="Vegan">Vegan</em>-->
-          <em class="calories" title="Energy content">1110 kcal</em>
-      </li>
+                    h2 = $('<h2></h2>');
+                    h2.text(data[index]['name_'+lang]);
+                    item.append(h2);
 
-      <li>
-        <h2 class="new">Red Beef Curry with Rice</h2>
-        <p></p>
-        <p class="price">
-          <strong>2370</strong>
-        </p>
-          <!--<em class="flourfree" title="Flour free">Flour free</em>-->
-          <em class="lactosefree" title="Lactose free">Lactose free</em>
-          <em class="calories" title="Energy content">643 kcal</em>
-      </li>
+                    p = $('<p></p>');
+                    p.text(data[index]['description_'+lang]);
+                    item.append(p);
 
-
-
-
-        <li>
-            <h2>Grilled chicken  with grilled vegetables
-            </h2>
-            <p>meat, chicken, slices
-                </p>
-            <p class="price">
-                <strong>2390</strong>
-            </p>
-            <em class="flourfree" title="Flour free">Flour free</em>
-            <em class="calories" title="Energy content">431 kcal</em>
-        </li>
-
-        <li>
-            <h2>Grilled 'Gomolya' cheese with grilled vegetables
-
-            </h2>
-            <p>cheese, smoked Gomolya slices
-                </p>
-            <p class="price">
-                <strong>2390</strong>
-            </p>
-            <em class="flourfree" title="Flour free">Flour free</em>
-            <em class="vegetarian" title="Vegetarian">Vegetarian</em>
-            <em class="calories" title="Energy content">943 kcal</em>
-        </li>
-
-
-        <li>
-            <h2>Grilled salmon with sautéed vegetables</h2>
-            <p>fish, salmon slices</p>
-            <p class="price">
-                <strong>2590</strong>
-            </p>
-            <em class="flourfree" title="Flour free">Flour free</em>
-            <em class="vegetarian" title="Vegetarian">Vegetarian</em>
-            <em class="calories" title="Energy content">428 kcal</em>
-        </li>
-
-
-        <li>
-            <h2>Grilled vegetables</h2>
-            <p>potato, zucchini, californian pepper, button mushroom, parsley</p>
-            <p class="price">
-                <strong>1090</strong>
-            </p>
-            <em class="flourfree" title="Flour free">Flour free</em>
-            <em class="vegetarian" title="Vegetarian">Vegetarian</em>
-            <em class="calories" title="Energy content">226 kcal</em>
-        </li>
-
-
-
-
-
-      <li>
-        <h2>Grilled chicken breast
-            </h2>
-        <p></p>
-        <p class="price">
-          <strong>1120</strong>
-        </p>
-      </li>
-
-      <li>
-        <h2>Grilled 'Gomolya' cheese
-            </h2>
-        <p></p>
-        <p class="price">
-          <strong>1120</strong>
-        </p>
-          <!--<em class="flourfree" title="Flour free">Flour free</em>-->
-          <!--<em class="vegetarian" title="Vegetarian">Vegetarian</em>-->
-      </li>
-
-
-      <li>
-        <h2>Grilled salmon
-            </h2>
-        <p></p>
-        <p class="price">
-          <strong>1980</strong>
-        </p>
-          <!--<em class="flourfree" title="Flour free">Flour free</em>-->
-          <!--<em class="vegetarian" title="Vegetarian">Vegetarian</em>-->
-      </li>
-
-
-      <li>
-        <h2>'Gomolya' cheese, chicken, side dish </h2>
-          <p></p>
-          <p class="price">
-              <strong>2390</strong>
-          </p>
-          <!--<em class="flourfree" title="Flour free">Flour free</em>-->
-      </li>
-
-      <li>
-        <h2>Brown rice</h2>
-          <p></p>
-          <p class="price">
-              <strong>740</strong>
-          </p>
-      </li>
-      
-      <li>
-        <h2>Rice</h2>
-          <p></p>
-          <p class="price">
-              <strong>640</strong>
-          </p>
-      </li>
-      
-      <li>
-        <h2>dips and sauces</h2>
-          <p></p>
-          <p class="price">
-              <strong>230</strong>
-          </p>
-      </li>
-
-
-
+                    p = $('<p class=price></p>');
+                    strong = $('<strong></strong>');
+                    strong.text(data[index]['price']);
+                    p.append(strong);
+                    item.append(p);
+                    
+                    classes = data[index]['add_class'].split(',');
+                    $.each(classes, function(index, value){
+                      class_name = $.trim(value);
+                      switch(class_name) {
+                          case 'new':
+                              h2.addClass(class_name);
+                              break;                    
+                          case 'flourfree':
+                              item.append($( ff ));
+                              break;
+                          case 'lactosefree':
+                              item.append($( l ));
+                              break;
+                          case 'vegetarian':
+                              item.append($( vr ));
+                              break;
+                          case 'vegan':
+                              item.append($( vn ));
+                              break;
+                          default:
+                              item.addClass(class_name);
+                              break;
+                      }
+                    });
+                    
+                    if (data[index]['KCAL'] > 0 ) {
+                      c = $(cc);
+                      c.text(data[index]['KCAL']+' kcal');
+                      item.append(c);
+                    }
+                    
+                  });
+              });
+          })();
+      </script>
     </ul>
+  
+    
   </section>
 </main>
 <footer class="site-footer">
