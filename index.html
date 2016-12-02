@@ -520,6 +520,11 @@
                 $('.salad .title').text(data[2].title_hu);
                 $('.salad .ingredients').text(data[2].ingredients_hu);
                 $('.salad .price .num').text(data[2].price);
+              
+                if ($.inArray (4,data[2].allergen_ids)>= 0) $('.salad .price').after( $( '<em class="vegan" title="Vegán">Vegán</em>') );
+                if ($.inArray (3,data[2].allergen_ids)>= 0) $('.salad .price').after( $( '<em class="vegetarian" title="Vegetáriánus">Vegetáriánus</em>') );
+                if ($.inArray (2,data[2].allergen_ids)>= 0) $('.salad .price').after( $( '<em class="lactosefree" title="Laktózmentes">Laktózmentes</em>') );
+                if ($.inArray (1,data[2].allergen_ids)>= 0) $('.salad .price').after( $( '<em class="flourfree" title="Lisztmentes">Lisztmentes</em>') );
 
                 if(typeof data[2].image != 'undefined' && String(data[2].image).length > 0) {
                     $('.salad').append('<div class="container new"></div>');

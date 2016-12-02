@@ -1620,8 +1620,9 @@ button:hover, .button:hover {
   position: relative;
 }
 .site-footer:before {
-  background: #40ae49;
-  border: 5px solid #40ae49;
+  background: #fff;
+  border: 5px solid #fff;
+  color: #40ae49;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -2207,15 +2208,17 @@ button:hover, .button:hover {
     border: 1px #D3D3D3 solid;
     border-radius: 5px;
     background: white;
+    box-sizing: border-box;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position:relative;
 }
 
 .A4 .content .offer strong {   font-size: 62px;  line-height: 68px;}
 .A4 .content.menu li.dailymenu { margin-top:5cm; border-top: 1px dashed #555; border-bottom: 1px dashed #555; }
 .A4 .content.menu {padding: 0;}
 .A4 .content.menu ul.offer:after {content: ''; display:block; clear: both; margin-top: 1cm;}
-.A4 .content.menu em {height: 80px;    width: 80px;    margin-right: 3px;     margin-bottom: -15px;} 
-.A4 .content.menu em:before {font-size: 104px;    line-height: 94px;    margin-left: -10px;    margin-top: -3px;}
+.A4 .content.menu em {height: 80px; width: 80px; margin-right: 3px; margin-bottom: -15px;} 
+.A4 .content.menu em:before {font-size: 104px; line-height: 94px; margin-left: -10px; margin-top: -3px;}
 .A4 .offer:before {content:'';}
 .A4 .content.menu .offer:before {content:inherit; display:block; font-size: 4cm; width: 4cm; height:4cm; margin:1cm 2cm 6cm 0cm; float: left;}
 .A4 .content.menu .offer {padding: 0; margin: 0;}
@@ -2223,6 +2226,27 @@ button:hover, .button:hover {
 .A4 .content.menu .offer p:before { position: static; margin: 0; font-size: 46px;}
 .A4.eng {text-align: right;}
 .A4.eng .content.menu .offer:before {float:right; margin: 1cm 0cm 6cm 2cm;} 
+
+.A4 .salad.price {width:12%; margin: 0 auto; margin-top:-3cm; color:white; border-bottom-left-radius:200px; border-bottom-right-radius:200px; background-color:#40ae49; text-align:center; position:relative;}
+.A4 .salad.price p { padding-top:2cm;}
+.A4 .salad.price p:after {content: '\E021'; display: block; position:absolute; left:0; right:0; font-size: 75px; height: 80px; bottom:0.8cm; font-family: 'Fruccola'; font-style: normal;} 
+.A4 .salad.en {width:40%; float: left; padding:0; text-align:right;}
+.A4 .salad.hu {width:40%; float: right; padding:0;}
+.A4 .salad h1 {font-size: 22px;}
+.A4 .salad h2 {font-size: 36px; position:relative; margin:0.5em 0; padding:0.5em 0;}
+.A4 .salad h2:before, .A4 .salad h2:after { background: url(../img/dot.svg) repeat-x 50% 0; background-size: 8px 4px; content: ''; height: 4px; left: 0; position: absolute; z-index: 1; width: 100%;}
+.A4 .salad h2:before {top:0;}
+.A4 .salad h2:after {bottom:0;}
+.A4 .salad p {font-size: 20px;}
+.A4 .content.menu.salad em {height: 40px; width: 40px; margin-top:10px;}
+.A4 .content.menu.salad em:before {font-size: 54px; line-height: 50px; margin-left: -9px;}
+.A4 .content.menu.salad.en em {margin-left: 5px; margin-right:0px;}
+.A4 .content.menu.salad.hu em {margin-left: 0px; margin-right:5px;}
+.A4 .content.menu.salad:after {background-image: none; height: 0; padding-bottom: 0;}
+
+.A4 .site-footer {position: absolute; bottom:0px; left:0px; width:100%;}
+.A4 .site-footer:before {font-size: 3cm; width:3cm; height:3cm; border: 0.2cm solid #fff; padding-left:3px; margin-top:-3cm;}
+.A4 .site-footer nav:before {background-size: 15px 15px; height: 7px;}
 
 @page {
     size: A4, landscape;
@@ -2236,8 +2260,8 @@ button:hover, .button:hover {
 
     .A4 {
         width: 29.7cm;
-        min-height: 19.4cm;
-        height: 19cm;
+        min-height: 21cm;
+        height: 21cm;
         margin: 0;
         border: 0;
         box-shadow: none;
