@@ -1603,7 +1603,7 @@ button:hover, .button:hover {
 .content.payment-methods li {line-height:34px;}
 .content.payment-methods li:before {
   float:left; 
-  height:34px;
+  height:30px;
   font-size:42px;
   position:relative;
   bottom: 5px; 
