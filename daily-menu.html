@@ -30,6 +30,14 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Shuffle/4.0.2/shuffle.min.js"></script>
+  
+    <script>
+      var menu_slug = 'daily-menu';
+    </script>
+    
+    <script src="js/fruccola.locales.en.js"></script>
+    <script src="js/fruccola.menu.js"></script>
 
 </head>
 <body class="eng">
@@ -76,41 +84,8 @@
     </nav>
 </header>
 <main class="main-content clearfix">
-<ul class="menu-navigation">
-    <li class="dailymenu active">
-        <a href="daily-menu">Daily menu</a>
-    </li>
-    <li class="breakfast inactive">
-        <a href="breakfast">Breakfast</a>
-    </li>
-    <li class="brunch inactive">
-        <a href="brunch-en">Brunch</a>
-    </li>
-    <li class="lunchdinner inactive">
-        <a href="lunch-dinner">Lunch, dinner</a>
-    </li>
-    <li class="pasta inactive">
-        <a href="pasta">Pasta</a>
-    </li>
-    <li class="salad inactive">
-        <a href="salad">Salad</a>
-    </li>
-    <li class="sandwich inactive">
-        <a href="sandwich.html">Sandwich</a>
-    </li>
-    <li class="cake inactive">
-        <a href="treats">Treats</a>
-    </li>
-    <li class="juice inactive">
-        <a href="drinks">Drinks</a>
-    </li>
-    <li class="hotdrink inactive">
-        <a href="hot-drinks">Hot drinks</a>
-    </li>
-    <li class="grabandgo inactive">
-        <a href="grabandgo-en">Grab&Go</a>
-    </li>
-</ul>
+  
+  <ul class="menu-navigation"></ul>
 
   <section class="content menu dailymenu">
     <h1>Daily menu</h1>
@@ -182,91 +157,9 @@
             </p>
         </li>
     </ul>
-    <script>
-        (function() {
-            var fruccolaAPI = "http://fruccola.hu/admin/api/daily_menu";
-            $.getJSON( fruccolaAPI ).done(function( data ) {
 
-                var dayNames = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
-                var monthNames = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
-
-                var nData = new Date() ;
-                $('.dailymenu .date').html(nData.getDate() + " "  + monthNames[nData.getMonth()] + ", " + dayNames[nData.getDay()]);
-                if (nData.getDay() === 1) $('.dailymenu').addClass('meatfree');
-                if (nData.getDay() === 1) $('.dailymenu h1').text('Daily menu on a meatfree monday');
-                /*if (nData.getDay() === 3) $('.offer').addClass('beef');*/
-                if (nData.getDay() === 5) $('.dailymenu').addClass('fish');
-                if (nData.getDay() === 5) $('.dailymenu h1').text('Daily menu on fish fridays');        
-
-                if(typeof data[1] != 'undefined') {
-
-                  $('.offer .arany .soup span').html(data[1].soup_en);
-                  $('.offer .arany .main span').html(data[1].dish_en);
-
-                  if ($.inArray (1,data[1].soup_allergen_ids)>= 0) $('.offer .arany .soup').append( $( '<em class="flourfree" title="Flour free">Flour free</em>') );
-                  if ($.inArray (2,data[1].soup_allergen_ids)>= 0) $('.offer .arany .soup').append( $( '<em class="lactosefree" title="Lactose free">Lactose free</em>') );
-                  if ($.inArray (3,data[1].soup_allergen_ids)>= 0) $('.offer .arany .soup').append( $( '<em class="vegetarian" title="Vegetarian">Vegetarian</em>') );
-                  if ($.inArray (4,data[1].soup_allergen_ids)>= 0) $('.offer .arany .soup').append( $( '<em class="vegan" title="Vegan">Vegan</em>') );
-
-                  if ($.inArray (1,data[1].dish_allergen_ids)>= 0) $('.offer .arany .main').append( $( '<em class="flourfree" title="Flour free">Flour free</em>') );
-                  if ($.inArray (2,data[1].dish_allergen_ids)>= 0) $('.offer .arany .main').append( $( '<em class="lactosefree" title="Lactose free">Lactose free</em>') );
-                  if ($.inArray (3,data[1].dish_allergen_ids)>= 0) $('.offer .arany .main').append( $( '<em class="vegetarian" title="Vegetarian">Vegetarian</em>') );
-                  if ($.inArray (4,data[1].dish_allergen_ids)>= 0) $('.offer .arany .main').append( $( '<em class="vegan" title="Vegan">Vegan</em>') );
-                }
-
-                if(typeof data[2] != 'undefined') {
-
-                  $('.offer .kristof .soup span').html(data[2].soup_en);
-                  $('.offer .kristof .main span').html(data[2].dish_en);
-
-                  if ($.inArray (1,data[2].soup_allergen_ids)>= 0) $('.offer .kristof .soup').append( $( '<em class="flourfree" title="Flour free">Flour free</em>') );
-                  if ($.inArray (2,data[2].soup_allergen_ids)>= 0) $('.offer .kristof .soup').append( $( '<em class="lactosefree" title="Lactose free">Lactose free</em>') );
-                  if ($.inArray (3,data[2].soup_allergen_ids)>= 0) $('.offer .kristof .soup').append( $( '<em class="vegetarian" title="Vegetarian">Vegetarian</em>') );
-                  if ($.inArray (4,data[2].soup_allergen_ids)>= 0) $('.offer .kristof .soup').append( $( '<em class="vegan" title="Vegan">Vegan</em>') );
-
-                  if ($.inArray (1,data[2].dish_allergen_ids)>= 0) $('.offer .kristof .main').append( $( '<em class="flourfree" title="Flour free">Flour free</em>') );
-                  if ($.inArray (2,data[2].dish_allergen_ids)>= 0) $('.offer .kristof .main').append( $( '<em class="lactosefree" title="Lactose free">Lactose free</em>') );
-                  if ($.inArray (3,data[2].dish_allergen_ids)>= 0) $('.offer .kristof .main').append( $( '<em class="vegetarian" title="Vegetarian">Vegetarian</em>') );
-                  if ($.inArray (4,data[2].dish_allergen_ids)>= 0) $('.offer .kristof .main').append( $( '<em class="vegan" title="Vegan">Vegan</em>') );
-                }
-            });
-        })();
-    </script>
-
-
-    <ul class="items">
-      <script>
-          (function() {
-              var fruccolaAPI = "http://fruccola.hu/admin/api/menu/daily-menu";
-              var lang = 'en';
-              $.getJSON( fruccolaAPI ).done(function( data ) {
-                  $.each(data, function(index, value){
-
-                    item = $('<li></li>');
-                    item.addClass(data[index]['add_class'].replace(',',''));
-                    $('.content .items').append(item);
-
-                    h2 = $('<h2></h2>');
-                    h2.text(data[index]['name_'+lang]);
-                    item.append(h2);
-
-                    p = $('<p></p>');
-                    p.text(data[index]['description_'+lang]);
-                    item.append(p);
-
-                    p = $('<p class=price></p>');
-                    strong = $('<strong></strong>');
-                    strong.text(data[index]['price']);
-                    p.append(strong);
-                    item.append(p);
-
-                  });
-              });
-          })();
-      </script>
-    </ul>
-    
-    
+    <ul class="items"></ul>
+        
   </section>
 </main>
 <footer class="site-footer">

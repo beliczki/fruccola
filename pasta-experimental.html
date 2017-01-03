@@ -30,13 +30,6 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  
-    <script>
-      var menu_slug = 'pasta';
-    </script>
-    
-    <script src="js/fruccola.locales.en.js"></script>
-    <script src="js/fruccola.menu.js"></script>
 
 </head>
 <body class="eng">
@@ -78,7 +71,44 @@
   
 <main class="main-content clearfix">
   
-  <ul class="menu-navigation"></ul>
+  <ul class="menu-navigation">
+    
+
+    
+      <li class="dailymenu inactive">
+          <a href="daily-menu">Daily menu</a>
+      </li>
+      <li class="breakfast inactive">
+          <a href="breakfast">Breakfast</a>
+      </li>
+      <li class="brunch inactive">
+          <a href="brunch-en">Brunch</a>
+      </li>
+      <li class="lunchdinner inactive">
+          <a href="lunch-dinner">Lunch, dinner</a>
+      </li>
+      <li class="pasta active">
+          <a href="pasta">Pasta</a>
+      </li>
+      <li class="salad inactive">
+          <a href="salad">Salad</a>
+      </li>
+      <li class="sandwich inactive">
+          <a href="sandwich.html">Sandwich</a>
+      </li>
+      <li class="cake inactive">
+          <a href="treats">Treats</a>
+      </li>
+      <li class="juice inactive">
+          <a href="drinks">Drinks</a>
+      </li>
+      <li class="hotdrink inactive">
+          <a href="hot-drinks">Hot drinks</a>
+      </li>
+      <li class="grabandgo inactive">
+          <a href="grabandgo-en">Grab&Go</a>
+      </li>
+  </ul>
 
   <section class="content menu pasta">
     
@@ -133,8 +163,76 @@
     
     <ul class="items"></ul>
     
-    
+    <script>
+        (function() {
+            var fruccolaAPI = "http://fruccola.hu/admin/api/daily_pasta";
+            $.getJSON( fruccolaAPI ).done(function( data ) {
+
+                var dayNames = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+                var monthNames = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+
+                var nData = new Date() ;
+                /// $('.date').html(nData.getDate() + " "  + monthNames[nData.getMonth()] + ", " + dayNames[nData.getDay()]);   
+
+                if(typeof data[1] != 'undefined') {
+                  $('.content.pasta .location.arany').show();
+                  $('.arany .pasta').html(data[1].pasta_en);
+                }
+
+                if(typeof data[2] != 'undefined') {
+                  $('.content.pasta .location.kristof').show();
+                  $('.kristof .pasta').html(data[2].pasta_en);
+                }
+            });
+        })();
+    </script>
+
+
+
+    <script>
+          (function() {
+              var fruccolaAPI = "http://fruccola.hu/admin/api/menu/pasta";
+              var lang = 'en';
+              $.getJSON( fruccolaAPI ).done(function( data ) {
+                  $.each(data, function(index, value){
+
+                    item = $('<li></li>');
+                    item.addClass(data[index]['add_class'].replace(',',''));
+                    $('.content .items').append(item);
+
+                    h2 = $('<h2></h2>');
+                    h2.text(data[index]['name_'+lang]);
+                    item.append(h2);
+
+                    p = $('<p></p>');
+                    p.text(data[index]['description_'+lang]);
+                    item.append(p);
+                    
+                    p = $('<p class=price></p>');
+                    strong = $('<strong></strong>');
+                    strong.text(data[index]['price']);
+                    p.append(strong);
+                    item.append(p);
+                    
+                    /// console.log('----------------------------');
+                    /// console.log(data[index].name_hu);
+                    /// console.log(data[index]['add_class']);
+                    /// console.log(data[index].KCAL);
+                    /// console.log(String(data[index].KCAL).length);
+                    
+                    if ( data[index].add_class.indexOf('flourfree') >= 0 ) item.append( $( '<em class="flourfree" title="Flour free">Flour free</em>') );
+                    if ( data[index].add_class.indexOf('lactosefree') >= 0 ) item.append( $( '<em class="lactosefree" title="Lactose free">Lactose free</em>') );
+                    if ( data[index].add_class.indexOf('vegetarian') >= 0 ) item.append( $( '<em class="vegetarian" title="Vegetarian">Vegetarian</em>') );
+                    if ( data[index].add_class.indexOf('vegan') >= 0 ) item.append( $( '<em class="vegan" title="Vegan">Vegan</em>') );
+                    
+                    if (String(data[index].KCAL).length >= 0) item.append( $( '<em class="calories" title="Energy content">'+data[index].KCAL+' kcal</em>') );
+
+                  });
+              });
+          })();
+      </script>
   </section>
+  
 </main>
 <footer class="site-footer">
     <nav class="secondary-navigation">

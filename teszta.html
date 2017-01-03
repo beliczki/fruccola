@@ -159,8 +159,32 @@
   </fieldset>
 </form>
 
+    <p class="location arany">Napi tészta @Arany János utca.: <strong class='pasta'></strong></p>
+    <p class="location kristof">Napi tészta @Kristóf tér.: <strong class='pasta'></strong></p>
 
+    <script>
+        (function() {
+            var fruccolaAPI = "http://fruccola.hu/admin/api/daily_pasta";
+            $.getJSON( fruccolaAPI ).done(function( data ) {
 
+                var dayNames = new Array('vasárnap','hétfő','kedd','szerda','csütörtök','péntek','szombat');
+                var monthNames = new Array('Január','Február','Március','Április','Május','Június','Július','Augusztus','Szeptember','Október','November','December');
+
+                var nData = new Date() ;
+                /// $('.date').html(nData.getDate() + " "  + monthNames[nData.getMonth()] + ", " + dayNames[nData.getDay()]);   
+
+                if(typeof data[1] != 'undefined') {
+                  $('.content.pasta .location.arany').show();
+                  $('.arany .pasta').html(data[1].pasta_hu);
+                }
+
+                if(typeof data[2] != 'undefined') {
+                  $('.content.pasta .location.kristof').show();
+                  $('.kristof .pasta').html(data[2].pasta_hu);
+                }
+            });
+        })();
+    </script>
     <ul class="items">
       <li>
         <h2 class="new">Kucsmagomba, kecskesajt, tejszín</h2>

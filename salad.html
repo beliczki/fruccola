@@ -30,6 +30,13 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  
+    <script>
+      var menu_slug = 'salad';
+    </script>
+    
+    <script src="js/fruccola.locales.en.js"></script>
+    <script src="js/fruccola.menu.js"></script>
 
 </head>
 <body class="eng">
@@ -76,44 +83,16 @@
     </nav>
 </header>
 <main class="main-content clearfix">
-<ul class="menu-navigation">
-    <li class="dailymenu inactive">
-        <a href="daily-menu">Daily menu</a>
-    </li>
-    <li class="breakfast inactive">
-        <a href="breakfast">Breakfast</a>
-    </li>
-    <li class="brunch inactive">
-        <a href="brunch-en">Brunch</a>
-    </li>
-    <li class="lunchdinner inactive">
-        <a href="lunch-dinner">Lunch, dinner</a>
-    </li>
-    <li class="pasta inactive">
-        <a href="pasta">Pasta</a>
-    </li>
-    <li class="salad active">
-        <a href="salad">Salad</a>
-    </li>
-    <li class="sandwich inactive">
-        <a href="sandwich.html">Sandwich</a>
-    </li>
-    <li class="cake inactive">
-        <a href="treats">Treats</a>
-    </li>
-    <li class="juice inactive">
-        <a href="drinks">Drinks</a>
-    </li>
-    <li class="hotdrink inactive">
-        <a href="hot-drinks">Hot drinks</a>
-    </li>
-    <li class="grabandgo inactive">
-        <a href="grabandgo-en">Grab&Go</a>
-    </li>
-</ul>
+
+  <ul class="menu-navigation"></ul>
 
   <section class="content menu salad">
     <h1>Prepare your own salad</h1>
+    <p>
+      (1) choose greens to start <br />
+      (2) pick some sides for topping <br />
+      (3) and finish up with a dressing
+    </p>
 
     <form id="filter" class="product-filter">
   <a class="mobile-filter open" href="#filter"></a>
@@ -159,7 +138,7 @@
 </form>
 
     <ul class="items">
-      <li>
+      <!--<li>
         <h2>(1) Choose greens to start</h2>
 
         <ul class="options">
@@ -233,7 +212,6 @@
               <li>bulgur</li>
               <li>sprouts</li>
               <li>turkey ham</li>
-              <!--<li>serrano ham</li>-->
               <li>greek beans</li>
               <li>stuffed olives</li>
               <li>parmesan</li>
@@ -246,7 +224,6 @@
 
           <ul class="options">
               <li>smoked salmon</li>
-              <!--<li>mozzarella bufala</li>-->
               <li>line caught tuna</li>
           </ul>
           <p class="price">
@@ -328,7 +305,8 @@
             </p>
           </li>
         </ul>
-      </li>
+      </li>-->
+      
     </ul>
   </section>
 </main>

@@ -30,6 +30,18 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  
+    <script>
+      /// set up veriables for later scripts
+      var dayNames = new Array('vasárnap','hétfő','kedd','szerda','csütörtök','péntek','szombat');
+      var monthNames = new Array('Január','Február','Március','Április','Május','Június','Július','Augusztus','Szeptember','Október','November','December');
+      var tagOpen = 'Nyitva';
+      var tagClosed = 'Zárva';
+      var todayTag = 'Ma';
+      var tomorrowTag = 'Holnap';
+    </script>
+    
+    <script src="js/fruccola.calendar.js"></script>
 
 </head>
 <body class="hun">
@@ -76,68 +88,82 @@
     </nav>
 </header>
 <main class="main-content clearfix">
-  <article class="content hours">
+  
+  
+  
+  <article class="content opening">
+    <h1>Nyitvatartás</h1>
+    <ul>
+      <li class="hours arany clearfix">
+        <p><a href="fruccola-arany-janos-utca.html">Budapest, <strong>Arany János utca 32.</strong></a></p>
+        <h2>Arany János utca</h2> 
+        <h2 class="dayinfo"><span class="date">Ma:</span> <span class="tag"></span> <span class="time"></span></h2> 
 
-
-
-    <h1>Nyitvatartás - Arany János utca</h1><!--<em>Rendkívüli nyitvatartási rend</em>-->
-
-    <p>
-      <a href="fruccola-arany-janos-utca.html">Fruccola Arany, H-1051 Budapest, <strong>Arany János utca 32.</strong></a>
-    </p>
-    <p>
-      <span class="day">H:</span> <strong>7:00-19:00</strong><br>
-      <span class="day">K:</span> <strong>7:00-19:00</strong><br>
-      <span class="day">Sze:</span> <strong>7:00-19:00</strong><br>
-      <span class="day">Cs:</span> <strong>7:00-19:00</strong><br>
-      <span class="day">P:</span> <strong>7:00-19:00</strong><br>
-      <span class="day">Szo:</span> <strong>Zárva</strong><br>
-      <span class="day">V:</span> <strong>Zárva</strong>
-    </p>
-
-
-     <div class="special">
-          <h2>Rendkívüli</h2>
-          <p>
-              <span class="day">DECEMBER 24. -  JNAUÁR 2.:</span> <strong>Zárva</strong><br>
-          </p>
-     </div>
+        <div class="calendar">
+            <h3></h3>
+            <div class="weekHeader clearfix">
+                <div class="day">H:</div>
+                <div class="day">K:</div>
+                <div class="day">Sze:</div>
+                <div class="day">Cs:</div>
+                <div class="day">P:</div>
+                <div class="day">Szo:</div>
+                <div class="day">V:</div>
+            </div>
+            <div class="week clearfix">
+            </div>
+            <a class="button changeMonth next"></a>
+        </div>
+        <div class="table">
+          <h3>Normál nyitvatartási rend</h3>
+          <table>
+            <tr><td class="day">H:</td><td>7:00-19:00</td></tr>
+            <tr><td class="day">K:</td><td>7:00-19:00</td></tr>
+            <tr><td class="day">Sze:</td><td>7:00-19:00</td></tr>
+            <tr><td class="day">Cs:</td><td>7:00-19:00</td></tr>
+            <tr><td class="day">P:</td><td>7:00-19:00</td></tr>
+            <tr class="weekend"><td class="day">Szo:</td><td>Zárva</td></tr>
+            <tr class="weekend"><td class="day">V:</td><td>Zárva</td></tr>
+          </table>
+        </div>
+      </li>
+      <li class="hours kristof clearfix">
+        <p><a href="fruccola-kristof-ter.html">Budapest, <strong>Kristóf tér 3.</strong></a></p>
+        <h2>Kristóf tér</h2> 
+        <h2 class="dayinfo"><span class="date">Ma:</span> <span class="tag"></span> <span class="time"></span></h2> 
+        
+        <div class="calendar">
+            <h3></h3>
+            <div class="weekHeader clearfix">
+                <div class="day">H:</div>
+                <div class="day">K:</div>
+                <div class="day">Sze:</div>
+                <div class="day">Cs:</div>
+                <div class="day">P:</div>
+                <div class="day">Szo:</div>
+                <div class="day">V:</div>
+            </div>
+            <div class="week clearfix">
+            </div>
+            <a class="button changeMonth next"></a>
+        </div>
+        <div class="table">
+          <h3>Normál nyitvatartási rend</h3>
+          <table>
+            <tr><td class="day">H:</td><td>7:00-21:00</td></tr>
+            <tr><td class="day">K:</td><td>7:00-21:00</td></tr>
+            <tr><td class="day">Sze:</td><td>7:00-21:00</td></tr>
+            <tr><td class="day">Cs:</td><td>7:00-21:00</td></tr>
+            <tr><td class="day">P:</td><td>7:00-21:00</td></tr>
+            <tr><td class="day">Szo:</td><td>8:00-21:00</td></tr>
+            <tr><td class="day">V:</td><td>8:00-17:00</td></tr>
+          </table>
+        </div>
+      </li>
+    </ul>
       
-
-    <h1>Nyitvatartás - Kristóf tér</h1>
-
-    <p>
-      <a href="fruccola-kristof-ter.html">Fruccola Kristóf, H-1052 Budapest, <strong>Kristóf tér 3.</strong></a>
-    </p>
-    <p>
-      <span class="day">H:</span> <strong>7:00-21:00</strong><br>
-      <span class="day">K:</span> <strong>7:00-21:00</strong><br>
-      <span class="day">Sze:</span> <strong>7:00-21:00</strong><br>
-      <span class="day">Cs:</span> <strong>7:00-21:00</strong><br>
-      <span class="day">P:</span> <strong>7:00-21:00</strong><br>
-      <span class="day">Szo:</span> <strong>8:00-21:00</strong><br>
-      <span class="day">V:</span> <strong>8:00-17:00</strong>
-    </p>
-
-      <!--
-      <h2>Vasárnapi nyitvatartási</h2>
-      <p>
-          <strong>Örömmel jelentjük be, hogy vasárnaponként is nyitva lesz a Kristóf téri Fruccola 2016. április 10-től kezdődően.</strong>
-      </p>>-->
-    
-      <div class="special">
-          <h2>Rendkívüli nyitvatartási rend</h2>
-          <p>
-            <span class="day">Szo: DECEMBER 24.:</span> <strong>Zárva</strong><br>
-            <span class="day">V: DECEMBER 25.:</span> <strong>Zárva</strong><br>
-            <span class="day">H: DECEMBER 26.:</span> <strong>Zárva</strong><br>
-            <span class="day">Szo: DECEMBER 31.:</span> <strong>8:00-17:00 NYITVA</strong><br>
-            <span class="day">V: JANUÁR 1.:</span> <strong>12:00-20:00 NYITVA</strong>
-          </p>
-      </div>
-    
-
   </article>
+
 </main>
 <footer class="site-footer">
     <nav class="secondary-navigation">

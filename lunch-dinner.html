@@ -30,6 +30,14 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  
+    <script>
+      var menu_slug = 'lunch-dinner';
+    </script>
+    
+    <script src="js/fruccola.locales.en.js"></script>
+    <script src="js/fruccola.menu.js"></script>
+
 
 </head>
 <body class="eng">
@@ -76,41 +84,8 @@
     </nav>
 </header>
 <main class="main-content clearfix">
-<ul class="menu-navigation">
-    <li class="dailymenu inactive">
-        <a href="daily-menu">Daily menu</a>
-    </li>
-    <li class="breakfast inactive">
-        <a href="breakfast">Breakfast</a>
-    </li>
-    <li class="brunch inactive">
-        <a href="brunch-en">Brunch</a>
-    </li>
-    <li class="lunchdinner active">
-        <a href="lunch-dinner">Lunch, dinner</a>
-    </li>
-    <li class="pasta inactive">
-        <a href="pasta">Pasta</a>
-    </li>
-    <li class="salad inactive">
-        <a href="salad">Salad</a>
-    </li>
-    <li class="sandwich inactive">
-        <a href="sandwich.html">Sandwich</a>
-    </li>
-    <li class="cake inactive">
-        <a href="treats">Treats</a>
-    </li>
-    <li class="juice inactive">
-        <a href="drinks">Drinks</a>
-    </li>
-    <li class="hotdrink inactive">
-        <a href="hot-drinks">Hot drinks</a>
-    </li>
-    <li class="grabandgo inactive">
-        <a href="grabandgo-en">Grab&Go</a>
-    </li>
-</ul>
+  
+  <ul class="menu-navigation"></ul>
 
   <section class="content menu lunchdinner">
     <h1>Lunch, dinner</h1>
@@ -160,75 +135,7 @@
 </form>
 
 
-    <ul class="items">
-      <script>
-          (function() {
-              var lang = 'en';
-              var fruccolaAPI = 'http://fruccola.hu/admin/api/menu/lunch-dinner';
-              var ff = '<em class="flourfree" title="Flour free">Flour free</em>';
-              var l = '<em class="lactosefree" title="Lactose free">Lactose free</em>';
-              var vr = '<em class="vegetarian" title="Vegetarian">Vegetarian</em>'
-              var vn = '<em class="vegan" title="Vegan">Vegan</em>';
-              var cc = '<em class="calories" title="Energy content"></em>';
-              var item;
-              var h2;
-            
-              $.getJSON( fruccolaAPI ).done(function( data ) {
-                  $.each(data, function(index, value){
-
-                    item = $('<li></li>');
-                    $('.content .items').append(item);
-
-                    h2 = $('<h2></h2>');
-                    h2.text(data[index]['name_'+lang]);
-                    item.append(h2);
-
-                    p = $('<p></p>');
-                    p.text(data[index]['description_'+lang]);
-                    item.append(p);
-
-                    p = $('<p class=price></p>');
-                    strong = $('<strong></strong>');
-                    strong.text(data[index]['price']);
-                    p.append(strong);
-                    item.append(p);
-                    
-                    classes = data[index]['add_class'].split(',');
-                    $.each(classes, function(index, value){
-                      class_name = $.trim(value);
-                      switch(class_name) {
-                          case 'new':
-                              h2.addClass(class_name);
-                              break;                    
-                          case 'flourfree':
-                              item.append($( ff ));
-                              break;
-                          case 'lactosefree':
-                              item.append($( l ));
-                              break;
-                          case 'vegetarian':
-                              item.append($( vr ));
-                              break;
-                          case 'vegan':
-                              item.append($( vn ));
-                              break;
-                          default:
-                              item.addClass(class_name);
-                              break;
-                      }
-                    });
-                    
-                    if (data[index]['KCAL'] > 0 ) {
-                      c = $(cc);
-                      c.text(data[index]['KCAL']+' kcal');
-                      item.append(c);
-                    }
-                    
-                  });
-              });
-          })();
-      </script>
-    </ul>
+    <ul class="items"></ul>
   
     
   </section>

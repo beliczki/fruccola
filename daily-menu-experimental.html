@@ -32,7 +32,7 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   
     <script>
-      var menu_slug = 'pasta';
+      var menu_slug = 'daily-menu';
     </script>
     
     <script src="js/fruccola.locales.en.js"></script>
@@ -41,8 +41,12 @@
 </head>
 <body class="eng">
 <header id="mobile" class="site-header">
+
     <nav class="main-navigation">
-        <h1 class="logo"><a href="english.html">fruccola</a></h1>
+
+        <h1 class="logo">
+            <a href="english.html">fruccola</a>
+        </h1>
 
         <a class="mobile-navigation open" href="#mobile"></a>
         <a class="mobile-navigation close" href="#top"></a>
@@ -72,22 +76,24 @@
             </li>
         </ul>
 
-        <p class="language"><a href="index.html">Magyar </a></p>
+        <p class="language">
+            <a href="index.html">Magyar </a>
+        </p>
+
     </nav>
 </header>
-  
 <main class="main-content clearfix">
   
   <ul class="menu-navigation"></ul>
 
-  <section class="content menu pasta">
-    
-      <h1>Pasta</h1>
-      <p class="subtitle"><span class="date"> </span> from 11.30 a.m.</p>
+  <section class="content menu dailymenu">
+    <h1>Daily menu</h1>
+    <p class="subtitle"><span class="date"> </span> from 11.30 a.m.</p>
+    <a href="daily-menu-subscribe.html" class="button">Subscribe to daily notification</a>
 
-      <form id="filter" class="product-filter">
-      <a class="mobile-filter open" href="#filter"></a>
-      <a class="mobile-filter close" href="#top"></a>
+    <form id="filter" class="product-filter">
+        <a class="mobile-filter open" href="#filter"></a>
+        <a class="mobile-filter close" href="#top"></a>
 
       <fieldset class="items">
         <label for="filter-flourfree" class="flourfree">
@@ -128,12 +134,31 @@
       </fieldset>
     </form>
 
-    <p class="location arany"> Pasta of the day @Arany János str.: <strong class='pasta'></strong></p>
-    <p class="location kristof">Pasta of the day @Kristóf sqr.: <strong class='pasta'></strong></p>
-    
+    <h3 class="location arany">@ Arany János str.</h3><!-- Daily menu Brunch Meat Free -->
+    <ul class="offer"><!-- meatfree -->
+        <li class="arany">
+            <p class="soup">
+                soup: <span>-</span>
+            </p>
+            <p class="main">
+                main dish: <span>-</span>
+            </p>
+        </li>
+    </ul>
+    <h3 class="location">@ Kristóf sqr.</h3><!-- Daily menu Brunch Meat Free -->
+    <ul class="offer clearfix"><!-- meatfree -->
+        <li class="kristof">
+            <p class="soup">
+                soup: <span>-</span>
+            </p>
+            <p class="main">
+                main dish: <span>-</span>
+            </p>
+        </li>
+    </ul>
+
     <ul class="items"></ul>
-    
-    
+        
   </section>
 </main>
 <footer class="site-footer">
@@ -230,6 +255,35 @@
     ga('create', 'UA-39874982-1', 'fruccola.hu');
     ga('send', 'pageview');
 
+</script>
+
+<!-- Hotjar Tracking Code for http://www.fruccola.hu -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:119974,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '510450589137328');
+    fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=510450589137328&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+  
 </script>
 </body>
 </html>
