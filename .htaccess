@@ -1,16 +1,22 @@
 Options +FollowSymLinks
 
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^fruccola.hu
-RewriteRule ^allergens.html$ http://fruccola.hu/menu.html [L]
-RewriteRule ^allergenek.html$ http://fruccola.hu/etlap-itallap.html [L]
-RewriteRule ^sutik.html$ http://fruccola.hu/edessegek [L]
-RewriteRule ^cakes.html$ http://fruccola.hu/treats [L]
-RewriteRule ^levek.html$ http://fruccola.hu/italok [L]
-RewriteRule ^levek$ http://fruccola.hu/italok [L]
-RewriteRule ^juices.html$ http://fruccola.hu/drinks [L]
-RewriteRule ^juices$ http://fruccola.hu/drinks [L]
+RewriteBase "/"
 
-RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^allergens.html$ /menu [R,L]
+RewriteRule ^allergenek.html$ /etlap-itallap [R,L]
+RewriteRule ^sutik.html$ /etlap-itallap/edessegek [R,L]
+RewriteRule ^cakes.html$ /menu/treats [R,L]
+RewriteRule ^cakes$ /menu/treats [R,L]
+RewriteRule ^levek.html$ /etlap-itallap/italok [R,L]
+RewriteRule ^levek$ /etlap-itallap/italok [R,L]
+RewriteRule ^juices.html$ /menu/drinks [R,L]
+RewriteRule ^juices$ /menu/drinks [R,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f 
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /$1.html [QSA]
+RewriteRule (.+)\.html$ $1 [R,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L] 

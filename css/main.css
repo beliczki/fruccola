@@ -1,26 +1,26 @@
 @font-face { font-family: "Heavy";
-  src: url("font/helveticaneueltpro-hv-webfont.eot");
-  src: url("font/helveticaneueltpro-hv-webfont.eot?#iefix") format("embedded-opentype"),
-  url("font/helveticaneueltpro-hv-webfont.woff") format("woff");
+  src: url("/css/font/helveticaneueltpro-hv-webfont.eot");
+  src: url("/css/font/helveticaneueltpro-hv-webfont.eot?#iefix") format("embedded-opentype"),
+  url("/css/font/helveticaneueltpro-hv-webfont.woff") format("woff");
 
 }
 
 @font-face { font-family: "Bold";
-  src: url("font/helveticaneueltpro-bd-webfont.eot");
-  src: url("font/helveticaneueltpro-bd-webfont.eot?#iefix") format("embedded-opentype"),
-  url("font/helveticaneueltpro-bd-webfont.woff") format("woff");
+  src: url("/css/font/helveticaneueltpro-bd-webfont.eot");
+  src: url("/css/font/helveticaneueltpro-bd-webfont.eot?#iefix") format("embedded-opentype"),
+  url("/css/font/helveticaneueltpro-bd-webfont.woff") format("woff");
 
 }
 @font-face { font-family: "Roman";
-  src: url("font/helveticaneueltpro-roman-webfont.eot");
-  src: url("font/helveticaneueltpro-roman-webfont.eot?#iefix") format("embedded-opentype"),
-  url("font/helveticaneueltpro-roman-webfont.woff") format("woff");
+  src: url("/css/font/helveticaneueltpro-roman-webfont.eot");
+  src: url("/css/font/helveticaneueltpro-roman-webfont.eot?#iefix") format("embedded-opentype"),
+  url("/css/font/helveticaneueltpro-roman-webfont.woff") format("woff");
 
 }
 @font-face { font-family: "MediumCondensed";
-  src: url("font/helveticaneueltpro-mdcn-webfont.eot");
-  src: url("font/helveticaneueltpro-mdcn-webfont.eot?#iefix") format("embedded-opentype"),
-  url("font/helveticaneueltpro-mdcn-webfont.woff") format("woff");
+  src: url("/css/font/helveticaneueltpro-mdcn-webfont.eot");
+  src: url("/css/font/helveticaneueltpro-mdcn-webfont.eot?#iefix") format("embedded-opentype"),
+  url("/css/font/helveticaneueltpro-mdcn-webfont.woff") format("woff");
 
 }
 
@@ -28,8 +28,11 @@
   font-family: 'Fruccola';
   font-style: normal;
   font-weight: 400;
-  src: url("font/fruccola.eot?v=12");
-  src: url("font/fruccola.eot?#iefix") format('embedded-opentype'), url("font/fruccola.woff?v=12") format('woff'), url("font/fruccola.ttf?v=12") format('truetype'), url("font/fruccola.svg?#fruccola&v=12") format('svg');
+  src: url("/css/font/fruccola.eot?v=12");
+  src: url("/css/font/fruccola.eot?#iefix") format('embedded-opentype'), 
+    url("/css/font/fruccola.woff?v=12") format('woff'), 
+    url("/css/font/fruccola.ttf?v=12") format('truetype'), 
+    url("/css/font/fruccola.svg?#fruccola&v=12") format('svg');
 }
 .icon,
 .container.new:before,
@@ -44,6 +47,7 @@ h2.new:before,
 .product-filter .items label span:before,
 #subscribe label span:before,
 .content > ul > li:before,
+.jobs li:before,
 .seven-points li h2:before,
 .happy-things li a:before,
 .payment-methods li:before,
@@ -56,7 +60,10 @@ h2.new:before,
 .content em.vegan:before,
 .content em.vegetarian:before,
 .content.menu .menu-categories a:before,
+.content.menu .items .love:before,
 .content .offer p:before,
+.soup .description:before,
+.main-dish .description:before,
 .meatfree .location.arany:before,
 .fish .location.arany:before,
 .sticky.dailymenu a:before,
@@ -111,13 +118,13 @@ h2.new:before,
   content: '\e006';
 }
 .icon-cake,
-.menu-navigation .cake a:before,
-.content.menu .menu-categories .cake a:before,
-.content.recommended li.cake:before {
+.menu-navigation .treats a:before,
+.content.menu .menu-categories .treats a:before,
+.content.recommended li.treats:before {
   content: '\e007';
 }
 .icon-cake-inverse,
-.menu-navigation .cake.active a:before {
+.menu-navigation .treats.active a:before {
   content: '\e008';
 }
 .icon-daily,
@@ -148,7 +155,7 @@ h2.new:before,
 .icon-flourfree {
   content: '\E03D';
 }
-.hun .icon-flourfree {
+.hu .icon-flourfree {
   content: '\E03E';
 }
 .icon-flourfree-alternate,
@@ -157,18 +164,18 @@ h2.new:before,
   content: '\E03D';
 }
 
-.hun .content em.flourfree:before {
+.hu .content em.flourfree:before {
   content: '\E03E';
 }
 
-.icon-hotdrink,
-.menu-navigation .hotdrink a:before,
-.content.menu .menu-categories .hotdrink a:before,
-.content.recommended li.hotdrink:before {
+.icon-hot-drinks,
+.menu-navigation .hot-drinks a:before,
+.content.menu .menu-categories .hot-drinks a:before,
+.content.recommended li.hot-drinks:before {
   content: '\e015';
 }
-.icon-hotdrink-inverse,
-.menu-navigation .hotdrink.active a:before {
+.icon-hot-drinks-inverse,
+.menu-navigation .hot-drinks.active a:before {
   content: '\E016';
 }
 .icon-instagram,
@@ -276,18 +283,31 @@ h2.new:before,
   content: '\E000';
 }
 
+li.cook:before {
+  content: '\E03A';
+}
+li.waiter:before{
+  content: '\E046';
+}
+li.prep:before{
+  content: '\E03C';
+}
+li.dishwasher:before{
+  content: '\E03B';
+}
+
 .price strong:after{
   content: '\E00F';
 }
 
-.eng h2.new:before,
-.eng .new h2:before,
-.eng .container.new:before {
+.en h2.new:before,
+.en .new h2:before,
+.en .container.new:before {
   content: '\E01E';
 }
-.hun h2.new:before,
-.hun .new h2:before,
-.hun .container.new:before {
+.hu h2.new:before,
+.hu .new h2:before,
+.hu .container.new:before {
   content: '\E02A';
 }
 
@@ -332,19 +352,16 @@ h2.new:before,
 ,}
 .new h2:before,
 h2.new:before{
-  color: #f5820;
-  position: relative;
-  float:left;
+  position: absolute;
+  float: left;
   display: block;
   width: 24px;
   height: 24px;
   font-size: 24px;
   line-height: 16px;
-  left:-3px;
-  margin-right:3px;
-  /*bottom: 2px;*/
-  /*height: 40px;
-  padding: 10px;*/
+  left: -27px;
+  margin-right: 3px;
+  top: -22px;
 }
 
 .icon-settings,
@@ -421,11 +438,13 @@ h2.new:before{
   content: '\E02C';
 }
 .icon-spoon,
-.content .offer p.soup:before {
+.content .offer p.soup:before,
+.dailymenu .soup .description:before {
   content: '\E027';
 }
 .icon-fork,
-.content .offer p.main:before {
+.content .offer p.main:before, 
+.dailymenu .main-dish .description:before{
   content: '\E010';
 }
 .icon-checkbox,
@@ -649,9 +668,10 @@ fieldset {
 }
 
 .sticky.dailymenu a:before {  content: '\E050';}
-.sticky.feedback a:before {  content: '\E04C';}
+.sticky.feedback a:before {  content: '\E051';}
 
-
+.content.menu .items .love:before {  content: '\E036';}
+.content.menu .items .love.true:before {  content: '\E039';}
 
 
 .social {
@@ -685,7 +705,7 @@ fieldset {
   position: absolute;
   bottom: 0;
   top: 0;
-  right: 20px;
+  right: 13px;
   margin: auto 0px;
   text-transform: uppercase;
   z-index: 1;
@@ -727,10 +747,10 @@ fieldset {
 .menu-navigation .sandwich a {
   color: #d2ac67;
 }
-.menu-navigation .hotdrink a {
+.menu-navigation .hot-drinks a {
   color: #482722;
 }
-.menu-navigation .cake a {
+.menu-navigation .treats a {
   color: #c756a1;
 }
 .menu-navigation .grabandgo a {
@@ -905,7 +925,8 @@ button:hover, .button:hover {
 .content {
   padding: 0.5em 0 2em 0;
 }
-.content h1 {
+.content h1,
+.content.menu.categories h1 {
     text-transform: uppercase;
     font-size: 1.6rem;
     font-family: 'Heavy' !important;
@@ -913,6 +934,9 @@ button:hover, .button:hover {
     /*font-weight: 800;*/
     letter-spacing: -0.05rem;
     margin: 0.5em 0 1em 0;
+}
+.content.menu h1 {
+  margin: 0 0 0 0;
 }
 .content h2 {
   /*font-weight: 700;*/
@@ -938,7 +962,7 @@ button:hover, .button:hover {
 }
 .content strong {
   /*font-weight: bold;*/
-  font-family: 'Bold' !important;
+  font-family: 'Bold';
 }
 .content .price strong:after {
   position: relative;
@@ -948,7 +972,7 @@ button:hover, .button:hover {
 .content .price strong {
   font-size: 21px;
   /*font-weight: 800;*/
-  font-family: 'Heavy' !important;
+  font-family: 'Heavy';
   letter-spacing: -0.03em;
 }
 .content .container {
@@ -998,6 +1022,42 @@ button:hover, .button:hover {
   margin-top: -4px;
 }
 
+.content.jobs .items li {
+  padding: 0px 0px 0px 105px;
+  margin-left: 0px;
+  display: table;
+  margin-bottom: 1em;
+}
+.content.jobs .items li ul {
+  list-style:disc;
+}
+.content.jobs .items li ul li{
+  padding: 0px 0px 0px 0px;
+}
+.content.jobs .items li:before {
+  position: absolute;
+  display: block;
+  font-size: 100px;
+  height: 65px;
+  margin-left: -115px;
+  margin-top: 20px;
+}
+.content.jobs .items li.waiter {color: #482722}
+.content.jobs .items li.prep {color: #f58220}
+.content.jobs .items li.dishwasher {color: #93b1c2}
+
+.content.jobs .button {padding:0.5em 1em;}
+
+.content.jobs .items li.cook .button {color: #fff}
+.content.jobs .items li.waiter .button {background-color: #482722; border-color: #482722; color: #fff}
+.content.jobs .items li.prep .button{background-color: #f58220; border-color: #f58220;  color: #fff}
+.content.jobs .items li.dishwasher .button {background-color: #93b1c2; border-color: #93b1c2; color: #fff}
+
+.content.jobs .items li.cook .button:hover {color: #40ae49;}
+.content.jobs .items li.waiter .button:hover {background-color: #fff; color: #482722;}
+.content.jobs .items li.prep .button:hover{background-color: #fff; color: #f58220;}
+.content.jobs .items li.dishwasher .button:hover {background-color: #fff; color: #93b1c2;}
+
 .content.opening > ul > li:before,
 .content.contact > ul > li:before,
 .content.recommended > ul > li:before {
@@ -1021,17 +1081,17 @@ button:hover, .button:hover {
 .content > ul > li.sandwich {
   color: #d2ac67;
 }
-.content > ul > li.hotdrink {
+.content > ul > li.hot-drinks {
   color: #482722;
 }
-.content > ul > li.hotdrink ul.options li{
+.content > ul > li.hot-drinks ul.options li{
     color: #482722;
     margin: 0px;
 }
-.content > ul >  li.cake {
+.content > ul >  li.treats {
   color: #c756a1;
 }
-.content > ul >  li.cake ul.options li{
+.content > ul >  li.treats ul.options li{
   color: #c756a1;
   margin: 0px;
 }
@@ -1137,12 +1197,12 @@ button:hover, .button:hover {
   height: 66px;
   padding-bottom: 48%;
 }
-.content.menu.hotdrink:after {
+.content.menu.hot-drinks:after {
   background-image: url("../img/hotdrink.jpg");  /*seasonal case: seasonalhotdrink.jpg*/
   height: 48px;
   padding-bottom: 54%;
 }
-.content.menu.cake:after {
+.content.menu.treats:after {
   background-image: url("../img/cake.jpg");
   height: 59px;
   padding-bottom: 65.9%;
@@ -1152,8 +1212,8 @@ button:hover, .button:hover {
     height: 20px;
     padding-bottom: 62.3%;
 }
+#dailymenu-holder h2,
 .content.menu h2 {
-  margin-top: 0.5em;
   font-size: 1rem;
 }
 .content .offer h3 {
@@ -1203,10 +1263,10 @@ button:hover, .button:hover {
 .content  em.vegetarian {
   /*float: left;*/
   height: 24px;
-  margin-right: 3px;
+  margin-right: 0px;
   margin-bottom: -5px;
   overflow: hidden;
-  width: 22px;
+  width: 24px;
 }
 
 .content .calories {
@@ -1216,8 +1276,10 @@ button:hover, .button:hover {
   bottom: 3px;
   opacity: 0.5;
   margin-right: 5px;
-  padding: 3px 5px;
-  border-radius: 5px;
+  margin-left: 5px;
+  margin-top: 2px;
+  padding: 4px 8px;
+  border-radius: 10px;
 }
 
 
@@ -1229,7 +1291,7 @@ button:hover, .button:hover {
   display: block;
   font-size: 30px;
   line-height: 26px;
-  margin-left: -5px;
+  margin-left: -2px;
   margin-top: -2px;
 }
 .content em.flourfree:before {
@@ -1290,7 +1352,7 @@ button:hover, .button:hover {
 }
 
 .content.happy-things article > a {
-  font-family: 'Heavy' !important;
+  /*font-family: 'Heavy' !important;*/
   color: #40ae49;
 }
 
@@ -1309,10 +1371,10 @@ button:hover, .button:hover {
 .content.menu .menu-categories .sandwich a {
   color: #d2ac67;
 }
-.content.menu .menu-categories .hotdrink a {
+.content.menu .menu-categories .hot-drinks a {
   color: #482722;
 }
-.content.menu .menu-categories .cake a {
+.content.menu .menu-categories .treats a {
   color: #c756a1;
 }
 .content.menu .menu-categories .grabandgo a {
@@ -1342,51 +1404,202 @@ button:hover, .button:hover {
   width: 20px;
 }
 .content.menu .items {
-  margin: 30px 0 0 0;
+  margin: 0 0 0 0;
 }
+#dailymenu-holder > li,
 .content.menu .items > li {
-  border-top: 1px dotted #f58220;
-  padding: 0.5em 0;
+  border: 2px dotted #ddd;
+  padding-bottom:  1em;
+  margin-top: 1em;
   margin-left: 0px;
   margin-bottom: 0px;
+  position: relative;
 }
+.content.menu .items > li:hover {
+  box-shadow: 0 1px 20px 0px rgba(1,1,1,0.2);
+}
+.content.menu .items > li .love {
+  display:block;
+  position: absolute;
+  top:-2px;
+  right:-2px;
+  width: 48px;
+  height: 48px;
+  background:  #f58220;
+  border: 2px solid  #f58220;
+  border-top: none;
+  border-right: none;
+  border-bottom-left-radius:100px;
+  color:#fff;
+}
+.content.menu .items > li .love:hover {
+  color: #f58220;
+  background:  #fff;
+}
+.content.menu .items > li .love.true {
+  color: #f58220;
+  background:  #fff;
+  border-color:  #fff;
+  top:3px;
+  right:3px;
+}
+
+.dailymenu.meatfree .items > li .love {background: #ec008c; border-color: #ec008c;}
+.content.menu.juice .items > li .love {background: #d7182a; border-color: #d7182a;}
+.content.menu.hot-drinks .items > li .love {background: #482722; border-color:#482722;}
+.content.menu .items > li.fish .love,
+.dailymenu.fish .items > li .love,
+.content.menu.salad .items > li .love {background: #40ae49; border-color:#40ae49;}
+.content.menu.sandwich .items > li .love {background: #d2ac67; border-color:#d2ac67;}
+.content.menu.treats .items > li .love {background: #c756a1; border-color:#c756a1;}
+.content.menu.grabandgo .items > li.salad .love {background: #40ae49; border-color:#40ae49;}
+.content.menu.grabandgo .items > li.desert .love {background: #c756a1; border-color:#c756a1;}
+.content.menu.grabandgo .items > li.drink .love {background: #d7182a; border-color:#d7182a;}
+
+.dailymenu.meatfree .items > li .love:hover {background: #fff; color: #ec008c;}
+.content.menu.juice .items > li .love:hover {background: #fff; color: #d7182a;}
+.content.menu.hot-drinks .items > li .love:hover {background: #fff; color:#482722;}
+.content.menu .items > li.fish .love:hover, 
+.dailymenu.fish > li .love:hover, 
+.content.menu.salad .items > li .love:hover {background: #fff; color:#40ae49;}
+.content.menu.sandwich .items > li .love:hover {background: #fff; color:#d2ac67;}
+.content.menu.treats .items > li .love:hover {background: #fff; color:#c756a1;}
+.content.menu.grabandgo .items > li.salad .love:hover {background: #fff; color:#40ae49;}
+.content.menu.grabandgo .items > li.desert .love:hover {background: #fff; color:#c756a1;}
+.content.menu.grabandgo .items > li.drink .love:hove {background: #fff; color:#d7182a;}
+
+.dailymenu.meatfree .items > li .love.true {background: #fff; border-color:#fff; color: #ec008c;}
+.content.menu.juice .items > li .love.true {background: #fff; border-color:#fff; color: #d7182a;}
+.content.menu.hot-drinks .items > li .love.true {background: #fff; border-color:#fff; color:#482722;}
+.content.menu .items > li.fish .love.true,
+.dailymenu.fish > li .love.true, 
+.content.menu.salad .items > li .love.true {background: #fff; border-color:#fff; color:#40ae49;}
+.content.menu.sandwich .items > li .love.true {background: #fff; border-color:#fff; color:#d2ac67;}
+.content.menu.treats .items > li .love.true {background: #fff; border-color:#fff; color:#c756a1;}
+.content.menu.grabandgo .items > li.salad .love.true {background: #fff; border-color:#fff; color:#40ae49;}
+.content.menu.grabandgo .items > li.desert .love.true {background: #fff; border-color:#fff; color:#c756a1;}
+.content.menu.grabandgo .items > li.drink .love.true {background: #fff; border-color:#fff; color:#d7182a;}
+
+
+.content.menu .items > li .love:before {
+  font-size: 28px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
 .content.menu .items .calories {
   background: #f58220;
 }
-.content.menu .items > li:first-child {
-  /*border-top: 0;*/
+
+#dailymenu-holder h2,
+.content.menu .items h2 {
+  width: 70%;
+  margin-left: 1em;
+  margin-bottom: 2em;
+  position:relative;
 }
-.content.menu .items h3 {
-  margin-top: 1em;
-  display: inline-block;
-  margin-right: 10px;
+.content #dailymenu-holder li h2 {margin-top:1em;}
+
+.content #dailymenu-holder .description,
+.content.menu .items .description {
+  width: 80%;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+#dailymenu-holder .price,
+.content.menu .items .price {
+ text-align:right;
+ margin-right:1em;
 }
 
-.content.menu .items .price {
+.content.menu .items .price p {
  display: inline-block;
- margin-right: 10px;
+ margin: 0 0 -7px 1em;
 }
 .content.menu .items .price + ul > li:first-child > h3 {
   margin-top: 0.5em;
 }
-.content em {
-  display: inline-block;
+.content #dailymenu-holder .properties,
+.content.menu .items .properties {
+ display: block;
+ position: absolute;
+ margin:0;
+ left: 1em;
 }
-.content.menu .options li {
-  display: inline;
+.content.menu .items .properties {bottom: 1em;}
+.dailymenu .today .soup p.properties,
+.dailymenu .today .main-dish p.properties {bottom: 0.5em;}
+
+.dailymenu .today .soup:after,
+.dailymenu .today .main-dish:after,
+.dailymenu #dailymenu-holder h2:after,
+.menu .items h2:after {
+  background: url(../img/dot-orange.svg) repeat-x;
+  background-size: 8px 3px;
+  bottom: -1em;
+  content: '';
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  opacity: 1;
 }
-.content.menu .options li:after {
-  content: '/';
+
+.dailymenu.meatfree .today .soup:after,
+.dailymenu.meatfree .today .main-dish:after,
+.dailymenu.meatfree #dailymenu-holder h2:after{
+  background-image: url(../img/dot-pink.svg);
 }
-.content.menu .options li:last-child:after {
-  content: none;
+.dailymenu.fish .today .soup:after,
+.dailymenu.fish .today .main-dish:after,
+.dailymenu.fish #dailymenu-holder h2:after,
+.dailymenu li.fish h2:after {
+  background-image: url(../img/dot-green.svg);
 }
-.content.menu.juice .options li {
-    display: block;
+
+.dailymenu .soup,
+.dailymenu .main-dish,
+.dailymenu .soup-and-maindish {
+  margin: 0 1em 0 1em;
 }
-.content.menu.juice .options li:after {
-    content: "";
+
+
+
+.dailymenu .today { margin-bottom:3em !important;}
+.dailymenu .today div {position:relative; margin-bottom:2em;}
+.dailymenu .today div.soup-and-maindish {margin-bottom:0px;}
+
+.dailymenu .today p.description { margin-left:0 !important; width:inherit !important;}
+.dailymenu .today p.description:before {font-size:20px; position:relative; bottom:-5px; left:-3px;}
+.dailymenu .today .soup-and-maindish p.description {float:left; width:50%; margin-bottom:0px !important;}
+
+.dailymenu .today p.price { margin-right:0 !important;}
+.dailymenu .soup p.price strong,
+.dailymenu .main-dish p.price strong {font-family:Arial !important; font-weight:normal !important; }
+.dailymenu .today p.price {margin:-3px 0 0 0;}
+
+.dailymenu .today div.subscribe {
+  position:absolute;
+  margin: 0px;
+  width: 100%;
+  bottom:-50px;
+  text-align:center;
 }
+.dailymenu .today div.subscribe a.button {
+  border-top:none;
+  border-top-left-radius:0px;
+  border-top-right-radius:0px;
+  padding: 0.5em 2em;
+}
+.dailymenu .arany.unavailable {
+  opacity: 0.2;
+}
+
+
+
+
+
 
 .dailymenu { color:#f58220; }
 .dailymenu h2 a { color:#f58220; font-family: 'Heavy' !important;}
@@ -1399,6 +1612,8 @@ button:hover, .button:hover {
 .dailymenu.fish a.button { background-color: #40ae49; border-color: #40ae49; color: #fff; }
 .dailymenu.fish a.button:hover {background-color: #fff; color:#40ae49;}
 
+.dailymenu .hide {display:none;}
+.dailymenu.fish .fish {display:none;}
 
 .dailymenu.meatfree li,
 .dailymenu.meatfree h2 a,
@@ -1408,9 +1623,6 @@ button:hover, .button:hover {
     color: #ec008c;
 }
 
-.brand h2 a {color: #40ae49; font-family: 'Heavy' !important;}
-.brand a.button {color: #fff; height: 22px; padding: 5px 10px 0 10px; display: inline-block; margin-top: 0.5em;}
-.brand a.button:hover {color: #40ae49;}
 
 .dailymenu.beef li,
 .dailymenu.beef h2 a,
@@ -1429,15 +1641,34 @@ button:hover, .button:hover {
 }
 .content.menu.dailymenu li.fish {
   color: #40ae49;
-  border-top-color: #40ae49;
 }
 
 
+
+
+.content em {
+  display: inline-block;
+}
+.content.menu .options li {
+  display: inline;
+}
+.content.menu .options li:after {
+  content: '/';
+}
+.content.menu .options li:last-child:after {
+  content: none;
+}
+.content.menu.juice .options li {
+    display: block;
+}
+.content.menu.juice .options li:after {
+    content: "";
+}
 .content.menu.juice {
   color: #d7182a;
 }
-.content.menu.juice .items > li {
-  border-top-color: #d7182a;
+.content.menu.juice .items > li h2:after {
+  background-image: url(../img/dot-red.svg);
 }
 .content.menu.juice .items .calories {
   background: #d7182a;
@@ -1449,14 +1680,16 @@ button:hover, .button:hover {
   color: #40ae49;
 }
 .content.menu.salad .items > li {
-  border-top-color: #40ae49;
   position: relative;
+}
+.content.menu.salad .items > li h2:after {
+  background-image: url(../img/dot-green.svg);
 }
 .content.menu.salad .items .calories {
   background: #40ae49;
 }
 .content.menu.salad .items > li:before {
-  background: #fff;
+  /**background: #fff;
   content: '+';
   font-size: 18px;
   font-weight: 700;
@@ -1465,7 +1698,7 @@ button:hover, .button:hover {
   right: 15px;
   text-align: center;
   top: -15px;
-  width: 30px;
+  width: 30px;**/
 }
 .content.menu.salad .items > li:first-child:before {
   content: none;
@@ -1473,41 +1706,41 @@ button:hover, .button:hover {
 .content.menu.sandwich {
   color: #d2ac67;
 }
-.content.menu.sandwich .items > li {
-  border-top-color: #d2ac67;
+.content.menu.sandwich .items > li h2:after {
+  background-image: url(../img/dot-kaki.svg);
 }
 .content.menu.sandwich .items .calories {
   background: #d2ac67;
 }
-.content.menu.hotdrink {
+.content.menu.hot-drinks {
   color: #482722;
 }
-.content.menu.hotdrink .items > li {
-  border-top-color: #482722;
+.content.menu.hot-drinks .items > li h2:after {
+  background-image: url(../img/dot-brown.svg);
 }
-.content.menu.hotdrink .items .calories {
+.content.menu.hot-drinks .items .calories {
   background: #482722;
 }
-.content.menu.cake {
+.content.menu.treats {
   color: #c756a1;
 }
-.content.menu.cake .items > li {
-  border-top-color: #c756a1;
+.content.menu.treats .items > li h2:after {
+  background-image: url(../img/dot-pink.svg);
 }
-.content.menu.cake .items .calories {
+.content.menu.treats .items .calories {
   background: #c756a1;
 }
 .content.menu.grabandgo {
     color: #40ae49;
 }
-.content.menu.grabandgo .items > li {
-    border-top-color: #40ae49;
+.content.menu.grabandgo .items > li h2:after {
+    background-image: url(../img/dot-green.svg);
 }
 .content.menu.grabandgo li.salad {
     color: #40ae49;
 }
-.content.menu.grabandgo .items > li.salad {
-    border-top-color: #40ae49;
+.content.menu.grabandgo .items > li.salad h2:after {
+    background-image: url(../img/dot-green.svg);
 }
 .content.menu.grabandgo .items .calories {
   background: #40ae49;
@@ -1515,8 +1748,8 @@ button:hover, .button:hover {
 .content.menu.grabandgo li.desert {
     color: #c756a1;
 }
-.content.menu.grabandgo .items > li.desert {
-    border-top-color: #c756a1;
+.content.menu.grabandgo .items > li.desert h2:after {
+    background-image: url(../img/dot-pink.svg);
 }
 .content.menu.grabandgo .items li.desert .calories {
   background: #c756a1;
@@ -1524,12 +1757,17 @@ button:hover, .button:hover {
 .content.menu.grabandgo li.drink {
     color: #d7182a;
 }
-.content.menu.grabandgo .items > li.drink {
-    border-top-color: #d7182a;
+.content.menu.grabandgo .items > li.drink h2:after {
+    background-image: url(../img/dot-red.svg);
 }
 .content.menu.grabandgo .items li.drink .calories {
   background: #d7182a;
 }
+
+.brand h2 a {color: #40ae49; font-family: 'Heavy' !important;}
+.brand a.button {color: #fff; height: 22px; padding: 5px 10px 0 10px; display: inline-block; margin-top: 0.5em;}
+.brand a.button:hover {color: #40ae49;}
+
 .main-content.map {
   margin-top: 70px;
   padding: 0 18px;
@@ -1678,10 +1916,10 @@ button:hover, .button:hover {
   display:block;
   margin-top:4px;
 }
-.eng .content .calendar .changeMonth:before { content:'« prev month'; }
-.eng .content .calendar .changeMonth.next:before { content:'next month »'; }
-.hun .content .calendar .changeMonth:before { content:'« előző hónap'; }
-.hun .content .calendar .changeMonth.next:before { content:'következő hónap »'; }
+.en .content .calendar .changeMonth:before { content:'« prev month'; }
+.en .content .calendar .changeMonth.next:before { content:'next month »'; }
+.hu .content .calendar .changeMonth:before { content:'« előző hónap'; }
+.hu .content .calendar .changeMonth.next:before { content:'következő hónap »'; }
 
 .content.payment-methods,
 .content.allergenes {
@@ -2052,7 +2290,7 @@ button:hover, .button:hover {
     .content.menu .items > li {
         float: left;
         width: 380px;
-        margin-right: 30px;
+        margin-right: 1em;
     }
     .content.menu.categories,
     .content.menu.payment-methods,
@@ -2081,14 +2319,16 @@ button:hover, .button:hover {
     padding:0px;
   }
 
+  #dailymenu-holder,
   .content.menu .items {
     display:flex; /* equal height of the children */ 
     flex-flow: row wrap;
   }
+  #dailymenu-holder > li,
   .content.menu .items > li {
     float: left;
     width: 380px;
-    margin-right: 30px;
+    margin-right: 1em;
   }
   
   .content.opening .calendar {
@@ -2193,6 +2433,7 @@ button:hover, .button:hover {
   .content.opening p,
   .content.contact p,
   .content.recommended p { width: 85%;}
+  .content.recommended #dailymenu-holder p.price {width:100%;}
 
   .content.menu:after {
     margin-left: 0;
@@ -2260,12 +2501,12 @@ button:hover, .button:hover {
     height: 39px;
     padding-bottom: 48%;
   }
-  .content.menu.hotdrink:after {
+  .content.menu.hot-drinks:after {
     background-image: url("../img/hotdrink@2x.jpg");  /*seasonal case: seasonalhot@2x.jpg*/
     height: 25px;
     padding-bottom: 60.6%;
   }
-  .content.menu.cake:after {
+  .content.menu.treats:after {
     background-image: url("../img/cake@2x.jpg");
     height: 27px;
     padding-bottom: 55.1%;
@@ -2354,17 +2595,18 @@ button:hover, .button:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     position:relative;
 }
-
-.A4 .content .offer strong {   font-size: 62px;  line-height: 68px;}
-.A4 .content.menu li.dailymenu { margin-top:5cm; border-top: 1px dashed #555; border-bottom: 1px dashed #555; }
+.A4 .dailymenu h2 {color:black;}
+.A4 .dailymenu p {color:black;}
+.A4 .content .offer strong {  font-size: 62px;  line-height: 68px;}
+.A4 .content.menu li.dailymenu { /* margin-top:5cm; border-top: 1px dashed #555; border-bottom: 1px dashed #555;*/ }
 .A4 .content.menu {padding: 0;}
 .A4 .content.menu ul.offer:after {content: ''; display:block; clear: both; margin-top: 1cm;}
 .A4 .content.menu em {height: 80px; width: 80px; margin-right: 3px; margin-bottom: -15px;} 
 .A4 .content.menu em:before {font-size: 104px; line-height: 94px; margin-left: -10px; margin-top: -3px;}
 .A4 .offer:before {content:'';}
-.A4 .content.menu .offer:before {content:inherit; display:block; font-size: 4cm; width: 4cm; height:4cm; margin:1cm 2cm 6cm 0cm; float: left;}
+.A4 .content.menu .offer:before {content:inherit; display:none; font-size: 4cm; width: 4cm; height:4cm; margin:1cm 2cm 6cm 0cm; float: left;}
 .A4 .content.menu .offer {padding: 0; margin: 0;}
-.A4 .content.menu p {margin: 1cm 0 0 0;}
+.A4 .content.menu .offer p {margin: 1cm 0 0 0; left:0px;}
 .A4 .content.menu .offer p:before { position: static; margin: 0; font-size: 46px;}
 .A4.eng {text-align: right;}
 .A4.eng .content.menu .offer:before {float:right; margin: 1cm 0cm 6cm 2cm;} 

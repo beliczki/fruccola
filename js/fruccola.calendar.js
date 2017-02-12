@@ -124,20 +124,20 @@ $(function() {
           }
         } /// for
 
-
-        /// after load set todays info into header
-        var t = new Date();
-        var todayDiv = $('.calendar .day'+t.getDate());
-        var divDateData = todayDiv.attr('data-date');
-        var divDate = new Date(divDateData);
-        /// show today info
-        if (divDate.getMonth() == t.getMonth()) {
-          $('.calendar .day'+t.getDate()).addClass('today');
-          setDayInfo( $('.arany .calendar .day'+t.getDate()) );
-          setDayInfo( $('.kristof .calendar .day'+t.getDate()) );
-        }
-
       } /// if data
+      
+      /// after load set todays info into header
+      var t = new Date();
+      var todayDiv = $('.calendar .day'+t.getDate());
+      var divDateData = todayDiv.attr('data-date');
+      var divDate = new Date(divDateData);
+      /// show today info
+      /// console.log(divDate.getMonth() +' / '+ t.getMonth());
+      if (divDate.getMonth() == t.getMonth()) {
+        $('.calendar .day'+t.getDate()).addClass('today');
+        setDayInfo( $('.arany .calendar .day'+t.getDate()) );
+        setDayInfo( $('.kristof .calendar .day'+t.getDate()) );
+      }
       
       /// console.log(month);
       /// console.log(monthNames[Number(month)-1]);
@@ -148,6 +148,8 @@ $(function() {
       /// set interactions on days
       $('.calendar .week div').click(function() {
         /// console.log($(this))
+        /// console.log($(this).attr('data-date'));
+        fbq('trackCustom', 'Calendar-DayClick', { day: $(this).attr('data-date') });
         setDayInfo ($(this));
       });
       
