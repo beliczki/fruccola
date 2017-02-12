@@ -1554,7 +1554,7 @@ button:hover, .button:hover {
 .dailymenu.fish .today .soup:after,
 .dailymenu.fish .today .main-dish:after,
 .dailymenu.fish #dailymenu-holder h2:after,
-.dailymenu li.fish h2:after {
+.dailymenu #dailymenu-holder li.fish h2:after {
   background-image: url(../img/dot-green.svg);
 }
 
