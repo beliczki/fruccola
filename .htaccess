@@ -12,6 +12,10 @@ RewriteRule ^levek.html$ /etlap-itallap/italok [R,L]
 RewriteRule ^levek$ /etlap-itallap/italok [R,L]
 RewriteRule ^juices.html$ /menu/drinks [R,L]
 RewriteRule ^juices$ /menu/drinks [R,L]
+RewriteRule ^daily-menu$ /menu/daily-menu [R,L]
+RewriteRule ^napi-menu$ /etlap-itallap/napi-menu [R,L]
+RewriteRule ^daily-menu.html$ /menu/daily-menu [R,L]
+RewriteRule ^napi-menu.html$ /etlap-itallap/napi-menu [R,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f 
 RewriteCond %{REQUEST_FILENAME} !-d

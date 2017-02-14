@@ -935,6 +935,10 @@ button:hover, .button:hover {
     letter-spacing: -0.05rem;
     margin: 0.5em 0 1em 0;
 }
+.content.error404 h1{
+  font-size: 3rem;
+  margin-bottom:0px;
+}
 .content.menu h1 {
   margin: 0 0 0 0;
 }

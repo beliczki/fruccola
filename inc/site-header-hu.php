@@ -15,6 +15,6 @@
     <li class="sticky dailymenu"><a href="/napi-menu-ertesito" class="">Napi menü feliratkozás</a></li>
   </ul>
 
-  <p class="language"><a href="/?language=en">English </a></p>
+  <p class="language"><a href="<?php echo $version_en;?>">English </a></p>
 
 </nav>

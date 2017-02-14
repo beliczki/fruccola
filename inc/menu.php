@@ -1,5 +1,5 @@
 <section class="content menu categories">
-    <h1><?php echo $config['titles']['GET '.$url['path']]?></h1>
+    <h1><?php echo $config['GET '.$url['path']]['title']?></h1>
     <ul class="menu-categories">
       <script>
         (function() {

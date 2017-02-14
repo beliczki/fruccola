@@ -15,6 +15,6 @@
     <li class="sticky dailymenu"><a href="/daily-menu-subscribe" class="">Get daily menu notification</a></li>
   </ul>
   
-  <p class="language"><a href="/?language=hu">Magyar </a></p>
+  <p class="language"><a href="<?php echo $version_hu;?>">Magyar </a></p>
   
 </nav>

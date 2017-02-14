@@ -16,7 +16,7 @@ $(function() {
               item.addClass('active');
               $('.content').addClass(data[index]['name_class']);
               $('.content h1').html(data[index]['name_'+language]);
-              $('.content .subtitle').html(data[index]['description_'+language]);
+              if (category != 'daily-menu' && category != 'napi-menu') $('.content .subtitle').html(data[index]['description_'+language]);
             } else {
               item.addClass('inactive');
             }

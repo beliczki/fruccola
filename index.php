@@ -5,10 +5,15 @@ $url = parse_url ($_SERVER['REQUEST_URI']);
 $params = array();
 if (isset($url['query'])) parse_str($url['query'], $params);
 
-$language = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
-if ($language != 'hu' || $language != 'en' || !isset($language)) $language = 'en';
-if (isset($_COOKIE["language"])) $language = $_COOKIE["language"];
-if (isset($params["language"])) $language = $params["language"];
+if (isset($config['GET '.$url['path']]['version_hu'])) $version_hu = $config['GET '.$url['path']]['version_hu'];
+if (isset($config['GET '.$url['path']]['version_en'])) $version_en = $config['GET '.$url['path']]['version_en'];
+
+
+$language = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2); //első látogatás browser beállítás lapján
+if ($language != 'hu' || $language != 'en' || !isset($language)) $language = 'en'; //első látogatás se nem angol se nem magyar browser
+if (isset($_COOKIE["language"])) $language = $_COOKIE["language"]; //ha van cookie
+if (isset($params["language"])) $language = $params["language"]; //ha van parameter
+if (isset($config['GET '.$url['path']]['language']) && $config['GET '.$url['path']]['language'] !="") $language = $config['GET '.$url['path']]['language']; //ha aloldalra megyunk akkor annak nyelve fakad az url-ből
 setcookie("language", $language, time() + (86400 * 365), "/");
 ?>
 <!doctype html>
@@ -55,16 +60,22 @@ setcookie("language", $language, time() + (86400 * 365), "/");
   
   
 <header class="site-header" id="mobile">
-<?php include 'inc/site-header-'.$language.'.html'; ?>
+<?php include 'inc/site-header-'.$language.'.php'; ?>
 </header>
   
 <main class="main-content clearfix <?php if ($url['path'] == '/terkep' || $url['path'] == '/map') echo 'map'; ?>">
-<?php include 'inc/'.$config['routes']['GET '. $url['path']]; ?>
+<?php 
+  if (isset($config['GET '.$url['path']]['include'])) {
+    include 'inc/'.$config['GET '.$url['path']]['include'];  
+  } else {
+    include 'inc/404.php';
+  }
+?>
 </main>
   
   
 <footer class="site-footer">
-<?php include 'inc/site-footer-'.$language.'.html'; ?>
+<?php include 'inc/site-footer-'.$language.'.php'; ?>
 </footer>
 
 
