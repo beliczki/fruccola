@@ -17,6 +17,21 @@ RewriteRule ^napi-menu$ /etlap-itallap/napi-menu [R,L]
 RewriteRule ^daily-menu.html$ /menu/daily-menu [R,L]
 RewriteRule ^napi-menu.html$ /etlap-itallap/napi-menu [R,L]
 
+RewriteRule ^sandwich$ /menu/sandwich [R,L]
+RewriteRule ^szendvics$ /etlap-itallap/szendvics [R,L]
+RewriteRule ^breakfast$ /menu/breakfast [R,L]
+RewriteRule ^reggeli$ /etlap-itallap/reggeli [R,L]
+RewriteRule ^brunch-en$ /menu/brunch [R,L]
+RewriteRule ^brunch$ /etlap-itallap/villas-reggali [R,L]
+RewriteRule ^lunch-dinner$ /menu/lunch-dinner [R,L]
+RewriteRule ^ebed-vacsora$ /etlap-itallap/ebed-vacsora [R,L]
+RewriteRule ^salad$ /menu/salad [R,L]
+RewriteRule ^salata$ /etlap-itallap/salata [R,L]
+RewriteRule ^grabandgo-en$ /menu/grabandgo [R,L]
+RewriteRule ^grabandgo$ /etlap-itallap/fogd-es-vidd [R,L]
+RewriteRule ^hot-drink$ /menu/hot-drink [R,L]
+RewriteRule ^forro-italok$ /etlap-itallap/forro-italok [R,L]
+
 RewriteCond %{REQUEST_FILENAME} !-f 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule (.+)\.html$ $1 [R,L]
