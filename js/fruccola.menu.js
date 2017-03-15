@@ -10,11 +10,11 @@ $(function() {
           $.each(data, function(index, value){
 
             item = $('<li></li>');
-            item.addClass(data[index].name_class.replace(',',''));
+            item.addClass(data[index].name_class.replace(/,/g,' '));
             
             if (data[index]['slug_'+language].toLowerCase() === category.toLowerCase()){
               item.addClass('active');
-              $('.content').addClass(data[index]['name_class']);
+              $('.content').addClass(data[index].name_class);
               $('.content h1').html(data[index]['name_'+language]);
               if (category != 'daily-menu' && category != 'napi-menu') $('.content .subtitle').html(data[index]['description_'+language]);
             } else {
@@ -43,7 +43,7 @@ $(function() {
             
             item = $('<li></li>');
             item.addClass(data[index].add_class.replace(/,/g,' '));
-            $('.content .items').append(item);
+            
 
             h2 = $('<h2></h2>');
             h2.html(data[index]['name_'+language]);
@@ -99,8 +99,9 @@ $(function() {
               if (pv[1]) p.append(' /'+pv[1]);
               div.append(p);
             });
+            item.append(div);
             
-            if (data[index].visible) item.append(div); // only if visible
+            if (data[index].visible) $('.content .items').append(item); // only if visible
 
             
           });
