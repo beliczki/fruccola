@@ -2654,14 +2654,11 @@ button:hover, .button:hover {
 .A4.redesign_2017 .content.menu ul li p.name_en,
 .A4.redesign_2017 .content.menu ul li p.name_hu {text-transform:Uppercase;}
 
-@page {
-    size: A4, portrait;
-    margin: 0;
-    padding: 0;
-}
+
 @media print {
     html, body {
-
+      margin:0;
+      padding:0;
     }
 
     .A4 {
@@ -2679,5 +2676,5 @@ button:hover, .button:hover {
         min-height: 29.7cm;
         padding:0;
       }
-    .A4 .content.menu li.dailymenu { margin-top:4cm;}
+    
 }
