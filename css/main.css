@@ -2588,8 +2588,8 @@ button:hover, .button:hover {
 
 .A4 {
     width: 29.7cm;
-    min-height: 21cm;
     height: 21cm;
+    min-height: 21cm;   
     padding: 2cm;
     margin: 1cm auto;
     border: 1px #D3D3D3 solid;
@@ -2599,6 +2599,14 @@ button:hover, .button:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     position:relative;
 }
+.A4.redesign_2017 {
+    width: 21cm;
+    height: 29.7cm;
+    min-height: 29.7cm;
+    padding:0;
+}
+
+
 .A4 .dailymenu h2 {color:black;}
 .A4 .dailymenu p {color:black;}
 .A4 .content .offer strong {  font-size: 62px;  line-height: 68px;}
@@ -2636,8 +2644,17 @@ button:hover, .button:hover {
 .A4 .site-footer:before {font-size: 3cm; width:3cm; height:3cm; border: 0.2cm solid #fff; padding-left:3px; margin-top:-3cm;}
 .A4 .site-footer nav:before {background-size: 15px 15px; height: 7px;}
 
+.A4.redesign_2017 .devide {font-size:52px; font-family:times; color:black;}
+.A4.redesign_2017 ul {padding:17mm;}
+.A4.redesign_2017 ul li p.allergenes em:before {color: black!important; font-size:62px; margin-top:-20px;}
+.A4.redesign_2017 .content.menu ul li p.allergenes {margin-top:0px !important;}
+.A4.redesign_2017 .content.menu ul li p.name_en {margin-top:0px !important;}
+.A4.redesign_2017 .content.menu em {height: 60px; width: 60px; } 
+.A4.redesign_2017 .content.menu ul li p.name_en,
+.A4.redesign_2017 .content.menu ul li p.name_hu {text-transform:Uppercase;}
+
 @page {
-    size: A4, landscape;
+    size: A4, portrait;
     margin: 0;
     padding: 0;
 }
@@ -2655,5 +2672,11 @@ button:hover, .button:hover {
         box-shadow: none;
         page-break-after: always;
     }
+    .A4.redesign_2017 {
+        width: 21cm;
+        height: 29.7cm;
+        min-height: 29.7cm;
+        padding:0;
+      }
     .A4 .content.menu li.dailymenu { margin-top:4cm;}
 }
