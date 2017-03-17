@@ -2644,6 +2644,7 @@ button:hover, .button:hover {
 .A4 .site-footer:before {font-size: 3cm; width:3cm; height:3cm; border: 0.2cm solid #fff; padding-left:3px; margin-top:-3cm;}
 .A4 .site-footer nav:before {background-size: 15px 15px; height: 7px;}
 
+.A4.redesign_2017 .content .offer strong {font-size:52px; line-height:60px;}
 .A4.redesign_2017 .devide {font-size:52px; font-family:times; color:black;}
 .A4.redesign_2017 ul {padding:17mm;}
 .A4.redesign_2017 ul li p.allergenes em:before {color: black!important; font-size:62px; margin-top:-20px;}
