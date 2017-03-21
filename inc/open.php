@@ -25,13 +25,7 @@
       <div class="table">
         <h3>Normal Opening hours</h3>
         <table>
-          <tr><td class="day">Mon:</td><td>7:00-21:00</td></tr>
-          <tr><td class="day">Tue:</td><td>7:00-21:00</td></tr>
-          <tr><td class="day">Wed:</td><td>7:00-21:00</td></tr>
-          <tr><td class="day">Thu:</td><td>7:00-21:00</td></tr>
-          <tr><td class="day">Fri:</td><td>7:00-21:00</td></tr>
-          <tr><td class="day">Sat:</td><td>8:00-21:00</td></tr>
-          <tr><td class="day">Sun:</td><td>8:00-17:00</td></tr>
+        
         </table>
       </div>
     </li>
@@ -59,13 +53,7 @@
       <div class="table">
         <h3>Normal Opening hours</h3>
         <table>
-          <tr><td class="day">Mon:</td><td>7:00-19:00</td></tr>
-          <tr><td class="day">Tue:</td><td>7:00-19:00</td></tr>
-          <tr><td class="day">Wed:</td><td>7:00-19:00</td></tr>
-          <tr><td class="day">Thu:</td><td>7:00-19:00</td></tr>
-          <tr><td class="day">Fri:</td><td>7:00-19:00</td></tr>
-          <tr class="weekend"><td class="day">Sat:</td><td>Closed</td></tr>
-          <tr class="weekend"><td class="day">Sun:</td><td>Closed</td></tr>
+         
         </table>
       </div>
     </li>
@@ -73,4 +61,5 @@
 
 </article>
 
-<script src="js/fruccola.calendar.js"></script>  
+<script src="js/fruccola.calendar.js"></script> 
+<script src="js/fruccola.open.js"></script>  

@@ -10,7 +10,7 @@ $(function() {
 
         buildCardItem ('arany');
         if(typeof data[1] != 'undefined') {
-          console.log('language: ' +data[1]['soup_'+language]);
+          //console.log('language: ' +data[1]['soup_'+language]);
           $('.arany .soup .description').html(data[1]['soup_'+language]);
           $('.arany .main-dish .description').html(data[1]['dish_'+language]);
           addAllergenes (data[1], 'arany','soup','soup');
@@ -26,10 +26,10 @@ $(function() {
           addAllergenes (data[2], 'kristof','soup','soup');
           addAllergenes (data[2], 'kristof','dish','main-dish');
         }
-        if(typeof data['pricing'] != 'undefined') {
-          $('.soup .price strong').html(data['pricing'].soup);
-          $('.main-dish .price strong').html(data['pricing'].dish);
-          $('.soup-and-maindish .price strong').html(data['pricing'].combo);
+        if(typeof data.pricing != 'undefined') {
+          $('.soup .price strong').html(data.pricing.soup);
+          $('.main-dish .price strong').html(data.pricing.dish);
+          $('.soup-and-maindish .price strong').html(data.pricing.combo);
         }
       
         if (nData.getDay() === 1) {

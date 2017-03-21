@@ -25,13 +25,7 @@
       <div class="table">
         <h3>Normál nyitvatartási rend</h3>
         <table>
-          <tr><td class="day">H:</td><td>7:00-21:00</td></tr>
-          <tr><td class="day">K:</td><td>7:00-21:00</td></tr>
-          <tr><td class="day">Sze:</td><td>7:00-21:00</td></tr>
-          <tr><td class="day">Cs:</td><td>7:00-21:00</td></tr>
-          <tr><td class="day">P:</td><td>7:00-21:00</td></tr>
-          <tr><td class="day">Szo:</td><td>8:00-21:00</td></tr>
-          <tr><td class="day">V:</td><td>8:00-17:00</td></tr>
+
         </table>
       </div>
     </li>
@@ -59,13 +53,7 @@
       <div class="table">
         <h3>Normál nyitvatartási rend</h3>
         <table>
-          <tr><td class="day">H:</td><td>7:00-19:00</td></tr>
-          <tr><td class="day">K:</td><td>7:00-19:00</td></tr>
-          <tr><td class="day">Sze:</td><td>7:00-19:00</td></tr>
-          <tr><td class="day">Cs:</td><td>7:00-19:00</td></tr>
-          <tr><td class="day">P:</td><td>7:00-19:00</td></tr>
-          <tr class="weekend"><td class="day">Szo:</td><td>Zárva</td></tr>
-          <tr class="weekend"><td class="day">V:</td><td>Zárva</td></tr>
+          
         </table>
       </div>
     </li>
@@ -74,3 +62,4 @@
 </article>
 
 <script src="js/fruccola.calendar.js"></script>
+<script src="js/fruccola.open.js"></script>
