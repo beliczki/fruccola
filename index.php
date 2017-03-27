@@ -46,7 +46,7 @@ setcookie("language", $language, time() + (86400 * 365), "/");
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&subset=latin,latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="/css/vendor/normalize.css">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/main.css?version=<?php echo filemtime ('css/main.css')?>">
 
   <script>
     var language = '<?php echo $language?>';
