@@ -47,6 +47,7 @@ $(function() {
 
             h2 = $('<h2></h2>');
             h2.html(data[index]['name_'+language]);
+            if(data[index].order_number !== '' && data[index].order_number !== null) h2.prepend($('<strong>'+data[index].order_number+'</strong>'))
             item.append(h2);
 
             menuid = 'menu'+data[index].id;

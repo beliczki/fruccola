@@ -1220,6 +1220,10 @@ button:hover, .button:hover {
 .content.menu h2 {
   font-size: 1rem;
 }
+.content.menu h2 strong {
+  display: block;
+  font-size: 2em;
+}
 .content .offer h3 {
     background: #f58220;
     display: inline-block;
