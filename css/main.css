@@ -2664,6 +2664,7 @@ button:hover, .button:hover {
 .A4.redesign_2017 .content.menu em {height: 60px; width: 60px; } 
 .A4.redesign_2017 .content.menu ul li p.name_en,
 .A4.redesign_2017 .content.menu ul li p.name_hu {text-transform:Uppercase;}
+.A4.redesign_2017 .content.menu .offer li {margin:0;}
 
 
 @media print {
