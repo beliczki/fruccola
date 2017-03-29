@@ -29,7 +29,7 @@
       <li class="prep">
         <h2>Prep</h2>
         <p>
-          Ha szeretsz konyhán dolgozni és lázba hoznak a friss gyümölcsök, zöldségek, akkor nálad a helyünk. 
+          Ha szeretsz konyhán dolgozni és lázba hoznak a friss gyümölcsök, zöldségek, akkor nálunk a helyed. 
         </p>
         <!--<ul class="required">
           <li> Lorem ipsum dolor sit amet</li>
