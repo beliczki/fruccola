@@ -14,7 +14,7 @@
           A tapasztalat hasznos, de a legfontosabb, hogy szeresd majd, amit csinálsz és kedves legyél a vendégeinkkel. 
           Jó csapat vár majd. 
         </p>
-        <p><a href="mailto:hr@fruccola.hu?subject=Pincér, Jelentkezés, Fruccola, HR" class="button">Jelentkezés</a></p>
+        <p><a href="mailto:hr@fruccola.hu?subject=Pultos, Jelentkezés, Fruccola, HR" class="button">Jelentkezés</a></p>
       </li>
     
       <li class="cook">
