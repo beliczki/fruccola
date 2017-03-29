@@ -1050,7 +1050,7 @@ button:hover, .button:hover {
 .content.jobs .items li.prep {color: #f58220}
 .content.jobs .items li.dishwasher {color: #93b1c2}
 
-.content.jobs .button {padding:0.5em 1em;}
+.content.jobs .button {padding: 0.5em 1em; display: inline-block; height: inherit; margin-top: 0.5em;}
 
 .content.jobs .items li.cook .button {color: #fff}
 .content.jobs .items li.waiter .button {background-color: #482722; border-color: #482722; color: #fff}
@@ -2438,6 +2438,7 @@ button:hover, .button:hover {
     font-size: 2rem;
     width: 70%;
   }
+  .content.jobs p,
   .content.opening p,
   .content.contact p,
   .content.recommended p { width: 85%;}
