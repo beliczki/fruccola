@@ -2615,9 +2615,9 @@ button:hover, .button:hover {
 .A4 .dailymenu h2 {color:black;}
 .A4 .dailymenu p {color:black;}
 .A4 .content .offer strong {  font-size: 62px;  line-height: 68px;}
-.A4 .content.menu li.dailymenu { /* margin-top:5cm; border-top: 1px dashed #555; border-bottom: 1px dashed #555;*/ }
+ /*.A4 .content.menu li.dailymenu { margin-top:5cm; border-top: 1px dashed #555; border-bottom: 1px dashed #555;} */ 
+/*.A4 .content.menu ul.offer:after {content: ''; display:block; clear: both; margin-top: 1cm;}*/
 .A4 .content.menu {padding: 0;}
-.A4 .content.menu ul.offer:after {content: ''; display:block; clear: both; margin-top: 1cm;}
 .A4 .content.menu em {height: 80px; width: 80px; margin-right: 3px; margin-bottom: -15px;} 
 .A4 .content.menu em:before {font-size: 104px; line-height: 94px; margin-left: -10px; margin-top: -3px;}
 .A4 .offer:before {content:'';}
@@ -2657,15 +2657,15 @@ button:hover, .button:hover {
     width: 86%;
     margin: auto 7%;
 }
-.A4.redesign_2017 .content .offer strong {font-size:52px; line-height:60px;}
-.A4.redesign_2017 .devide {font-size:52px; font-family:times; color:black;}
-.A4.redesign_2017 ul li p.allergenes em:before {color: black!important; font-size:62px; margin-top:-20px;}
-.A4.redesign_2017 .content.menu ul li p.allergenes {margin-top:0px !important;}
-.A4.redesign_2017 .content.menu ul li p.name_en {margin-top:0px !important;}
-.A4.redesign_2017 .content.menu em {height: 60px; width: 60px; } 
-.A4.redesign_2017 .content.menu ul li p.name_en,
-.A4.redesign_2017 .content.menu ul li p.name_hu {text-transform:Uppercase;}
+.A4.redesign_2017 .content .offer strong {font-size:52px; line-height:56px;}
+.A4.redesign_2017 .devide {font-size:52px; font-family:times; line-height:40px; color:black; padding-bottom:0.8cm;}
+.A4.redesign_2017 ul li p.allergenes em:before {color: black!important; font-size:62px; margin-top:-20px; }
+.A4.redesign_2017 .content.menu em {height: 50px; width: 60px; margin-bottom: 0px;} 
+.A4.redesign_2017 .content.menu ul li p.allergenes {margin:0.5cm 0 !important;}
+.A4.redesign_2017 .content.menu ul li p.name_en {margin:0 0 0 0!important;text-transform:Uppercase;}
+.A4.redesign_2017 .content.menu ul li p.name_hu {margin:0 0 0 0 !important;text-transform:Uppercase;}
 .A4.redesign_2017 .content.menu .offer li {margin:0;}
+
 
 
 @media print {
