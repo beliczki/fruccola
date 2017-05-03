@@ -13,6 +13,7 @@
     <li class="happy"><a href="/jo-dolgok">Jó dolgok</a></li>
     <li class="sticky feedback"><a href="/visszajelzes" class="">Mit gondolsz rólunk?</a></li>
     <li class="sticky dailymenu"><a href="/napi-menu-ertesito" class="">Napi menü feliratkozás</a></li>
+    <li class="sticky jobs"><a href="/allasok" class="">Csatlakozz!</a></li>
   </ul>
 
   <p class="language"><a href="<?php echo $version_en;?>">English </a></p>

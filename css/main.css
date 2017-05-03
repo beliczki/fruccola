@@ -68,6 +68,7 @@ h2.new:before,
 .fish .location.arany:before,
 .sticky.dailymenu a:before,
 .sticky.feedback a:before,
+.sticky.jobs a:before,
 .price strong:after,
 .site-footer:before,
 .site-footer .locations:after,
@@ -595,7 +596,7 @@ fieldset {
   display: block;
 }
 .site-header:target  {
-  top: 260px;
+  top: 300px;
 }
 
 .site-header .main-navigation .items {
@@ -605,8 +606,8 @@ fieldset {
   /*font-weight: 800;*/
   letter-spacing: -0.05rem;
   line-height: 34px;
-  height: 260px;
-  top: -260px;
+  height: 300px;
+  top: -300px;
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -669,6 +670,7 @@ fieldset {
 
 .sticky.dailymenu a:before {  content: '\E050';}
 .sticky.feedback a:before {  content: '\E051';}
+.sticky.jobs a:before {  content: '\E046';}
 
 .content.menu .items .love:before {  content: '\E036';}
 .content.menu .items .love.true:before {  content: '\E039';}
@@ -2210,6 +2212,9 @@ button:hover, .button:hover {
   .site-header .main-navigation .items > li.sticky.feedback a {
     width:100px;
   }
+  .site-header .main-navigation .items > li.sticky.jobs a {
+    width:100px;
+  }
   .site-header .main-navigation .items > li.sticky > a:before {
     font-size: 44px;
     margin: -7px 8px 0px -46px;
@@ -2217,6 +2222,9 @@ button:hover, .button:hover {
   }
   .site-header .main-navigation .items > li.sticky.feedback > a:before {
     margin-top: -4px;
+  }
+  .site-header .main-navigation .items > li.sticky.jobs > a:before {
+    margin-top: -12px;
   }
 
   .site-header .main-navigation .items > li.sticky a:after,
@@ -2230,12 +2238,13 @@ button:hover, .button:hover {
 
   li.sticky.dailymenu {margin-top: 150px;  animation-delay: 1.5s;}
   li.sticky.feedback {margin-top: 230px; animation-delay: 2s;}
+  li.sticky.jobs {margin-top: 310px; animation-delay: 2.5s;}
 
   .sticky a:before {float:left; font-size: 65px; width:65px; margin: -18px 10px 3px -55px;}
 
 
     .site-header .main-navigation .items > li:first-child {
-        box-shadow: none;
+      box-shadow: none;
       margin-left:20px;
     }
 
