@@ -1,4 +1,6 @@
 $(function() {
+  
+  var normalHours = {};
 
   /// calendar builder for both places
   function buildLayout (year, month) {
@@ -28,8 +30,33 @@ $(function() {
       /// either way date is required data on both places calendar
       $('.calendar .day'+i).attr('data-date',currentDay.getFullYear()+'-'+curentMonth2Digit+'-'+currentDay2Digit);
       
+      /// render normalHours dataData
+
+      o = normalHours.arany['opens_'+currentDay.getDay()];
+      c = normalHours.arany['closes_'+currentDay.getDay()];
+      d = new Date('01/01/2017 ' + c) - new Date( '01/01/2017 ' + o)
+      if ( d === 0 ) t = tagClosed; else t = tagOpen; 
+      if ( d === 0 ) s = 'closed'; else s = 'open'; 
+      if ( d === 0 ) s = 'closed'; else s = 'open'; 
+      if(s != 'closed') $('.arany .calendar .day'+i).attr('data-time', o.slice(0,5) + '-' + c.slice(0,5) );
+      $('.arany .calendar .day'+i).attr('data-tag', t );
+      $('.arany .calendar .day'+i).attr('data-class', s );
+      if (currentDay.getDay() == 6 || currentDay.getDay() === 0) $('.arany .calendar .day'+i).addClass( 'weekend' ); else $('.arany .calendar .day'+i).addClass( s );
+      
+      o = normalHours.kristof['opens_'+currentDay.getDay()];
+      c = normalHours.kristof['closes_'+currentDay.getDay()];
+      d = new Date('01/01/2017 ' + c) - new Date( '01/01/2017 ' + o)
+      if ( d === 0 ) t = tagClosed; else t = tagOpen; 
+      if ( d === 0 ) s = 'closed'; else s = 'open'; 
+      if ( d === 0 ) s = 'closed'; else s = 'open'; 
+      if(s != 'closed') $('.kristof .calendar .day'+i).attr('data-time', o.slice(0,5) + '-' + c.slice(0,5) );
+      $('.kristof .calendar .day'+i).attr('data-tag', t );
+      $('.kristof .calendar .day'+i).attr('data-class', s );
+      $('.kristof .calendar .day'+i).addClass( s );
+
+      
       /// than based on the palce and wether it is weekend; the daily rules are the following
-      if (currentDay.getDay() == 6 || currentDay.getDay() === 0) {
+      /*if (currentDay.getDay() == 6 || currentDay.getDay() === 0) {
         $('.arany .calendar .day'+i).addClass('weekend');
 
         $('.arany .calendar .day'+i).attr('data-time','');
@@ -64,7 +91,7 @@ $(function() {
         $('.kristof .calendar .day'+i).attr('data-tag', tagOpen);
         $('.kristof .calendar .day'+i).attr('data-class','open');
 
-      }
+      }*/
     }
 
   } /// end of calendar builder
@@ -96,7 +123,7 @@ $(function() {
 
 
 
-  function loadAndRenderData (year, month) {
+  function loadAndRenderSpecialCalendarData (year, month) {
     var fruccolaAPI = "http://fruccola.hu/admin/api/calendar/"+year+"/"+month;
 
     // load special days        
@@ -156,6 +183,8 @@ $(function() {
     }); /// getJSON
 
   }  /// end of loadAndRenderData
+  
+  
 
   function fruccolaCaledar () {
 
@@ -164,9 +193,26 @@ $(function() {
     var tmn = ("0" + (t.getMonth()+2)).slice(-2);
     var ty = t.getFullYear();
     var tyn = t.getFullYear();
+    
+    var fruccolaAPI = "http://fruccola.hu/admin/api/open";
 
-    buildLayout (ty, tm);
-    loadAndRenderData (ty, tm);
+    // load opening hours       
+    $.getJSON( fruccolaAPI ).done(function( data ) {
+      //console.log('data opening hours');
+      //console.log(data);
+      //console.log(data[1]);
+      // if load complete and we have data
+
+      if(data[1] !== undefined) normalHours.arany = data[1];
+      if(data[2] !== undefined) normalHours.kristof = data[2];
+      if(data[3] !== undefined) normalHours.mom = data[3];
+      
+      //only build calendar after we have basic data
+      buildLayout (ty, tm);
+      loadAndRenderSpecialCalendarData (ty, tm);
+      
+    }); /// getJSON
+  
 
     $('.changeMonth').click(function() {
 
@@ -176,10 +222,10 @@ $(function() {
             tmn = 1;
           }
           buildLayout (tyn, tmn);
-          loadAndRenderData (tyn, tmn);
+          loadAndRenderSpecialCalendarData (tyn, tmn);
       } else {
           buildLayout (ty, tm);
-          loadAndRenderData (ty, tm);
+          loadAndRenderSpecialCalendarData (ty, tm);
       }
 
       $('.changeMonth').toggleClass('next');
@@ -188,6 +234,7 @@ $(function() {
 
   } /// end of fruccolaCaledar
 
+  
   fruccolaCaledar();
 
 });
