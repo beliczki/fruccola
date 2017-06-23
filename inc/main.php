@@ -467,7 +467,7 @@
       </li>-->
 
 
-      <li class="hot-drinks narrow">
+      <!--<li class="hot-drinks narrow">
           <p>Szezonális</p>
           <h2>Forró italok</h2>
           <ul class="options">
@@ -481,7 +481,7 @@
           <div class="container">
               <img width="640" height="400" src="img/seasonalhot@2x.jpg">
           </div>
-      </li>
+      </li>-->
 
       <li class="treats narrow">
           <p>16 óra után minden délután</p>
