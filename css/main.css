@@ -1074,7 +1074,7 @@ button:hover, .button:hover {
   margin-left: -46px;
   margin-top: 20px;
 }
-.content > ul > li li.juice {
+.content > ul > li.juice {
      color: #d7182a;
  }
 .content > ul > li.juice ul.options li{
@@ -1214,7 +1214,7 @@ button:hover, .button:hover {
   padding-bottom: 65.9%;
 }
 .content.menu.grabandgo:after {
-    background-image: url("../img/grabandgo.jpg");
+    background-image: url("../img/grabandgo-2017.jpg");
     height: 20px;
     padding-bottom: 62.3%;
 }
@@ -2530,7 +2530,7 @@ button:hover, .button:hover {
     padding-bottom: 55.1%;
   }
   .content.menu.grabandgo:after {
-      background-image: url("../img/grabandgo@2x.jpg");
+      background-image: url("../img/grabandgo-2017@2x.jpg");
       height: 31px;
       padding-bottom: 62.3%;
   }
