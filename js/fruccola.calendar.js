@@ -196,7 +196,7 @@ $(function() {
     
     var fruccolaAPI = "http://fruccola.hu/admin/api/open";
 
-    // load opening hours       
+    // load normal opening hours       
     $.getJSON( fruccolaAPI ).done(function( data ) {
       //console.log('data opening hours');
       //console.log(data);
@@ -207,11 +207,11 @@ $(function() {
       if(data[2] !== undefined) normalHours.kristof = data[2];
       if(data[3] !== undefined) normalHours.mom = data[3];
       
-      //only build calendar after we have basic data
+      //only build calendar after we have basic "normal opening hours" data
       buildLayout (ty, tm);
       loadAndRenderSpecialCalendarData (ty, tm);
       
-    }); /// getJSON
+    }); /// getJSON normal opening hours   
   
 
     $('.changeMonth').click(function() {

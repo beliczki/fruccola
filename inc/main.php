@@ -210,7 +210,7 @@
           </div>
       </li>-->
 
-      <li class="hot-drinks narrow">
+      <!--<li class="hot-drinks narrow">
           <p>Seasonal</p>
           <h2>HOT DRINKS</h2>
           <ul class="options">
@@ -239,7 +239,7 @@
           <div class="container">
               <img width="640" height="400" src="img/cakemenu@2x.jpg">
           </div>
-      </li>
+      </li>-->
 
       <li class="brand">
           <p>If you are happy in fruccola</p>
