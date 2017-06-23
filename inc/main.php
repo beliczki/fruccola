@@ -145,6 +145,22 @@
           </ul>
       </li>
 
+      <li class="juice narrow">
+          <p>Seasonal:</p>
+          <h2>SUGAR FREE LEMONADES</h2>
+          <ul class="options">
+              <li>(1) <strong>raspberry, melon, pomegranate, mineral water, erythrite</strong> </li>
+              <li>(2) <strong>mineral water, erythrite, lemon juice, mint syrup, ginger, orange juice, mint</strong> </li>
+              <li>(3) <strong>pine bud and elderflower syrup, goji berry, rosewater, mineral water, stevia</strong> </li>
+              <li>(4) <strong>lavender and sour cherry syrup, chia seeds, mineral water, stevia</strong> </li>
+          </ul>
+          <p class="price">
+              <strong>890</strong>/ 0.5l
+          </p>
+          <div class="container">
+              <img width="640" height="400" src="img/lemondes-2017@2x.jpg">
+          </div>
+      </li>
 
       <li class="brunch">
           <p>On saturdays and sunday on Kristóf square</p>
@@ -194,22 +210,7 @@
           </div>
       </li>-->
 
-      <li class="juice narrow">
-          <p>Seasonal:</p>
-          <h2>SUGAR FREE LEMONADES</h2>
-          <ul class="options">
-              <li>(1) <strong>raspberry, melon, pomegranate, mineral water, erythrite</strong> </li>
-              <li>(2) <strong>mineral water, erythrite, lemon juice, mint syrup, ginger, orange juice, mint</strong> </li>
-              <li>(3) <strong>pine bud and elderflower syrup, goji berry, rosewater, mineral water, stevia</strong> </li>
-              <li>(4) <strong>lavender and sour cherry syrup, chia seeds, mineral water, stevia</strong> </li>
-          </ul>
-          <p class="price">
-              <strong>890</strong>/ 0.5l
-          </p>
-          <div class="container">
-              <img width="640" height="400" src="img/lemondes-2017@2x.jpg">
-          </div>
-      </li>
+
 
       <!--<li class="hot-drinks narrow">
           <p>Seasonal</p>
@@ -404,7 +405,22 @@
 
           </ul>
       </li>
-
+      <li class="juice narrow">
+          <p>Szezonális:</p>
+          <h2>Cukormentes limonádék</h2>
+          <ul class="options">
+              <li>(1) <strong>Málna, sárgadinnye, gránátalma, ásványvíz, eritrit</strong> </li>
+              <li>(2) <strong>Ásványvíz, eritrit, citromlé, mentaszirup, gyömbér, narancslé, mentalevél</strong> </li>
+              <li>(3) <strong>Fenyőrügyes bodzaszörp, goji bogyó, rózsavíz, ásványvíz, stevia</strong> </li>
+              <li>(4) <strong>Levendulás meggyszörp, chiamag, ásványvíz, stevia</strong> </li>
+          </ul>
+          <p class="price">
+              <strong>890</strong>/ 0.5l
+          </p>
+          <div class="container">
+              <img width="640" height="400" src="img/lemondes-2017@2x.jpg">
+          </div>
+      </li>-->
       <li class="brunch">
           <p>Szombaton és vasárnap a Kristóf téren</p>
           <h2>
@@ -451,21 +467,7 @@
           </div>
       </li>-->
 
-      <!--<li class="juice narrow">
-          <p>Szezonális:</p>
-          <h2>Hűsítőd</h2>
-          <ul class="options">
-              <li>(1) <strong>banán, narancs, menta</strong> </li>
-              <li>(2) <strong>citrom, bazsalikom</strong> </li>
-              <li>(3) <strong>eper, uborka, citromlé, cukor</strong> </li>
-          </ul>
-          <p class="price">
-              <strong>790</strong>/ 0.5l
-          </p>
-          <div class="container">
-              <img width="640" height="400" src="img/lemondaes@2x.jpg">
-          </div>
-      </li>-->
+      
 
 
       <!--<li class="hot-drinks narrow">
