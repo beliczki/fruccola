@@ -26,6 +26,10 @@
             <input type="checkbox" id="place_id_2" name="places[]" value="2">
             <span>Kristóf square</span>
         </label>
+        <label for="place_id_3" class="checkbox">
+            <input type="checkbox" id="place_id_3" name="places[]" value="3">
+            <span>MOM park</span>
+        </label>
 
         <input type="hidden" name="language" value="hu" />
         <input type="hidden" name="created_by" value="feedback-webform-1.2-hu" />

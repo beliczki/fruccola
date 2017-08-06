@@ -19,7 +19,7 @@
             <textarea class="form-control" id="message" name="message" ></textarea>
         </label>
 
-        <p>Melyik Fruccolába szoktál járni?</p>
+        <p>Melyik Fruccolával kapcsolatban?</p>
         <label for="place_id_2" class="checkbox">
             <input type="checkbox" id="place_id_2" name="places[]" value="2">
             <span>Kristóf téri</span>
@@ -27,6 +27,10 @@
         <label for="place_id_1" class="checkbox">
             <input type="checkbox" id="place_id_1" name="places[]" value="1">
             <span>Arany János utcai</span>
+        </label>
+        <label for="place_id_3" class="checkbox">
+            <input type="checkbox" id="place_id_3" name="places[]" value="3">
+            <span>MOM park</span>
         </label>
 
 
