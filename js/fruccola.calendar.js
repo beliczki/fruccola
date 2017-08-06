@@ -53,6 +53,17 @@ $(function() {
       $('.kristof .calendar .day'+i).attr('data-tag', t );
       $('.kristof .calendar .day'+i).attr('data-class', s );
       $('.kristof .calendar .day'+i).addClass( s );
+      
+      o = normalHours.mom['opens_'+currentDay.getDay()];
+      c = normalHours.mom['closes_'+currentDay.getDay()];
+      d = new Date('01/01/2017 ' + c) - new Date( '01/01/2017 ' + o)
+      if ( d === 0 ) t = tagClosed; else t = tagOpen; 
+      if ( d === 0 ) s = 'closed'; else s = 'open'; 
+      if ( d === 0 ) s = 'closed'; else s = 'open'; 
+      if(s != 'closed') $('.mom .calendar .day'+i).attr('data-time', o.slice(0,5) + '-' + c.slice(0,5) );
+      $('.mom .calendar .day'+i).attr('data-tag', t );
+      $('.mom .calendar .day'+i).attr('data-class', s );
+      $('.mom .calendar .day'+i).addClass( s );
 
       
       /// than based on the palce and wether it is weekend; the daily rules are the following
@@ -136,7 +147,11 @@ $(function() {
         for (i = 0; i < data.length; i++) {
           dataDay = new Date(data[i].day)
           day = dataDay.getDate();
-          placeClass = (data[i].place_id == 1) ? 'arany' : 'kristof';
+          placeClass = '';
+          if (data[i].place_id == 1) placeClass = 'arany';
+          if (data[i].place_id == 2) placeClass = 'kristof';
+          if (data[i].place_id == 3) placeClass = 'mom';
+          
           if (data[i].status_en == 'Open') {
             $('.'+placeClass+' .calendar .day'+day).attr('data-time',(data[i].open_hour + ' - ' + data[i].close_hour));
             $('.'+placeClass+' .calendar .day'+day).attr('data-tag', tagOpen);
@@ -164,6 +179,7 @@ $(function() {
         $('.calendar .day'+t.getDate()).addClass('today');
         setDayInfo( $('.arany .calendar .day'+t.getDate()) );
         setDayInfo( $('.kristof .calendar .day'+t.getDate()) );
+        setDayInfo( $('.mom .calendar .day'+t.getDate()) );
       }
       
       /// console.log(month);

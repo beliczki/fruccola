@@ -51,6 +51,21 @@ $(function() {
           } 
           td.next().text(interval_hu);
         } /// end of kristof cycle
+        
+        // cycle for mom
+        for (i=0; i<7; i++) {
+          opens = String(data[3]['opens_'+i]).split(':');
+          closes = String(data[3]['closes_'+i]).split(':');
+          td = $('td[data-day-id='+i+']', $('.mom'));
+
+          interval_hu =  opens[0] + ':' + opens[1] + ' - ' + closes[0] + ':' + closes[1];
+          interval_en = '';
+          if(opens[0] === closes[0]) {
+            interval_hu = tagClosed;
+            td.parent().addClass('weekend');
+          } 
+          td.next().text(interval_hu);
+        } /// end of mom cycle
        
       } /// if data
       
