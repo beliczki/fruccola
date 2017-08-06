@@ -1602,10 +1602,15 @@ button:hover, .button:hover {
   border-top-right-radius:0px;
   padding: 0.5em 2em;
 }
-.dailymenu .arany.unavailable {
+.dailymenu .unavailable {
   opacity: 0.2;
 }
-
+.dailymenu .unavailable .soup, 
+.dailymenu .unavailable .main-dish, 
+.dailymenu .unavailable .soup-and-maindish,
+.dailymenu .unavailable .subscribe {
+  display: none;
+}
 
 
 

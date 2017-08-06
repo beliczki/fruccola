@@ -8,18 +8,21 @@ $(function() {
         var nData = new Date() ;
         $('.subtitle').html(nData.getDate() + " "  + monthNames[nData.getMonth()] + ", " + dayNames[nData.getDay()]);
 
-
       
-        buildCardItem ('kristof');
-        if(typeof data[2] != 'undefined') {
-          $('.kristof .soup .description').html(data[2]['soup_'+language]);
-          $('.kristof .main-dish .description').html(data[2]['dish_'+language]);
-          addAllergenes (data[2], 'kristof','soup','soup');
-          addAllergenes (data[2], 'kristof','dish','main-dish');
+        // prepend miatt az utolsó kártyával kezdünk
+        // Build MOM daily menu card
+        buildCardItem ('mom');
+        if(typeof data[3] != 'undefined') {
+          $('.mom .soup .description').html(data[3]['soup_'+language]);
+          $('.mom .main-dish .description').html(data[3]['dish_'+language]);
+          addAllergenes (data[3], 'mom','soup','soup');
+          addAllergenes (data[3], 'mom','dish','main-dish');
         } else {
-          $('.kristof').addClass('unavailable');
+          $('.mom').addClass('unavailable');
         }
+        $('#dailymenu-holder .mom').addClass('new');
       
+        // Build arany daily menu card
         buildCardItem ('arany');
         if(typeof data[1] != 'undefined') {
           //console.log('language: ' +data[1]['soup_'+language]);
@@ -31,16 +34,16 @@ $(function() {
           $('.arany').addClass('unavailable');
         }
       
-        buildCardItem ('mom');
-        if(typeof data[3] != 'undefined') {
-          $('.mom .soup .description').html(data[3]['soup_'+language]);
-          $('.mom .main-dish .description').html(data[3]['dish_'+language]);
-          addAllergenes (data[3], 'mom','soup','soup');
-          addAllergenes (data[3], 'mom','dish','main-dish');
+        // Build kristof daily menu card
+        buildCardItem ('kristof');
+        if(typeof data[2] != 'undefined') {
+          $('.kristof .soup .description').html(data[2]['soup_'+language]);
+          $('.kristof .main-dish .description').html(data[2]['dish_'+language]);
+          addAllergenes (data[2], 'kristof','soup','soup');
+          addAllergenes (data[2], 'kristof','dish','main-dish');
         } else {
-          $('.mom').addClass('unavailable');
+          $('.kristof').addClass('unavailable');
         }
-
       
       
         if(typeof data.pricing != 'undefined') {
@@ -111,7 +114,7 @@ $(function() {
     div.append(a);
     item.append(div);
     
-    $('#dailymenu-holder').append(item);
+    $('#dailymenu-holder').prepend(item);
 
     
   }
