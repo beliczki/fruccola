@@ -206,7 +206,7 @@ h2.new:before,
 }
 .icon-location,
 .site-footer .locations > ul > li:before {
-  content: '\E01B';
+  /*content: '\E01B';*/
 }
 .icon-menu,
 .site-header .main-navigation .mobile-navigation:before {
@@ -678,6 +678,7 @@ fieldset {
 
 .social {
   /*padding: 0 20px;*/
+  margin-top: 3rem;
 }
 .social li {
   /*float: left;*/
@@ -2018,6 +2019,7 @@ button:hover, .button:hover {
 .site-footer .locations {
   margin-top: 20px;
   padding: 0 20px;
+  text-align: center;
 }
 .site-footer .locations:after {
   display: block;
@@ -2032,11 +2034,11 @@ button:hover, .button:hover {
 }
 .site-footer .locations > ul > li {
     /*font-size: 16px;*/
-    font-weight: normal;
+    /*font-weight: normal;
     margin: 0px auto;
     margin-top: 2rem;
     line-height: 1.4rem;
-    text-align: center;
+    text-align: center;*/
 }
 .site-footer .locations > ul > li:before {
   font-size: 20px;
@@ -2574,35 +2576,35 @@ button:hover, .button:hover {
     padding-bottom: 20px;
   }*/
   .site-footer .locations > ul > li {
-    width: 45%;
+    /*width: 45%;*/
   }
-    .site-footer .locations > ul > li:first-child {
+    /*.site-footer .locations > ul > li:first-child {
         float: left;
         text-align: right;
         margin-right: 5%;
-    }
-    .site-footer .locations > ul > li:first-child .social li {
+    }*/
+    /*.site-footer .locations > ul > li:first-child .social li {
         float:right;
-    }
-    .site-footer .locations  > ul > li:last-child {
+    }*/
+    /*.site-footer .locations  > ul > li:last-child {
         text-align: left;
         margin-left: 5%;
         float: right;
-    }
-    .site-footer .locations > ul > li:last-child .social li {
+    }*/
+    /*.site-footer .locations > ul > li:last-child .social li {
         float:left;
-    }
+    }*/
     .site-footer .locations:after {
         clear:both;
         position: relative;
-        top: 3rem;
+        top: 0;
         width: 280px;
         height: 152px;
     }
-  /*.site-footer .locations:after {
-    margin-right: -480px;
-    right: 50%;
-  }*/
+    /*.site-footer .locations:after {
+      margin-right: -480px;
+      right: 50%;
+    }*/
 }
 
 .A4 {
