@@ -35,7 +35,7 @@
 
 
         <input type="hidden" name="language" value="hu" />
-        <input type="hidden" name="created_by" value="feedback-webform-1.2-hu" />
+        <input type="hidden" name="created_by" value="feedback-webform-1.3-hu" />
         <input type="hidden" name="create" value="create" />
         <p class="message"></p>
         <button type="submit">Beküldöm a véleményem</button>

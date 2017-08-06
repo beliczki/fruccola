@@ -31,8 +31,8 @@
             <span>MOM park</span>
         </label>
 
-        <input type="hidden" name="language" value="hu" />
-        <input type="hidden" name="created_by" value="feedback-webform-1.2-hu" />
+        <input type="hidden" name="language" value="en" />
+        <input type="hidden" name="created_by" value="feedback-webform-1.3-en" />
         <input type="hidden" name="create" value="create" />
         <p class="message"></p>
         <button type="submit">Submit your opinion</button>
