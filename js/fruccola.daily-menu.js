@@ -8,6 +8,18 @@ $(function() {
         var nData = new Date() ;
         $('.subtitle').html(nData.getDate() + " "  + monthNames[nData.getMonth()] + ", " + dayNames[nData.getDay()]);
 
+
+      
+        buildCardItem ('kristof');
+        if(typeof data[2] != 'undefined') {
+          $('.kristof .soup .description').html(data[2]['soup_'+language]);
+          $('.kristof .main-dish .description').html(data[2]['dish_'+language]);
+          addAllergenes (data[2], 'kristof','soup','soup');
+          addAllergenes (data[2], 'kristof','dish','main-dish');
+        } else {
+          $('.kristof').addClass('unavailable');
+        }
+      
         buildCardItem ('arany');
         if(typeof data[1] != 'undefined') {
           //console.log('language: ' +data[1]['soup_'+language]);
@@ -19,18 +31,24 @@ $(function() {
           $('.arany').addClass('unavailable');
         }
       
-        buildCardItem ('kristof');
-        if(typeof data[2] != 'undefined') {
-          $('.kristof .soup .description').html(data[2]['soup_'+language]);
-          $('.kristof .main-dish .description').html(data[2]['dish_'+language]);
-          addAllergenes (data[2], 'kristof','soup','soup');
-          addAllergenes (data[2], 'kristof','dish','main-dish');
+        buildCardItem ('mom');
+        if(typeof data[3] != 'undefined') {
+          $('.mom .soup .description').html(data[3]['soup_'+language]);
+          $('.mom .main-dish .description').html(data[3]['dish_'+language]);
+          addAllergenes (data[3], 'mom','soup','soup');
+          addAllergenes (data[3], 'mom','dish','main-dish');
+        } else {
+          $('.mom').addClass('unavailable');
         }
+
+      
+      
         if(typeof data.pricing != 'undefined') {
           $('.soup .price strong').html(data.pricing.soup);
           $('.main-dish .price strong').html(data.pricing.dish);
           $('.soup-and-maindish .price strong').html(data.pricing.combo);
         }
+
       
         if (nData.getDay() === 1) {
           $('.dailymenu').addClass('meatfree');
@@ -58,9 +76,9 @@ $(function() {
   }
   
   function buildCardItem (loc){
-    item = $('<li></li>').addClass(loc+' today'); 
+    item = $('<li></li>').addClass(loc + ' today'); 
       
-    h2 = $('<h2></h2>').html(daily_menu_txt+'<br/>'+ eval('daily_menu_'+loc));
+    h2 = $('<h2></h2>').html(daily_menu_txt+'<br/>'+ eval('daily_menu_' + loc));
     item.append(h2);
 
     div = $('<div></div>').addClass('soup');
@@ -93,7 +111,7 @@ $(function() {
     div.append(a);
     item.append(div);
     
-    $('#dailymenu-holder').prepend(item);
+    $('#dailymenu-holder').append(item);
 
     
   }

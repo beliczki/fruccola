@@ -22,13 +22,15 @@
             <input type="checkbox" id="place_id_2" name="places[]" value="2" checked>
             <span>Send me the menu of fruccola Kristóf square.</span>
         </label>
-        <label for="place_id_3" class="checkbox">
-            <input type="checkbox" id="place_id_3" name="places[]" value="3" checked>
-            <span>Send me the menu of fruccola Mom park.</span>
-        </label>
+
         <label for="place_id_1" class="checkbox">
             <input type="checkbox" id="place_id_1" name="places[]" value="1" checked>
             <span>Send me the menu of fruccola Arany János street.</span>
+        </label>
+      
+        <label for="place_id_3" class="checkbox">
+            <input type="checkbox" id="place_id_3" name="places[]" value="3" checked>
+            <span>Send me the menu of fruccola Mom park.</span>
         </label>
 
         <input type="hidden" name="language" value="en" />

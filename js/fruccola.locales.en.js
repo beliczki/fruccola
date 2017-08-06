@@ -8,6 +8,7 @@ var daily_menu_subscribe_txt = 'Subscribe to daily notification';
 var daily_menu_subscribe_url = 'daily-menu-subscribe';
 var daily_menu_arany = '@ Arany János street';
 var daily_menu_kristof = '@ Kristóf square';
+var daily_menu_mom = '@ MOM park';
 var daily_menu_brunh_txt = 'Today is Brunch day. <br/>Check out our <a href=/menu/breakfast>Breakfast</a> and <a href=/menu/brunch>Brunch</a> offers.';
 
 var tag_flourfree = 'Flour free';

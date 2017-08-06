@@ -21,16 +21,16 @@
             <input type="checkbox" id="place_id_2" name="places[]" value="2" checked>
             <span>Kérem az Kristóf téri napimenü értesítőt.</span>
         </label>
-        <label for="place_id_3" class="checkbox">
-            <input type="checkbox" id="place_id_3" name="places[]" value="3" checked>
-            <span>Kérem az Csőrsz utcai napimenü értesítőt.</span>
-        </label>
+
         <label for="place_id_1" class="checkbox">
             <input type="checkbox" id="place_id_1" name="places[]" value="1" checked>
             <span>Kérem az Arany János utcai napimenü értesítőt.</span>
         </label>
     
-    
+        <label for="place_id_3" class="checkbox">
+            <input type="checkbox" id="place_id_3" name="places[]" value="3" checked>
+            <span>Kérem az MOM park napimenü értesítőt.</span>
+        </label>
     
         <input type="hidden" name="language" value="hu" />
         <input type="hidden" name="created_by" value="menu-webform-1.3-hu" />

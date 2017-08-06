@@ -8,6 +8,7 @@ var daily_menu_subscribe_txt = 'Feliratkozás napi értesítőre';
 var daily_menu_subscribe_url = 'napi-menu-ertesito';
 var daily_menu_arany = '@ Arany János utca';
 var daily_menu_kristof = '@ Kristóf tér';
+var daily_menu_mom = '@ MOM park';
 var daily_menu_brunh_txt = 'A mai nap Brunch nap. <br/>Válassz a leves mellé az egész nap elérhető <a href=/etlap-itallap/reggeli>Reggeli</a> és <a href=/etlap-itallap/villas-reggeli>Bruch</a> kínálatunkból.';
 
 var tag_flourfree = 'Lisztmentes';
