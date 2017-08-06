@@ -4,19 +4,28 @@
   <ul>
 
     <li class="location kristof">
-      <p>Budapest, <strong><a href="fruccola-kristof-ter.html">Kristóf tér 3.</a></strong></p>
+      <p>Budapest, <strong><a href="https://goo.gl/maps/jecFsgn3was">Kristóf tér 3.</a></strong></p>
       <h2>Fruccola Kristóf tér</h2>
       <p>
-        email: <a href="mailto:hello[at]fruccola.hu" class="mailto">hello[kukac]fruccola.hu</a><br>
+        email: <a href="mailto:kristof[at]fruccola.hu" class="mailto">kristof[kukac]fruccola.hu</a><br>
         telefon: <a class="phone" href="tel://+3614306125">+36 1 430 6125</a> (Hétfőtől péntekig 8:00-tól 20:00-ig elérhető.)
       </p>
     </li>
     
     <li class="location arany">
-      <p>Budapest, <strong><a href="fruccola-arany-janos-utca.html">Arany János utca 32.</a></strong></p>
+      <p>Budapest, <strong><a href="https://goo.gl/maps/8H4t76ZAyJB2">Arany János utca 32.</a></strong></p>
       <h2>Fruccola Arany János utca</h2>
       <p>
-        email: <a href="mailto:hello[at]fruccola.hu" class="mailto">hello[kukac]fruccola.hu</a><br>
+        email: <a href="mailto:arany[at]fruccola.hu" class="mailto">arany[kukac]fruccola.hu</a><br>
+        telefon: <a class="phone" href="tel://+3614306125">+36 1 430 6125</a> (Hétfőtől péntekig 8:00-tól 20:00-ig elérhető.)
+      </p>
+    </li>
+    
+    <li class="location arany">
+      <p>Budapest, <strong><a href="https://goo.gl/maps/CqNa8dKYjkx">Liszabon sétány</a></strong></p>
+      <h2>Fruccola Mom</h2>
+      <p>
+        email: <a href="mailto:mom[at]fruccola.hu" class="mailto">mom[kukac]fruccola.hu</a><br>
         telefon: <a class="phone" href="tel://+3614306125">+36 1 430 6125</a> (Hétfőtől péntekig 8:00-tól 20:00-ig elérhető.)
       </p>
     </li>
