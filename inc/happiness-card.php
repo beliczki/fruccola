@@ -52,6 +52,10 @@
             <input type="radio" id="place_id_2" name="places[]" value="2" >
             <span>Register to Kristóf Square.</span>
         </label>
+        <label for="place_id_3" class="checkbox">
+            <input type="radio" id="place_id_3" name="places[]" value="3" >
+            <span>Register to Mom Park.</span>
+        </label>
         <label for="place_id_1" class="checkbox">
             <input type="radio" id="place_id_1" name="places[]" value="1" >
             <span>Register to Arany János street.</span>
