@@ -21,9 +21,9 @@
       </p>
     </li>
     
-    <li class="location arany">
+    <li class="location mom">
       <p>Budapest, <strong><a href="https://goo.gl/maps/CqNa8dKYjkx">Liszabon sétány</a></strong></p>
-      <h2>Fruccola Mom</h2>
+      <h2>Fruccola MOM park</h2>
       <p>
         email: <a href="mailto:mom[at]fruccola.hu" class="mailto">mom[kukac]fruccola.hu</a><br>
         telefon: <a class="phone" href="tel://+3614306125">+36 1 430 6125</a> (Hétfőtől péntekig 8:00-tól 20:00-ig elérhető.)

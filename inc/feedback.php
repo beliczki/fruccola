@@ -16,7 +16,7 @@
             <textarea class="form-control" id="message" name="message" ></textarea>
         </label>
 
-        <p>Which Fruccola do you visit?</p>
+        <p>Which Fruccola is related?</p>
 
         <label for="place_id_1" class="checkbox">
             <input type="checkbox" id="place_id_1" name="places[]" value="1">
