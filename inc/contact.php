@@ -22,7 +22,7 @@
     </li>
     
     <li class="location mom">
-      <p>Budapest, <strong><a href="https://goo.gl/maps/CqNa8dKYjkx">Liszabon promenade</a></strong></p>
+      <p>Budapest, <strong><a href="https://goo.gl/maps/CqNa8dKYjkx">Lisszabon promenade</a></strong></p>
       <h2>Fruccola MOM Park</h2>
       <p>
         email: <a href="mailto:mom[at]fruccola.hu" class="mailto">mom[at]fruccola.hu</a><br>

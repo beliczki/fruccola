@@ -59,7 +59,7 @@
     </li>
     
     <li class="hours mom clearfix">
-      <p><a href="https://goo.gl/maps/CqNa8dKYjkx">Budapest, <strong>MOM park, Liszabon promenade</strong></a></p>
+      <p><a href="https://goo.gl/maps/CqNa8dKYjkx">Budapest, <strong>MOM park, Lisszabon promenade</strong></a></p>
       <h2>MOM park</h2> 
       <h2 class="dayinfo"><span class="date">Today:</span> <span class="tag"></span> <span class="time"></span></h2> 
 
