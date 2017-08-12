@@ -149,10 +149,10 @@
           <p>Seasonal:</p>
           <h2>SUGAR FREE LEMONADES</h2>
           <ul class="options">
-              <li>(1) <strong>raspberry, melon, pomegranate, mineral water, erythrite</strong> </li>
-              <li>(2) <strong>mineral water, erythrite, lemon juice, mint syrup, ginger, orange juice, mint</strong> </li>
-              <li>(3) <strong>pine bud and elderflower syrup, goji berry, rosewater, mineral water, stevia</strong> </li>
-              <li>(4) <strong>lavender and sour cherry syrup, chia seeds, mineral water, stevia</strong> </li>
+              <li>(1) <strong>RASPBERRY</strong> raspberry, melon, pomegranate, mineral water, erythrite</li>
+              <li>(2) <strong>ORANGE</strong> mineral water, erythrite, lemon juice, mint syrup, ginger, orange juice, mint</li>
+              <li>(3) <strong>EDERFLOWER</strong> pine bud and elderflower syrup, goji berry, rosewater, mineral water, stevia</li>
+              <li>(4) <strong>SOUR CHERRY</strong> lavender and sour cherry syrup, chia seeds, mineral water, stevia</li>
           </ul>
           <p class="price">
               <strong>890</strong>/ 0.5l
@@ -162,7 +162,7 @@
           </div>
       </li>
 
-      <li class="brunch">
+      <!--<li class="brunch">
           <p>On saturdays and sunday on Kristóf square</p>
           <h2>
               LA GRANDE FRUCCOLA<br/>
@@ -186,7 +186,7 @@
           <div class="container">
               <img width="640" height="400" src="img/etagere@2x.jpg">
           </div>
-      </li>
+      </li>-->
 
       <!--<li class="grabandgo">
           <p>Seasonal:</p>
@@ -226,11 +226,11 @@
           <div class="container">
               <img width="640" height="400" src="img/seasonalhot@2x.jpg">
           </div>
-      </li>
+      </li>-->
 
-      <li class="treats narrow">
+      <!--<li class="h2>treats narrow">
           <p>After 4:00 p.m.</p>
-          <h2>Cake menu</h2>
+          <h2>Cake menu</
           <ul class="options">
               <li>(1) any slive of <strong>cake</strong></li>
               <li>(+) coffee or tea</li>
@@ -252,7 +252,7 @@
           <p>Valid: 31<sup>th</sup> of December 2050.</p>
           <p><a href="happiness-card.html" class="button">Order a Happiness Card</a></p>
           <div class="container">
-              <img width="640" height="400" src="img/happiness@2x.jpg">
+              <img width="640" height="400" src="img/happiness_2017@2x.jpg">
           </div>
       </li>
 
@@ -409,10 +409,10 @@
           <p>Szezonális:</p>
           <h2>Cukormentes limonádék</h2>
           <ul class="options">
-              <li>(1) <strong>Málna, sárgadinnye, gránátalma, ásványvíz, eritrit</strong> </li>
-              <li>(2) <strong>Ásványvíz, eritrit, citromlé, mentaszirup, gyömbér, narancslé, mentalevél</strong> </li>
-              <li>(3) <strong>Fenyőrügyes bodzaszörp, goji bogyó, rózsavíz, ásványvíz, stevia</strong> </li>
-              <li>(4) <strong>Levendulás meggyszörp, chiamag, ásványvíz, stevia</strong> </li>
+              <li>(1) <strong>MÁLNÁS</strong> Málna, sárgadinnye, gránátalma, ásványvíz, eritrit</li>
+              <li>(2) <strong>NARANCSOS</strong> Ásványvíz, eritrit, citromlé, mentaszirup, gyömbér, narancslé, mentalevél</li>
+              <li>(3) <strong>BODZÁS</strong> Fenyőrügyes bodzaszörp, goji bogyó, rózsavíz, ásványvíz, stevia</li>
+              <li>(4) <strong>MEGGYES</strong> Levendulás meggyszörp, chiamag, ásványvíz, stevia</li>
           </ul>
           <p class="price">
               <strong>890</strong>/ 0.5l
@@ -420,8 +420,10 @@
           <div class="container">
               <img width="640" height="400" src="img/lemondes-2017@2x.jpg">
           </div>
-      </li>-->
-      <li class="brunch">
+      </li>
+    
+    
+      <!--<li class="brunch">
           <p>Szombaton és vasárnap a Kristóf téren</p>
           <h2>
               LA GRANDE FRUCCOLA<br/>
@@ -443,7 +445,7 @@
           <div class="container">
               <img width="640" height="400" src="img/etagere@2x.jpg">
           </div>
-      </li>
+      </li>-->
 
       <!--<li class="grabandgo">
           <p>Szezonális:</p>
@@ -486,7 +488,7 @@
           </div>
       </li>-->
 
-      <li class="treats narrow">
+      <!--<li class="treats narrow">
           <p>16 óra után minden délután</p>
           <h2>Sütemény menü</h2>
           <ul class="options">
@@ -499,7 +501,7 @@
           <div class="container">
               <img width="640" height="400" src="img/cakemenu@2x.jpg">
           </div>
-      </li>
+      </li>-->
 
       <li class="brand">
           <p>Ha szeretsz nálunk lenni</p>
@@ -510,7 +512,7 @@
           <p>Levásárolható: 2050. december 31-ig </p>
           <p><a href="happiness-kartya.html" class="button">Megrendelem</a></p>
           <div class="container">
-              <a href="happiness-kartya.html"><img width="640" height="400" src="img/happiness@2x.jpg"></a>
+              <a href="happiness-kartya.html"><img width="640" height="400" src="img/happiness_2017@2x.jpg"></a>
           </div>
       </li>
 
