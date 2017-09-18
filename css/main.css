@@ -1180,12 +1180,12 @@ button:hover, .button:hover {
   padding-bottom: 52%;
 }
 .content.menu.pasta:after {
-  background-image: url("../img/pasta-2017.jpg");
+  /*background-image: url("../img/pasta-2017.jpg");*/ /* 2018 ??*/
   height: 50px;
   padding-bottom: 55.7%;
 }
 .content.menu.lunchdinner:after {
-  background-image: url("../img/lunchdinner-2017.jpg");
+  /*background-image: url("../img/lunchdinner-2017.jpg");*/ /* 2018 ??*/
   height: 44px;
   padding-bottom: 49.3%;
 }
@@ -2502,12 +2502,12 @@ button:hover, .button:hover {
     padding-bottom: 55.6%;
   }
   .content.menu.pasta:after {
-    background-image: url("../img/pasta-2017@2x.jpg");
+    /*background-image: url("../img/pasta-2017@2x.jpg");*/ /* 2018 ??*/
     height: 27px;
     padding-bottom: 58.1%;
   }
   .content.menu.lunchdinner:after {
-    background-image: url("../img/lunchdinner-2017@2x.jpg");
+    /* background-image: url("../img/lunchdinner-2017@2x.jpg");*/ /* 2018 ??*/
     height: 25px;
     padding-bottom: 50.2%;
   }
