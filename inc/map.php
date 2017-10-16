@@ -10,6 +10,13 @@
         <div class="selector">
             <h1>Map</h1>
             <p>
+                <a href="https://www.google.com/maps/place/Fruccola+Mom/@47.4909963,19.0235534,17.5z/data=!4m8!1m2!2m1!1sfruccola+Budapest,+Arany+J%C3%A1nos+u+32,+1052+Magyarorsz%C3%A1g!3m4!1s0x0:0x1896980ac769c092!8m2!3d47.4904741!4d19.0221372">
+                    <span>Fruccola - <br/></span>
+                    MOM
+                    <span> promenade <br/> <span class="number">Lisszabon</span></span>
+                </a>
+            </p>  
+            <p>
                 <a href="https://www.google.com/maps/place/Fruccola+Krist%C3%B3f+t%C3%A9r/@47.4988429,19.0478982,16z/data=!4m13!1m7!3m6!1s0x4741dc14ca087bed:0xd29042512db8ff08!2sBudapest,+Arany+J%C3%A1nos+u.+32,+1051+Hungary!3b1!8m2!3d47.5025338!4d19.0533856!3m4!1s0x0:0x18a1aaf800f814c5!8m2!3d47.4955717!4d19.0519814">
                     <span>Fruccola - <br/></span>
                     Kristóf
@@ -23,7 +30,6 @@
                     <span> János street <br/> <span class="number">32.</span></span>
                 </a>
             </p>
-
         </div>
     </div>
 
