@@ -12,8 +12,8 @@
            <p>
                 <a href="https://www.google.com/maps/place/Fruccola+Mom/@47.4909963,19.0235534,17.5z/data=!4m8!1m2!2m1!1sfruccola+Budapest,+Arany+J%C3%A1nos+u+32,+1052+Magyarorsz%C3%A1g!3m4!1s0x0:0x1896980ac769c092!8m2!3d47.4904741!4d19.0221372">
                     <span>Fruccola - <br/></span>
-                    Lisszabon sétány
-                    <span> MOM Park <br/> <span class="number"></span></span>
+                    MOM Park
+                    <span> Lisszabon sétány <br/> <span class="number"></span></span>
                 </a>
             </p>  
             <p>
