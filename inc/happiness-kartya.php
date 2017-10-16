@@ -54,7 +54,7 @@
         </label>
         <label for="place_id_3" class="checkbox">
             <input type="radio" id="place_id_3" name="places[]" value="3" >
-            <span>Csőrsz utcai regisztrációt kérek.</span>
+            <span>MOM park regisztrációt kérek.</span>
         </label>
         <label for="place_id_1" class="checkbox">
             <input type="radio" id="place_id_1" name="places[]" value="1" >
