@@ -2,7 +2,16 @@
 
   <h1>Kapcsolat</h1>
   <ul>
-
+    
+    <li class="location mom">
+      <p>Budapest, <strong><a href="https://goo.gl/maps/CqNa8dKYjkx">Lisszabon sétány</a></strong></p>
+      <h2>Fruccola MOM park</h2>
+      <p>
+        email: <a href="mailto:mom[at]fruccola.hu" class="mailto">mom[kukac]fruccola.hu</a><br>
+        telefon: <a class="phone" href="tel://+3614306125">+36 1 430 6125</a> (Hétfőtől péntekig 8:00-tól 20:00-ig elérhető.)
+      </p>
+    </li>
+    
     <li class="location kristof">
       <p>Budapest, <strong><a href="https://goo.gl/maps/jecFsgn3was">Kristóf tér 3.</a></strong></p>
       <h2>Fruccola Kristóf tér</h2>
@@ -17,15 +26,6 @@
       <h2>Fruccola Arany János utca</h2>
       <p>
         email: <a href="mailto:arany[at]fruccola.hu" class="mailto">arany[kukac]fruccola.hu</a><br>
-        telefon: <a class="phone" href="tel://+3614306125">+36 1 430 6125</a> (Hétfőtől péntekig 8:00-tól 20:00-ig elérhető.)
-      </p>
-    </li>
-    
-    <li class="location mom">
-      <p>Budapest, <strong><a href="https://goo.gl/maps/CqNa8dKYjkx">Lisszabon sétány</a></strong></p>
-      <h2>Fruccola MOM park</h2>
-      <p>
-        email: <a href="mailto:mom[at]fruccola.hu" class="mailto">mom[kukac]fruccola.hu</a><br>
         telefon: <a class="phone" href="tel://+3614306125">+36 1 430 6125</a> (Hétfőtől péntekig 8:00-tól 20:00-ig elérhető.)
       </p>
     </li>

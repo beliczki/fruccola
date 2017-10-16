@@ -2,7 +2,16 @@
 
   <h1>Contact</h1>
   <ul>
-
+    
+    <li class="location mom">
+      <p>Budapest, <strong><a href="https://goo.gl/maps/CqNa8dKYjkx">Lisszabon promenade</a></strong></p>
+      <h2>Fruccola MOM Park</h2>
+      <p>
+        email: <a href="mailto:mom[at]fruccola.hu" class="mailto">mom[at]fruccola.hu</a><br>
+        phone: <a class="phone" href="tel://+3614306125">+36 1 430 6125</a> (Available from monday to friday 8 a.m. - 8 p.m.)
+      </p>
+    </li>
+    
     <li class="location kristof">
       <p>Budapest, <strong><a href="https://goo.gl/maps/jecFsgn3was">Kristóf square 3.</a></strong></p>
       <h2>Fruccola Kristóf square</h2>
@@ -20,18 +29,6 @@
         phone: <a class="phone" href="tel://+3614306125">+36 1 430 6125</a> (Available from monday to friday 8 a.m. - 8 p.m.)
       </p>
     </li>
-    
-    <li class="location mom">
-      <p>Budapest, <strong><a href="https://goo.gl/maps/CqNa8dKYjkx">Lisszabon promenade</a></strong></p>
-      <h2>Fruccola MOM Park</h2>
-      <p>
-        email: <a href="mailto:mom[at]fruccola.hu" class="mailto">mom[at]fruccola.hu</a><br>
-        phone: <a class="phone" href="tel://+3614306125">+36 1 430 6125</a> (Available from monday to friday 8 a.m. - 8 p.m.)
-      </p>
-    </li>
-    
-    
-    
     
     <li class="reservation">
       <h2>Reservation</h2>

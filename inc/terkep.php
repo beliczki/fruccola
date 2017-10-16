@@ -53,7 +53,7 @@
     anchor: new google.maps.Point(13, 40)
   };
 
-  [{lat: 47.502534, lng: 19.053386}, {lat: 47.495476, lng: 19.0520404}].forEach(function(poi){
+  [{lat: 47.502534, lng: 19.053386}, {lat: 47.495476, lng: 19.0520404}, {lat:47.490478, lng:19.022280}].forEach(function(poi){
     var marker, markerOptions;
 
     markerOptions = {
