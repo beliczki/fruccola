@@ -145,22 +145,7 @@
           </ul>
       </li>
 
-      <li class="juice narrow">
-          <p>Seasonal:</p>
-          <h2>SUGAR FREE LEMONADES</h2>
-          <ul class="options">
-              <li>(1) <strong>RASPBERRY</strong> raspberry, melon, pomegranate, mineral water, erythrite</li>
-              <li>(2) <strong>ORANGE</strong> mineral water, erythrite, lemon juice, mint syrup, ginger, orange juice, mint</li>
-              <li>(3) <strong>EDERFLOWER</strong> pine bud and elderflower syrup, goji berry, rosewater, mineral water, stevia</li>
-              <li>(4) <strong>SOUR CHERRY</strong> lavender and sour cherry syrup, chia seeds, mineral water, stevia</li>
-          </ul>
-          <p class="price">
-              <strong>890</strong>/ 0.5l
-          </p>
-          <div class="container">
-              <img width="640" height="400" src="img/lemondes-2017@2x.jpg">
-          </div>
-      </li>
+      
 
       <!--<li class="brunch">
           <p>On saturdays and sunday on Kristóf square</p>
@@ -210,15 +195,30 @@
           </div>
       </li>-->
 
+      <!--<li class="juice narrow">
+          <p>Seasonal:</p>
+          <h2>SUGAR FREE LEMONADES</h2>
+          <ul class="options">
+              <li>(1) <strong>RASPBERRY</strong> raspberry, melon, pomegranate, mineral water, erythrite</li>
+              <li>(2) <strong>ORANGE</strong> mineral water, erythrite, lemon juice, mint syrup, ginger, orange juice, mint</li>
+              <li>(3) <strong>EDERFLOWER</strong> pine bud and elderflower syrup, goji berry, rosewater, mineral water, stevia</li>
+              <li>(4) <strong>SOUR CHERRY</strong> lavender and sour cherry syrup, chia seeds, mineral water, stevia</li>
+          </ul>
+          <p class="price">
+              <strong>890</strong>/ 0.5l
+          </p>
+          <div class="container">
+              <img width="640" height="400" src="img/lemondes-2017@2x.jpg">
+          </div>
+      </li>-->
 
-
-      <!--<li class="hot-drinks narrow">
+      <li class="hot-drinks narrow">
           <p>Seasonal</p>
           <h2>HOT DRINKS</h2>
           <ul class="options">
-              <li>(1) <strong>Elderflower and lemon</strong> (Elderflower cordial, lemon juice)</li>
-              <li>(2) <strong>Mint and honey</strong> (fresh peppermint, honey, lemon juice)</li>
-              <li>(3) <strong>Apple and ginger</strong> (spiced ginger apple cordial, cinnamon, star aniseed)</li>
+              <li>(1) <strong>ELDERFLOWER AND LEMON:</strong> Elderflower cordial, lemon juice</li>
+              <li>(2) <strong>MINT AND HONEY:</strong> fresh peppermint, honey, lemon juice)</li>
+              <li>(3) <strong>APPLE AND GINGER:</strong> spiced ginger apple cordial, cinnamon, star aniseed</li>
           </ul>
           <p class="price">
               <strong>790</strong>
@@ -226,7 +226,7 @@
           <div class="container">
               <img width="640" height="400" src="img/seasonalhot@2x.jpg">
           </div>
-      </li>-->
+      </li>
 
       <!--<li class="h2>treats narrow">
           <p>After 4:00 p.m.</p>
@@ -405,22 +405,6 @@
 
           </ul>
       </li>
-      <li class="juice narrow">
-          <p>Szezonális:</p>
-          <h2>Cukormentes limonádék</h2>
-          <ul class="options">
-              <li>(1) <strong>MÁLNÁS</strong> Málna, sárgadinnye, gránátalma, ásványvíz, eritrit</li>
-              <li>(2) <strong>NARANCSOS</strong> Ásványvíz, eritrit, citromlé, mentaszirup, gyömbér, narancslé, mentalevél</li>
-              <li>(3) <strong>BODZÁS</strong> Fenyőrügyes bodzaszörp, goji bogyó, rózsavíz, ásványvíz, stevia</li>
-              <li>(4) <strong>MEGGYES</strong> Levendulás meggyszörp, chiamag, ásványvíz, stevia</li>
-          </ul>
-          <p class="price">
-              <strong>890</strong>/ 0.5l
-          </p>
-          <div class="container">
-              <img width="640" height="400" src="img/lemondes-2017@2x.jpg">
-          </div>
-      </li>
     
     
       <!--<li class="brunch">
@@ -470,15 +454,30 @@
       </li>-->
 
       
+      <!--<li class="juice narrow">
+          <p>Szezonális:</p>
+          <h2>Cukormentes limonádék</h2>
+          <ul class="options">
+              <li>(1) <strong>MÁLNÁS</strong> Málna, sárgadinnye, gránátalma, ásványvíz, eritrit</li>
+              <li>(2) <strong>NARANCSOS</strong> Ásványvíz, eritrit, citromlé, mentaszirup, gyömbér, narancslé, mentalevél</li>
+              <li>(3) <strong>BODZÁS</strong> Fenyőrügyes bodzaszörp, goji bogyó, rózsavíz, ásványvíz, stevia</li>
+              <li>(4) <strong>MEGGYES</strong> Levendulás meggyszörp, chiamag, ásványvíz, stevia</li>
+          </ul>
+          <p class="price">
+              <strong>890</strong>/ 0.5l
+          </p>
+          <div class="container">
+              <img width="640" height="400" src="img/lemondes-2017@2x.jpg">
+          </div>
+      </li>-->
 
-
-      <!--<li class="hot-drinks narrow">
+      <li class="hot-drinks narrow">
           <p>Szezonális</p>
           <h2>Forró italok</h2>
           <ul class="options">
-              <li>(1) <strong>Bodzás-citromos</strong> (bodzaszörp, citromlé)</li>
-              <li>(2) <strong>Mentás-mézes</strong> (friss borsmenta, méz, citromlé)</li>
-              <li>(3) <strong>Gyömbéres-almás</strong> (fűszeres, gyömbéres almaszörp, fahéj, csillagánizs)</li>
+              <li>(1) <strong>BODZÁS-CITROMOS:</strong> bodzaszörp, citromlé</li>
+              <li>(2) <strong>MENTÁS-MÉZES:</strong> friss borsmenta, méz, citromlé</li>
+              <li>(3) <strong>GYÖMBÉRES-ALMÁS:</strong> fűszeres, gyömbéres almaszörp, fahéj, csillagánizs</li>
           </ul>
           <p class="price">
               <strong>790</strong>
@@ -486,7 +485,7 @@
           <div class="container">
               <img width="640" height="400" src="img/seasonalhot@2x.jpg">
           </div>
-      </li>-->
+      </li>
 
       <!--<li class="treats narrow">
           <p>16 óra után minden délután</p>
