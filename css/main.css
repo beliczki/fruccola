@@ -2682,7 +2682,15 @@ button:hover, .button:hover {
 .A4.redesign_2017 .content.menu ul li p.name_hu {margin:0 0 0 0 !important;text-transform:Uppercase;}
 .A4.redesign_2017 .content.menu .offer li {margin:0;}
 
-
+.A4.redesign_2017.patch_2018 .content.menu .offer .allergenes {
+  position: absolute;
+  left: 1.4cm;
+  background: white;
+}
+.A4.redesign_2017.patch_2018 .offer .devide {font-size:72px; line-height:60px;}
+.A4.redesign_2017.patch_2018 .content .offer strong {font-size:72px; line-height:76px;}
+.A4.redesign_2017.patch_2018 .content.menu em {height: 62px; width: 60px; margin-bottom: 0px;} 
+.A4.redesign_2017.patch_2018 ul li p.allergenes em:before {font-size:82px; }
 
 @media print {
     html, body {
