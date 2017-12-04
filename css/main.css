@@ -2687,10 +2687,11 @@ button:hover, .button:hover {
   left: 1.4cm;
   background: white;
 }
-.A4.redesign_2017.patch_2018 .offer .devide {font-size:72px; line-height:60px;}
-.A4.redesign_2017.patch_2018 .content .offer strong {font-size:72px; line-height:76px;}
-.A4.redesign_2017.patch_2018 .content.menu em {height: 62px; width: 60px; margin-bottom: 0px;} 
-.A4.redesign_2017.patch_2018 ul li p.allergenes em:before {font-size:82px; }
+
+.A4.redesign_2017.patch_2018 .offer .devide {font-size:78px; line-height:68px;}
+.A4.redesign_2017.patch_2018 .content .offer strong {font-size:78px; line-height:76px;}
+.A4.redesign_2017.patch_2018 .content.menu em {height: 80px; width: 72px; margin-bottom: 0px;} 
+.A4.redesign_2017.patch_2018 ul li p.allergenes em:before {font-size:92px; margin-top:-14px;}
 
 @media print {
     html, body {
