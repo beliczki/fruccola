@@ -1292,7 +1292,8 @@ button:hover, .button:hover {
 .content  em.flourfree,
 .content  em.lactosefree,
 .content  em.vegan,
-.content  em.vegetarian {
+.content  em.vegetarian,
+.content  em.hot {
   /*float: left;*/
   height: 24px;
   margin-right: 0px;
@@ -1318,7 +1319,8 @@ button:hover, .button:hover {
 .content em.flourfree:before,
 .content em.lactosefree:before,
 .content em.vegan:before,
-.content em.vegetarian:before {
+.content em.vegetarian:before,
+.content em.hot:before {
   color: #40ae49;
   display: block;
   font-size: 30px;
