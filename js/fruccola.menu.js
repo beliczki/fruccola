@@ -83,11 +83,11 @@ $(function() {
             p = $('<p></p>');
             p.addClass('properties');
             
-            if ( data[index].allergen_ids.in_array(1) >= 0 ) p.append( $( ff ).addClass('flourfree') ); // 1 - flourfree
-            if ( data[index].allergen_ids.in_array(2) >= 0 ) p.append( $( lf ).addClass('lactosefree') ); // 2 - lactosefree
-            if ( data[index].allergen_ids.in_array(3) >= 0 ) p.append( $( vr ).addClass('vegetarian') ); // 3 - vegetarian
-            if ( data[index].allergen_ids.in_array(4) >= 0 ) p.append( $( vn ).addClass('vegan')  ); // 4 - vegan
-            if ( data[index].allergen_ids.in_array(5) >= 0 ) p.append( $( hh ).addClass('hot')  ); // 5 - hot
+            if ($.inArray (1,data[index].allergen_ids) >= 0) p.append( $( ff ).addClass('flourfree') ); // 1 - flourfree
+            if ($.inArray (2,data[index].allergen_ids) >= 0) p.append( $( lf ).addClass('lactosefree') ); // 2 - lactosefree
+            if ($.inArray (3,data[index].allergen_ids) >= 0) p.append( $( vr ).addClass('vegetarian') ); // 3 - vegetarian
+            if ($.inArray (4,data[index].allergen_ids) >= 0) p.append( $( vn ).addClass('vegan')  ); // 4 - vegan
+            if ($.inArray (5,data[index].allergen_ids) >= 0) p.append( $( hh ).addClass('hot')  ); // 5 - hot
             
             if ( data[index].KCAL > 0) p.append( $( '<em class="calories" title="'+tag_calories+'">'+data[index].KCAL+' kcal</em>') );
             if (p.children().length > 0) item.append(p);
