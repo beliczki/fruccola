@@ -55,10 +55,12 @@ h2.new:before,
 .content.menu p .lactosefree:before,
 .content.menu p .vegan:before,
 .content.menu p .vegetarian:before,
+.content.menu p .hot:before,
 .content em.flourfree:before,
 .content em.lactosefree:before,
 .content em.vegan:before,
 .content em.vegetarian:before,
+.content em.hot:before,
 .content.menu .menu-categories a:before,
 .content.menu .items .love:before,
 .content .offer p:before,
@@ -167,6 +169,22 @@ h2.new:before,
 
 .hu .content em.flourfree:before {
   content: '\E03E';
+}
+
+.icon-hot {
+  content: '\E048'; /*spicy*/
+}
+.hu .icon-hot {
+  content: '\E048'; /*spicy*/
+}
+.icon-hot-alternate,
+.product-filter .items label.hot:before, /*spicy*/
+.content em.hot:before {
+  content: '\E048';
+}
+
+.hu .content em.hot:before {
+  content: '\E048'; /*spicy*/
 }
 
 .icon-hot-drinks,
@@ -833,6 +851,9 @@ fieldset {
 .product-filter .items label.flourfree:before {
   color: #d2ac67;
 }
+.product-filter .items label.hot:before {
+  color: #e82c00;
+}
 .product-filter .items label.lactosefree:before {
   color: #93b1c2;
 }
@@ -1313,6 +1334,9 @@ button:hover, .button:hover {
 }
 .content em.vegan:before {
   color: #327034;
+}
+.content em.hot:before {
+  color: #e82c00;
 }
 
 

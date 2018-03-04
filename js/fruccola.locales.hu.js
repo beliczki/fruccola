@@ -21,6 +21,7 @@ var ff = '<em title="Lisztmentes" class="flourfree">Lisztmentes</em>';
 var lf = '<em title="Laktózmentes" class="lactosefree">Laktózmentes</em>';
 var vr = '<em title="Vegetáriánus" class="vegetarian">Vegetáriánus</em>';
 var vn = '<em title="Vegán" class="vegan">Vegán</em>';
+var hh = '<em title="Csípős" class="hot">Csípős</em>';
 
 var email_at = 'kukac';
 

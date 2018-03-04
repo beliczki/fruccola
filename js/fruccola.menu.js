@@ -82,10 +82,11 @@ $(function() {
 
             p = $('<p></p>');
             p.addClass('properties');
-            if ( data[index].add_class.indexOf('flourfree') >= 0 ) p.append( $( ff ).addClass('flourfree') );
-            if ( data[index].add_class.indexOf('lactosefree') >= 0 ) p.append( $( lf ).addClass('lactosefree') );
-            if ( data[index].add_class.indexOf('vegetarian') >= 0 ) p.append( $( vr ).addClass('vegetarian') );
-            if ( data[index].add_class.indexOf('vegan') >= 0 ) p.append( $( vn ).addClass('vegan')  );
+            if ( data[index].ellergen_ids.in_array(1) >= 0 ) p.append( $( ff ).addClass('flourfree') ); // 1 - flourfree
+            if ( data[index].ellergen_ids.in_array(2) >= 0 ) p.append( $( lf ).addClass('lactosefree') ); // 2 - lactosefree
+            if ( data[index].ellergen_ids.in_array(3) >= 0 ) p.append( $( vr ).addClass('vegetarian') ); // 3 - vegetarian
+            if ( data[index].ellergen_ids.in_array(4) >= 0 ) p.append( $( vn ).addClass('vegan')  ); // 4 - vegan
+            if ( data[index].ellergen_ids.in_array(5) >= 0 ) p.append( $( hh ).addClass('hot')  ); // 5 - hot
             if ( data[index].KCAL > 0) p.append( $( '<em class="calories" title="'+tag_calories+'">'+data[index].KCAL+' kcal</em>') );
             if (p.children().length > 0) item.append(p);
 
