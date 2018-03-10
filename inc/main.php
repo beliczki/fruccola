@@ -520,5 +520,5 @@
 
 <?php } ?>
 
-<script src="/js/fruccola.daily-menu.js"></script>
+<script src="/js/fruccola.daily-menu.js?version=<?php echo filemtime ('/js/fruccola.daily-menu.js')?>"></script>
 <!--<script src="/js/fruccola.weekly-salad.js"></script>-->
