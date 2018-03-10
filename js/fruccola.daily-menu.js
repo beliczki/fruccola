@@ -64,9 +64,9 @@ $(function() {
           $('.dailymenu h1').text(daily_menu_friday);
         }
         if (nData.getDay() === 6 || nData.getDay() === 0) {
-          $('.soup-and-maindish').addClass('hide');
+          /*$('.soup-and-maindish').addClass('hide');
           $('.arany .main-dish').addClass('hide');
-          $('.kristof .main-dish').html(daily_menu_brunh_txt); 
+          $('.kristof .main-dish').html(daily_menu_brunh_txt); */
         }
     });
   }
