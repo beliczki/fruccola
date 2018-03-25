@@ -65,7 +65,7 @@ h2.new:before,
 .content em.sugarfree:before,
 .content.menu .menu-categories a:before,
 .content.menu .items .love:before,
-.content.menu .items .details:after,
+.content.menu .items .details:before,
 .content .offer p:before,
 .soup .description:before,
 .main-dish .description:before,
@@ -715,8 +715,8 @@ fieldset {
 .content.menu .items .love:before {  content: '\E036';}
 .content.menu .items .love.true:before {  content: '\E039';}
 
-.content.menu .items .details:after {  content: '\E049';}
-.content.menu .items li.detailed .details:after {  content: '\E047';}
+.content.menu .items .details:before {  content: '\E049';}
+.content.menu .items li.detailed .details:before {  content: '\E047';}
 
 .social {
   /*padding: 0 20px;*/
@@ -1550,11 +1550,56 @@ button:hover, .button:hover {
 .content.menu.grabandgo .items > li.drink .love.true {background: #fff; border-color:#fff; color:#d7182a;}
 
 
+.content.menu .items > li .details {
+
+  width: 9xpx;
+  height: 24px;
+  background:  #f58220;
+  border: 2px solid  #f58220;
+  color:#fff;
+}
+.content.menu .items > li .love:hover {
+  color: #f58220;
+  background:  #fff;
+}
+
+.dailymenu.meatfree .items > li .details {background: #ec008c; border-color: #ec008c;}
+.content.menu.juice .items > li .details {background: #d7182a; border-color: #d7182a;}
+.content.menu.hot-drinks .items > li .details {background: #482722; border-color:#482722;}
+.content.menu .items > li.fish .details,
+.dailymenu.fish .items > li .details,
+.content.menu.salad .items > li .details {background: #40ae49; border-color:#40ae49;}
+.content.menu.sandwich .items > li .details {background: #d2ac67; border-color:#d2ac67;}
+.content.menu.treats .items > li .details {background: #c756a1; border-color:#c756a1;}
+.content.menu.grabandgo .items > li.details .love {background: #40ae49; border-color:#40ae49;}
+.content.menu.grabandgo .items > li.details .love {background: #c756a1; border-color:#c756a1;}
+.content.menu.grabandgo .items > li.details .love {background: #d7182a; border-color:#d7182a;}
+
+.dailymenu.meatfree .items > li .details:hover {background: #fff; color: #ec008c;}
+.content.menu.juice .items > li .details:hover {background: #fff; color: #d7182a;}
+.content.menu.hot-drinks .items > li .details:hover {background: #fff; color:#482722;}
+.content.menu .items > li.fish .details:hover, 
+.dailymenu.fish > li .details:hover, 
+.content.menu.salad .items > li .details:hover {background: #fff; color:#40ae49;}
+.content.menu.sandwich .items > li .details:hover {background: #fff; color:#d2ac67;}
+.content.menu.treats .items > li .details:hover {background: #fff; color:#c756a1;}
+.content.menu.grabandgo .items > li.salad .details:hover {background: #fff; color:#40ae49;}
+.content.menu.grabandgo .items > li.desert .details:hover {background: #fff; color:#c756a1;}
+.content.menu.grabandgo .items > li.drink .details:hove {background: #fff; color:#d7182a;}
+
+
 .content.menu .items > li .love:before {
   font-size: 28px;
   position: absolute;
   top: 8px;
   right: 8px;
+}
+
+.content.menu .items > li .details:before {
+  font-size: 28px;
+  position: absolute;
+  top: 0px;
+  right: 4px;
 }
 
 .content.menu .items .calories {
