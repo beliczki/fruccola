@@ -79,6 +79,11 @@ $(function() {
             p.addClass('description');
             p.html(data[index]['description_'+language].replace(/\//g,'<br/>'));
             item.append(p);
+            
+            a = $('<a></a>');
+            a.addClass('button');
+            a.addClass('details');
+            item.append(a);
 
             p = $('<p></p>');
             p.addClass('properties');
