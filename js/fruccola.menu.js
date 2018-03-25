@@ -82,7 +82,14 @@ $(function() {
             
             // if there are calories in admin, or allergenes set in admin 
             // let's make the cards expandable
+            
+            
+            
+            
             if ( data[index].allergen_ids.length > 0 || data[index].KCAL > 0 ) {
+              //// FINNISH HERE
+              //// FINNISH HERE
+              /*
               a = $('<a href="" title="' + button_nutrition + '" id="'+menuid+'"> </a>');
               a.addClass('button');
               a.addClass('details');
@@ -94,6 +101,13 @@ $(function() {
                   fbq('trackCustom', 'Menu-NutritionClick', { id: $(this).attr('id').replace('menu',''), item: $('h2', $(this).closest('li')).html(), category: $('h1', $(this).closest('section')).html() });
               });
               item.append(a);
+              */
+              //// FINNISH HERE
+              //// FINNISH HERE
+              //// FINNISH HERE
+              
+              
+              /// card click is bubbling in this way below, it makes toggleClass run two times, todo: retink
               /*item.click(function(e){
                   e.preventDefault();
                   $(this).toggleClass('detailed');
@@ -130,6 +144,11 @@ $(function() {
             item.append(div);
             
             div = $('<div class=details-box></div>');
+            //// FINNISH HERE
+            //// FINNISH HERE
+            //// FINNISH HERE
+            //// FINNISH HERE
+            //// FINNISH HERE
             item.append(div);
             
             if (data[index].visible) $('.content .items').append(item); // only if visible
