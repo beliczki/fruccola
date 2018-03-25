@@ -88,7 +88,7 @@ $(function() {
             if ($.inArray (3,data[index].allergen_ids) >= 0) p.append( $( vr ).addClass('vegetarian') ); // 3 - vegetarian
             if ($.inArray (4,data[index].allergen_ids) >= 0) p.append( $( vn ).addClass('vegan')  ); // 4 - vegan
             if ($.inArray (5,data[index].allergen_ids) >= 0) p.append( $( hh ).addClass('hot')  ); // 5 - hot
-            if ($.inArray (6,data[index].allergen_ids) >= 0) p.append( $( cm ).addClass('sugarfree')  ); // 5 - hot
+            if ($.inArray (6,data[index].allergen_ids) >= 0) p.append( $( cm ).addClass('sugarfree')  ); // 6 - sugarfree
             
             if ( data[index].KCAL > 0) p.append( $( '<em class="calories" title="'+tag_calories+'">'+data[index].KCAL+' kcal</em>') );
             if (p.children().length > 0) item.append(p);
