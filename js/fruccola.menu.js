@@ -89,18 +89,18 @@ $(function() {
               a.click(function(e){
                   e.preventDefault();
                   $(this).parent().toggleClass('detailed');
-                  console.log( 'Menu-NutritionClick');
-                  console.log({ id: $(this).attr('id').replace('menu',''), item: $('h2', $(this).closest('li')).html(), category: $('h1', $(this).closest('section')).html() });
+                  ///console.log( 'Menu-NutritionClick');
+                  ///console.log({ id: $(this).attr('id').replace('menu',''), item: $('h2', $(this).closest('li')).html(), category: $('h1', $(this).closest('section')).html() });
                   fbq('trackCustom', 'Menu-NutritionClick', { id: $(this).attr('id').replace('menu',''), item: $('h2', $(this).closest('li')).html(), category: $('h1', $(this).closest('section')).html() });
               });
               item.append(a);
-              item.click(function(e){
+              /*item.click(function(e){
                   e.preventDefault();
                   $(this).toggleClass('detailed');
                   console.log( 'Menu-CardClick');
                   console.log({ id: $('.details', $(this)).attr('id').replace('menu',''), item: $('h2', $(this)).html(), category: $('h1', $(this).closest('section')).html() });
                   fbq('trackCustom', 'Menu-CardClick', { id: $('.details', $(this)).attr('id').replace('menu',''), item: $('h2', $(this)).html(), category: $('h1', $(this).closest('section')).html() });
-              });
+              });*/
             }
 
             p = $('<p></p>');
