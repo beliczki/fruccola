@@ -82,7 +82,7 @@ $(function() {
             
             // if there are calories in admin, or allergenes set in admin 
             // let's make the cards expandable
-            if ( data[index].allergen_ids.length() > 0 || data[index].KCAL.length() > 0 ) {
+            if ( data[index].allergen_ids.length > 0 || data[index].KCAL.length > 0 ) {
               a = $('<a href="" title="' + button_nutrition + '" id="'+menuid+'"> </a>');
               a.addClass('button');
               a.addClass('details');
