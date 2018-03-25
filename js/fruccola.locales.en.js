@@ -22,6 +22,7 @@ var lf = '<em title="Lactose free" class="lactosefree">Lactose free</em>';
 var vr = '<em title="Vegetarian" class="vegetarian">Vegetarian</em>';
 var vn = '<em title="Vegan" class="vegan">Vegan</em>';
 var hh = '<em title="Spicy" class="hot">Spicy</em>';
+var cm = '<em title="Sugar free" class="sugarfree">Sugar free</em>';
 
 var email_at = 'at';
 

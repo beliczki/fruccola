@@ -77,6 +77,7 @@ $(function() {
     if ($.inArray (3,data[plate+'_allergen_ids']) >= 0) $(' .'+loc+' .'+plate_class+' .properties').append( $( vr ) );
     if ($.inArray (4,data[plate+'_allergen_ids']) >= 0) $(' .'+loc+' .'+plate_class+' .properties').append( $( vn ) );
     if ($.inArray (5,data[plate+'_allergen_ids']) >= 0) $(' .'+loc+' .'+plate_class+' .properties').append( $( hh ) );
+    if ($.inArray (6,data[plate+'_allergen_ids']) >= 0) $(' .'+loc+' .'+plate_class+' .properties').append( $( cm ) );
   }
   
   function buildCardItem (loc){

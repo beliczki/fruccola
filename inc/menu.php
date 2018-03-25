@@ -28,9 +28,13 @@
     <p>
         With the exception of American Express, <br/>all other credit cards are accepted.
     </p>
+    <p>
+      As of april the 6<sup>th</sup> 2018 Fruccola accepts Unionpay cards as well.
+    </p>
     <ul>
       <li class="icon-pay-mastercard">Mastercard</li>
       <li class="icon-pay-visa">Visa</li>
+      <li class="icon-pay-unionpay">Unionpay</li>
       <li class="icon-pay-szechenyi">SZÉPkártya (OTP, MKB, K&H)</li>
       <li class="icon-pay-ticket">Ticket restaurant, Ticket compliments</li>
       <li class="icon-pay-erzsebet">Erzsébetutalvány, Erzsébetkártya</li>
@@ -65,9 +69,13 @@
     <p>
         Éttermünkben az American Express kártyán kívül, <br>minden más bankkártyával lehetséges a fizetés.
     </p>
+    <p>
+        2018 Április 6-tól Unionpay kártyával is fizethetsz.
+    </p>
     <ul>
       <li class="icon-pay-mastercard">Mastercard</li>
       <li class="icon-pay-visa">Visa</li>
+      <li class="icon-pay-unionpay">Unionpay</li>
       <li class="icon-pay-szechenyi">SZÉPkártya (OTP, MKB, K&amp;H)</li>
       <li class="icon-pay-ticket">Ticket restaurant, Ticket compliments</li>
       <li class="icon-pay-erzsebet">Erzsébetutalvány, Erzsébetkártya</li>
