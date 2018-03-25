@@ -80,16 +80,26 @@ $(function() {
             p.html(data[index]['description_'+language].replace(/\//g,'<br/>'));
             item.append(p);
             
-            a = $('<a href="" title="' + button_nutrition + '" id="'+menuid+'"> </a>');
-            a.addClass('button');
-            a.addClass('details');
-            a.click(function(e){
-                e.preventDefault();
-                $(this).prent().addClass('detailed');
-                /// console.log({ id: $(this).attr('id').replace('menu',''), item: $('h2', $(this).closest('li')).html(), category: $('h1', $(this).closest('section')).html() });
-                fbq('trackCustom', 'Menu-NutritionClick', { id: $(this).attr('id').replace('menu',''), item: $('h2', $(this).closest('li')).html(), category: $('h1', $(this).closest('section')).html() });
-            });
-            item.append(a);
+            // if there are calories in admin, or allergenes set in admin 
+            // let's make the cards expandable
+            if ( data[index].allergen_ids.length() > 0 || data[index].KCAL.length() > 0 ) {
+              a = $('<a href="" title="' + button_nutrition + '" id="'+menuid+'"> </a>');
+              a.addClass('button');
+              a.addClass('details');
+              a.click(function(e){
+                  e.preventDefault();
+                  $(this).parent().addClass('detailed');
+                  console.log({ id: $(this).attr('id').replace('menu',''), item: $('h2', $(this).closest('li')).html(), category: $('h1', $(this).closest('section')).html() });
+                  fbq('trackCustom', 'Menu-NutritionClick', { id: $(this).attr('id').replace('menu',''), item: $('h2', $(this).closest('li')).html(), category: $('h1', $(this).closest('section')).html() });
+              });
+              item.append(a);
+              item.click(function(e){
+                  e.preventDefault();
+                  $(this).addClass('detailed');
+                  console.log({ id: $('.deatils', $(this)).attr('id').replace('menu',''), item: $('h2', $(this)).html(), category: $('h1', $(this).closest('section')).html() });
+                  fbq('trackCustom', 'Menu-CardClick', { id: $('.deatils', $(this)).attr('id').replace('menu',''), item: $('h2', $(this)).html(), category: $('h1', $(this).closest('section')).html() });
+              });
+            }
 
             p = $('<p></p>');
             p.addClass('properties');

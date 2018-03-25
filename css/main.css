@@ -1332,6 +1332,7 @@ button:hover, .button:hover {
 
 .content .calories {
   font-size: 0.8em;
+  line-height: 16px;
   color: #fff;
   position: relative;
   bottom: 3px;
@@ -1644,7 +1645,7 @@ button:hover, .button:hover {
 
 .content.menu .items .details {left: 1em; bottom: 1em; }
 .hu .content.menu .items .details {left: 1em; bottom: 1em;}
-.content.menu .items .properties {left: 3em; bottom: 1em;}
+.content.menu .items .properties {left: 58px; bottom: 1em; line-height: 24px;}
 
 .dailymenu .today .soup p.properties,
 .dailymenu .today .main-dish p.properties {bottom: 0.5em;}
