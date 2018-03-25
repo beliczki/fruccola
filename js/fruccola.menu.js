@@ -96,8 +96,8 @@ $(function() {
               item.click(function(e){
                   e.preventDefault();
                   $(this).addClass('detailed');
-                  console.log({ id: $('.deatils', $(this)).attr('id').replace('menu',''), item: $('h2', $(this)).html(), category: $('h1', $(this).closest('section')).html() });
-                  fbq('trackCustom', 'Menu-CardClick', { id: $('.deatils', $(this)).attr('id').replace('menu',''), item: $('h2', $(this)).html(), category: $('h1', $(this).closest('section')).html() });
+                  console.log({ id: $('.details', $(this)).attr('id').replace('menu',''), item: $('h2', $(this)).html(), category: $('h1', $(this).closest('section')).html() });
+                  fbq('trackCustom', 'Menu-CardClick', { id: $('.details', $(this)).attr('id').replace('menu',''), item: $('h2', $(this)).html(), category: $('h1', $(this).closest('section')).html() });
               });
             }
 
