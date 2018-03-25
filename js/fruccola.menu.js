@@ -82,13 +82,14 @@ $(function() {
             
             // if there are calories in admin, or allergenes set in admin 
             // let's make the cards expandable
-            if ( data[index].allergen_ids.length > 0 || data[index].KCAL.length > 0 ) {
+            if ( data[index].allergen_ids.length > 0 || data[index].KCAL > 0 ) {
               a = $('<a href="" title="' + button_nutrition + '" id="'+menuid+'"> </a>');
               a.addClass('button');
               a.addClass('details');
               a.click(function(e){
                   e.preventDefault();
                   $(this).parent().addClass('detailed');
+                  console.log( 'Menu-NutritionClick');
                   console.log({ id: $(this).attr('id').replace('menu',''), item: $('h2', $(this).closest('li')).html(), category: $('h1', $(this).closest('section')).html() });
                   fbq('trackCustom', 'Menu-NutritionClick', { id: $(this).attr('id').replace('menu',''), item: $('h2', $(this).closest('li')).html(), category: $('h1', $(this).closest('section')).html() });
               });
@@ -96,6 +97,7 @@ $(function() {
               item.click(function(e){
                   e.preventDefault();
                   $(this).addClass('detailed');
+                  console.log( 'Menu-CardClick');
                   console.log({ id: $('.details', $(this)).attr('id').replace('menu',''), item: $('h2', $(this)).html(), category: $('h1', $(this).closest('section')).html() });
                   fbq('trackCustom', 'Menu-CardClick', { id: $('.details', $(this)).attr('id').replace('menu',''), item: $('h2', $(this)).html(), category: $('h1', $(this).closest('section')).html() });
               });
@@ -125,6 +127,9 @@ $(function() {
               if (pv[1]) p.append(' /'+pv[1]);
               div.append(p);
             });
+            item.append(div);
+            
+            div = $('<div class=details-box></div>');
             item.append(div);
             
             if (data[index].visible) $('.content .items').append(item); // only if visible

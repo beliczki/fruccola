@@ -1588,6 +1588,13 @@ button:hover, .button:hover {
 .content.menu.grabandgo .items > li.desert .details:hover {background: #fff; color:#c756a1;}
 .content.menu.grabandgo .items > li.drink .details:hove {background: #fff; color:#d7182a;}
 
+.content.menu .items > li .details-box {
+  height:0px;
+}
+.content.menu .items > li.detailed .details-box {
+  height:100px;
+}
+
 
 .content.menu .items > li .love:before {
   font-size: 28px;
