@@ -80,9 +80,15 @@ $(function() {
             p.html(data[index]['description_'+language].replace(/\//g,'<br/>'));
             item.append(p);
             
-            a = $('<a href= title=' + button_nutrition + '> </a>');
+            a = $('<a href="" title="' + button_nutrition + '" id="'+menuid+'"> </a>');
             a.addClass('button');
             a.addClass('details');
+            a.click(function(e){
+                e.preventDefault();
+                $(this).prent().addClass('detailed');
+                /// console.log({ id: $(this).attr('id').replace('menu',''), item: $('h2', $(this).closest('li')).html(), category: $('h1', $(this).closest('section')).html() });
+                fbq('trackCustom', 'Menu-NutritionClick', { id: $(this).attr('id').replace('menu',''), item: $('h2', $(this).closest('li')).html(), category: $('h1', $(this).closest('section')).html() });
+            });
             item.append(a);
 
             p = $('<p></p>');

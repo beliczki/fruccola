@@ -1551,12 +1551,12 @@ button:hover, .button:hover {
 
 
 .content.menu .items > li .details {
-
-  width: 9xpx;
+  width: 16px;
   height: 24px;
   background:  #f58220;
   border: 2px solid  #f58220;
   color:#fff;
+  padding: 0 10px;
 }
 .content.menu .items > li .details:hover {
   color: #f58220;
