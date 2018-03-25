@@ -24,6 +24,8 @@ var vn = '<em title="Vegán" class="vegan">Vegán</em>';
 var hh = '<em title="Csípős" class="hot">Csípős</em>';
 var cm = '<em title="Cukormentes" class="sugarfree">Cukormentes</em>';
 
+var button_nutrition = 'részltek és tápértékek';
+
 var email_at = 'kukac';
 
 var tagOpen = 'Nyitva';

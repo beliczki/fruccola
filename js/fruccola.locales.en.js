@@ -24,6 +24,8 @@ var vn = '<em title="Vegan" class="vegan">Vegan</em>';
 var hh = '<em title="Spicy" class="hot">Spicy</em>';
 var cm = '<em title="Sugar free" class="sugarfree">Sugar free</em>';
 
+var button_nutrition = 'details and nutrition';
+
 var email_at = 'at';
 
 var tagOpen = 'Open';

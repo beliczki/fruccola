@@ -64,7 +64,8 @@ h2.new:before,
 .content em.hot:before,
 .content em.sugarfree:before,
 .content.menu .menu-categories a:before,
-.content.menu .items .love:before,daa
+.content.menu .items .love:before,
+.content.menu .items .details:after,
 .content .offer p:before,
 .soup .description:before,
 .main-dish .description:before,
@@ -714,6 +715,8 @@ fieldset {
 .content.menu .items .love:before {  content: '\E036';}
 .content.menu .items .love.true:before {  content: '\E039';}
 
+.content.menu .items .details:after {  content: '\E049';}
+.content.menu .items li.detailed .details:after {  content: '\E047';}
 
 .social {
   /*padding: 0 20px;*/
@@ -1594,9 +1597,9 @@ button:hover, .button:hover {
  margin:0;
 }
 .content #dailymenu-holder .properties {left: 1em;}
-.content.menu .items .details {left: 1em; bottom: 1em; content:'details and nutrition'}
-.hu .content.menu .items .details {left: 1em; bottom: 1em; content:'részltek és tápértékek'}
-.content.menu .items .properties {left: 1em; bottom: 8em;}
+.content.menu .items .details {left: 1em; bottom: 1em; }
+.hu .content.menu .items .details {left: 1em; bottom: 1em;}
+.content.menu .items .properties {left: 8em; bottom: 1em;}
 
 .dailymenu .today .soup p.properties,
 .dailymenu .today .main-dish p.properties {bottom: 0.5em;}

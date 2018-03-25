@@ -80,7 +80,7 @@ $(function() {
             p.html(data[index]['description_'+language].replace(/\//g,'<br/>'));
             item.append(p);
             
-            a = $('<a></a>');
+            a = $('<a>' + button_nutrition + '</a>');
             a.addClass('button');
             a.addClass('details');
             item.append(a);
