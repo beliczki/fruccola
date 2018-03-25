@@ -1641,7 +1641,7 @@ button:hover, .button:hover {
  position: absolute;
  margin:0;
 }
-.content #dailymenu-holder .properties {left: 1em;}
+
 .content.menu .items .details {left: 1em; bottom: 1em; }
 .hu .content.menu .items .details {left: 1em; bottom: 1em;}
 .content.menu .items .properties {left: 3em; bottom: 1em;}
