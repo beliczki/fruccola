@@ -179,22 +179,31 @@ h2.new:before,
 .hu .icon-hot {
   content: '\E048'; /*spicy*/
 }
-
-.icon-sugarfree {
-  content: '\E052'; /*spicy*/
-}
-.hu .icon-sugarfree {
-  content: '\E052'; /*spicy*/
-}
 .icon-hot-alternate,
 .product-filter .items label.hot:before, /*spicy*/
 .content em.hot:before {
   content: '\E048';
 }
-
 .hu .content em.hot:before {
   content: '\E048'; /*spicy*/
 }
+
+
+.icon-sugarfree {
+  content: '\E052'; /*sugarfree*/
+}
+.hu .icon-sugarfree {
+  content: '\E052'; /*sugarfree*/
+}
+.icon-sugarfree-alternate,
+.product-filter .items label.sugarfree:before, /*sugarfree*/
+.content em.sugarfree:before {
+  content: '\E052';
+}
+.hu .content em.sugarfree:before {
+  content: '\E052'; /*sugarfree*/
+}
+
 
 .icon-hot-drinks,
 .menu-navigation .hot-drinks a:before,
