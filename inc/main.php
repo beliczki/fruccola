@@ -250,14 +250,16 @@
           <p>Finally</p>
           <h2>Delivery to your home is here </h2>
           <p>
-              Töltsd le a Wolt alkalmazást a telefonodre és rendelj otthonra egy falat fruccolát!
-              <a href= >Android</a> <a href= >Apple</a>
+              Download the Wolt app to your phone and order a bite of fruccola delivered to to home. <br />
+              <a href=https://play.google.com/store/apps/details?id=com.wolt.android >Android app</a>  |  <a href=https://itunes.apple.com/hu/app/wolt/id943905271 >Apple app</a>
           </p>
 
           <div class="container">
               <img width="640" height="400" src="img/fruccola_wolt@2x.jpg">
           </div>
       </li>
+    
+    
     
       <li class="brand">
           <p>If you are happy in fruccola</p>
@@ -486,7 +488,8 @@
               <img width="640" height="400" src="img/lemondes-2017@2x.jpg">
           </div>
       </li>-->
-
+    
+      <!--
       <li class="hot-drinks narrow">
           <p>Szezonális</p>
           <h2>Forró italok</h2>
@@ -502,6 +505,7 @@
               <img width="640" height="400" src="img/seasonalhot@2x.jpg">
           </div>
       </li>
+      -->
 
       <!--<li class="treats narrow">
           <p>16 óra után minden délután</p>
@@ -517,6 +521,21 @@
               <img width="640" height="400" src="img/cakemenu@2x.jpg">
           </div>
       </li>-->
+    
+      <li class="wolt">
+          <p>Végre</p>
+          <h2>Házhoz visszük a vacsorád</h2>
+          <p>
+              Töltsd le a Wolt alkalmazást a telefonodre és rendelj otthonra egy falat fruccolát! <br />
+              <a href=https://play.google.com/store/apps/details?id=com.wolt.android >Android link</a>  |  <a href=https://itunes.apple.com/hu/app/wolt/id943905271 >Apple Link</a>
+          </p>
+
+          <div class="container">
+              <img width="640" height="400" src="img/fruccola_wolt@2x.jpg">
+          </div>
+      </li>
+    
+    
 
       <li class="brand">
           <p>Ha szeretsz nálunk lenni</p>
