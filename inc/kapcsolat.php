@@ -8,7 +8,8 @@
       <h2>Fruccola MOM park</h2>
       <p>
         email: <a href="mailto:mom[at]fruccola.hu" class="mailto">mom[kukac]fruccola.hu</a><br>
-        telefon: <a class="phone" href="tel://+3614306125">+36 1 430 6125</a> (Hétfőtől péntekig 8:00-tól 20:00-ig elérhető.)
+        telefon: <a class="phone" href="tel://+3614306125">+36 1 430 6125</a> (Hétfőtől péntekig 8:00-tól 20:00-ig elérhető.)<br>
+        házhozszállítás: <a href=https://wolt.com/hu/HUN/budapest/restaurant/fruccola-mom-park?utm_source=web&utm_medium=partner&utm_campaign=fruccola>csak a Wolt alkalmazáson keresztül</a> 
       </p>
     </li>
     
@@ -17,7 +18,8 @@
       <h2>Fruccola Kristóf tér</h2>
       <p>
         email: <a href="mailto:kristof[at]fruccola.hu" class="mailto">kristof[kukac]fruccola.hu</a><br>
-        telefon: <a class="phone" href="tel://+3614306125">+36 1 430 6125</a> (Hétfőtől péntekig 8:00-tól 20:00-ig elérhető.)
+        telefon: <a class="phone" href="tel://+3614306125">+36 1 430 6125</a> (Hétfőtől péntekig 8:00-tól 20:00-ig elérhető.)<br>
+        házhozszállítás: <a href=https://wolt.com/hu/HUN/budapest/restaurant/fruccola-kristof-ter?utm_source=web&utm_medium=partner&utm_campaign=fruccola>csak a Wolt alkalmazáson keresztül</a> 
       </p>
     </li>
     
@@ -29,6 +31,16 @@
         telefon: <a class="phone" href="tel://+3614306125">+36 1 430 6125</a> (Hétfőtől péntekig 8:00-tól 20:00-ig elérhető.)
       </p>
     </li>
+    
+    
+    
+    <li class="delivery">
+      <h2>Házhozszállítás</h2>
+      <p class="narrow">
+          Töltsd le a <a href=https://wolt.com/hu/hun/budapest/search?q=fruccola&utm_source=web&utm_medium=partner&utm_campaign=fruccola>Wolt alkalmazást</a> 
+          a telefonodra és rendelj otthonra egy falat Fruccolát! 
+      </p>
+    </li>  
     
     <li class="reservation">
       <h2>Asztalfoglalás</h2>

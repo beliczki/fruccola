@@ -250,12 +250,12 @@
           <p>Finally</p>
           <h2>Delivery to your home is here </h2>
           <p>
-              Download the Wolt app to your phone and order a bite of fruccola delivered to your home. <br />
+              Download the <a href=https://wolt.com/hu/hun/budapest/search?q=fruccola&utm_source=web&utm_medium=partner&utm_campaign=fruccola>Wolt app</a> to your phone and order a bite of fruccola delivered to your home. <br />
               <a href=https://play.google.com/store/apps/details?id=com.wolt.android >Android app</a>  |  <a href=https://itunes.apple.com/hu/app/wolt/id943905271 >Apple app</a>
           </p>
 
           <div class="container">
-              <img width="640" height="400" src="img/fruccola_wolt@2x.jpg">
+            <a href=https://wolt.com/hu/hun/budapest/search?q=fruccola&utm_source=web&utm_medium=partner&utm_campaign=fruccola><img width="640" height="400" src="img/fruccola_wolt@2x.jpg"></a>
           </div>
       </li>
     
@@ -526,12 +526,12 @@
           <p>Végre</p>
           <h2>Házhoz visszük a vacsorád</h2>
           <p>
-              Töltsd le a Wolt alkalmazást a telefonodra és rendelj otthonra egy falat Fruccolát! <br />
+              Töltsd le a <a href=https://wolt.com/hu/hun/budapest/search?q=fruccola&utm_source=web&utm_medium=partner&utm_campaign=fruccola>Wolt alkalmazást</a> a telefonodra és rendelj otthonra egy falat Fruccolát! <br />
               <a href=https://play.google.com/store/apps/details?id=com.wolt.android >Android link</a>  |  <a href=https://itunes.apple.com/hu/app/wolt/id943905271 >Apple Link</a>
           </p>
 
           <div class="container">
-              <img width="640" height="400" src="img/fruccola_wolt@2x.jpg">
+            <a href=https://wolt.com/hu/hun/budapest/search?q=fruccola&utm_source=web&utm_medium=partner&utm_campaign=fruccola><img width="640" height="400" src="img/fruccola_wolt@2x.jpg"></a>
           </div>
       </li>
     
