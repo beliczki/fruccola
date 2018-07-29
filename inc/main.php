@@ -250,7 +250,7 @@
           <p>Finally</p>
           <h2>Delivery to your home is here </h2>
           <p>
-              Download the Wolt app to your phone and order a bite of fruccola delivered to to home. <br />
+              Download the Wolt app to your phone and order a bite of fruccola delivered to your home. <br />
               <a href=https://play.google.com/store/apps/details?id=com.wolt.android >Android app</a>  |  <a href=https://itunes.apple.com/hu/app/wolt/id943905271 >Apple app</a>
           </p>
 
