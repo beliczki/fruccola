@@ -526,7 +526,7 @@
           <p>Végre</p>
           <h2>Házhoz visszük a vacsorád</h2>
           <p>
-              Töltsd le a Wolt alkalmazást a telefonodre és rendelj otthonra egy falat fruccolát! <br />
+              Töltsd le a Wolt alkalmazást a telefonodra és rendelj otthonra egy falat Fruccolát! <br />
               <a href=https://play.google.com/store/apps/details?id=com.wolt.android >Android link</a>  |  <a href=https://itunes.apple.com/hu/app/wolt/id943905271 >Apple Link</a>
           </p>
 
