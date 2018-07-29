@@ -154,6 +154,7 @@ h2.new:before,
 
 .icon-logo,
 .content.recommended li.brand:before,
+.content.recommended li.wolt:before,
 .site-header .logo a:before,
 .site-footer:before {
   content: '\E01C';
@@ -1168,6 +1169,9 @@ button:hover, .button:hover {
 .content > ul >  li.brand {
   color: #40ae49;
 }
+.content > ul >  li.wolt {
+  color: #d12288;
+}
 
 .content.recommended h1 {
   display: none;
@@ -1898,6 +1902,8 @@ button:hover, .button:hover {
 .brand h2 a {color: #40ae49; font-family: 'Heavy' !important;}
 .brand a.button {color: #fff; height: 22px; padding: 5px 10px 0 10px; display: inline-block; margin-top: 0.5em;}
 .brand a.button:hover {color: #40ae49;}
+
+.wolt h2 a {color: #d12288; font-family: 'Heavy' !important;}
 
 .main-content.map {
   margin-top: 70px;

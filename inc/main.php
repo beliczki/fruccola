@@ -212,6 +212,7 @@
           </div>
       </li>-->
 
+      <!--
       <li class="hot-drinks narrow">
           <p>Seasonal</p>
           <h2>HOT DRINKS</h2>
@@ -227,6 +228,7 @@
               <img width="640" height="400" src="img/seasonalhot@2x.jpg">
           </div>
       </li>
+      -->
 
       <!--<li class="h2>treats narrow">
           <p>After 4:00 p.m.</p>
@@ -243,6 +245,20 @@
           </div>
       </li>-->
 
+      
+      <li class="wolt">
+          <p>Finally</p>
+          <h2>Delivery to your home is here </h2>
+          <p>
+              Töltsd le a Wolt alkalmazást a telefonodre és rendelj otthonra egy falat fruccolát!
+              <a href= >Android</a> <a href= >Apple</a>
+          </p>
+
+          <div class="container">
+              <img width="640" height="400" src="img/fruccola_wolt@2x.jpg">
+          </div>
+      </li>
+    
       <li class="brand">
           <p>If you are happy in fruccola</p>
           <h2>Happiness Card</h2>
