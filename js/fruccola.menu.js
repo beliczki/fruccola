@@ -30,7 +30,7 @@ $(function() {
             a.attr('href',data[index]['slug_'+language]);
             item.append(a);
 
-            $('.menu-navigation').append(item);
+            if (data[index].visible) $('.menu-navigation').append(item);
           });
       });
   }
