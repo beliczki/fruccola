@@ -14,7 +14,7 @@
                   a.attr('href','<?php echo $url['path'];?>/' + data[index]['slug_'+language]);
                   item.append(a);
 
-                  $('.menu-categories').append(item);
+                  if (data[index].visible) $('.menu-categories').append(item);
                 });
             });
         })();
