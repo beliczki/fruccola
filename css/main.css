@@ -160,50 +160,50 @@ h2.new:before,
   content: '\E01C';
 }
 .icon-flourfree {
-  content: '\E03D';
+  content: '\E054';
 }
 .hu .icon-flourfree {
-  content: '\E03E';
+  content: '\E054';
 }
 .icon-flourfree-alternate,
 .product-filter .items label.flourfree:before,
 .content em.flourfree:before {
-  content: '\E03D';
+  content: '\E054';
 }
 
 .hu .content em.flourfree:before {
-  content: '\E03E';
+  content: '\E054';
 }
 
 .icon-hot {
-  content: '\E048'; /*spicy*/
+  content: '\E055'; /*spicy*/
 }
 .hu .icon-hot {
-  content: '\E048'; /*spicy*/
+  content: '\E055'; /*spicy*/
 }
 .icon-hot-alternate,
 .product-filter .items label.hot:before, /*spicy*/
 .content em.hot:before {
-  content: '\E048';
+  content: '\E055';
 }
 .hu .content em.hot:before {
-  content: '\E048'; /*spicy*/
+  content: '\E055'; /*spicy*/
 }
 
 
 .icon-sugarfree {
-  content: '\E052'; /*sugarfree*/
+  content: '\E01A'; /*sugarfree*/
 }
 .hu .icon-sugarfree {
-  content: '\E052'; /*sugarfree*/
+  content: '\E01A'; /*sugarfree*/
 }
 .icon-sugarfree-alternate,
 .product-filter .items label.sugarfree:before, /*sugarfree*/
 .content em.sugarfree:before {
-  content: '\E052';
+  content: '\E01A';
 }
 .hu .content em.sugarfree:before {
-  content: '\E052'; /*sugarfree*/
+  content: '\E01A'; /*sugarfree*/
 }
 
 
@@ -235,12 +235,12 @@ h2.new:before,
   content: '\E019';
 }
 .icon-lactosefree {
-  content: '\e01A';
+  content: '\E053';
 }
 .icon-lactosefree-alternate,
 .product-filter .items label.lactosefree:before,
 .content em.lactosefree:before {
-  content: '\e01A';
+  content: '\E053';
 }
 .icon-location,
 .site-footer .locations > ul > li:before {
@@ -464,20 +464,20 @@ h2.new:before{
 
 
 .icon-vegan {
-  content: '\E02B';
+  content: '\E056';
 }
 .icon-vegan-alternate,
 .product-filter .items label.vegan:before,
 .content em.vegan:before {
-  content: '\E02B';
+  content: '\E056';
 }
 .icon-vegetarian {
-  content: '\E02C';
+  content: '\E057';
 }
 .icon-vegetarian-alternate,
 .product-filter .items label.vegetarian:before,
 .content em.vegetarian:before {
-  content: '\E02C';
+  content: '\E057';
 }
 .icon-spoon,
 .content .offer p.soup:before,
