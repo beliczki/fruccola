@@ -160,34 +160,34 @@ h2.new:before,
   content: '\E01C';
 }
 .icon-flourfree {
-  content: '\E054';
+  content: '\E01A';
 }
 .hu .icon-flourfree {
-  content: '\E054';
+  content: '\E01A';
 }
 .icon-flourfree-alternate,
 .product-filter .items label.flourfree:before,
 .content em.flourfree:before {
-  content: '\E054';
+  content: '\E01A';
 }
 
 .hu .content em.flourfree:before {
-  content: '\E054';
+  content: '\E01A';
 }
 
 .icon-hot {
-  content: '\E055'; /*spicy*/
+  content: '\E02B'; /*spicy*/
 }
 .hu .icon-hot {
-  content: '\E055'; /*spicy*/
+  content: '\E02B'; /*spicy*/
 }
 .icon-hot-alternate,
 .product-filter .items label.hot:before, /*spicy*/
 .content em.hot:before {
-  content: '\E055';
+  content: '\E02B';
 }
 .hu .content em.hot:before {
-  content: '\E055'; /*spicy*/
+  content: '\E02B'; /*spicy*/
 }
 
 
@@ -200,10 +200,10 @@ h2.new:before,
 .icon-sugarfree-alternate,
 .product-filter .items label.sugarfree:before, /*sugarfree*/
 .content em.sugarfree:before {
-  content: '\E01A';
+  content: '\E022';
 }
 .hu .content em.sugarfree:before {
-  content: '\E01A'; /*sugarfree*/
+  content: '\E022'; /*sugarfree*/
 }
 
 
@@ -235,12 +235,12 @@ h2.new:before,
   content: '\E019';
 }
 .icon-lactosefree {
-  content: '\E053';
+  content: '\E021';
 }
 .icon-lactosefree-alternate,
 .product-filter .items label.lactosefree:before,
 .content em.lactosefree:before {
-  content: '\E053';
+  content: '\E021';
 }
 .icon-location,
 .site-footer .locations > ul > li:before {
@@ -265,11 +265,11 @@ h2.new:before,
 .seven-points .vegies h2:before,
 .content.menu .menu-categories .salad a:before,
 .content.recommended li.salad:before {
-  content: '\E021';
+  content: '\E035';
 }
 .icon-salad-inverse,
 .menu-navigation .salad.active a:before {
-  content: '\E022';
+  content: '\E02C';
 }
 .icon-sandwich,
 .menu-navigation .sandwich a:before,
@@ -464,20 +464,20 @@ h2.new:before{
 
 
 .icon-vegan {
-  content: '\E056';
+  content: '\E011';
 }
 .icon-vegan-alternate,
 .product-filter .items label.vegan:before,
 .content em.vegan:before {
-  content: '\E056';
+  content: '\E011';
 }
 .icon-vegetarian {
-  content: '\E057';
+  content: '\E002';
 }
 .icon-vegetarian-alternate,
 .product-filter .items label.vegetarian:before,
 .content em.vegetarian:before {
-  content: '\E057';
+  content: '\E002';
 }
 .icon-spoon,
 .content .offer p.soup:before,
