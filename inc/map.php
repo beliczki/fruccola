@@ -55,7 +55,7 @@
   iconOptions = {
     url: 'img/marker.png',
     size: new google.maps.Size(52, 80),
-
+    scaledSize: new google.maps.Size(26, 40),
     origin: new google.maps.Point(0, 0),
     anchor: new google.maps.Point(26, 80)
   };
@@ -72,4 +72,8 @@
     marker = new google.maps.Marker(markerOptions);
   });
 </script>
-
+<style>
+  /*bootstrap might interfere with google maps css undefinitions, so work around */
+  #map label { width: auto; display:inline; }
+  #map img { max-height: none; max-width: none; }
+</style>
