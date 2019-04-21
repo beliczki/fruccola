@@ -45,12 +45,21 @@ $(function() {
           $('.kristof').addClass('unavailable');
         }
       
-      
+        // fill in pricing coming form admin
         if(typeof data.pricing != 'undefined') {
           $('.soup .price strong').html(data.pricing.soup);
           $('.main-dish .price strong').html(data.pricing.dish);
           $('.soup-and-maindish .price strong').html(data.pricing.combo);
         }
+        // modify cards when items are not available
+        $( ".today" ).each(function( index ) {
+          if( $('.main-dish', this).html() == '' ||  $('.main-dish', this).html() == 'Brunch nap' ||  $('.main-dish', this).html() == 'Brunch day') {
+            $('.main-dish', this).setAttributes('style','display:none;');
+            $('.soup-and-maindish', this).setAttributes('style','display:none;');
+          }
+        });
+        
+        
 
       
         if (nData.getDay() === 1) {
