@@ -1656,7 +1656,7 @@ button:hover, .button:hover {
 
 .content.menu .items .details {left: 1em; bottom: 1em; }
 .hu .content.menu .items .details {left: 1em; bottom: 1em;}
-.content.menu .items .properties {left: 58px; bottom: 1em; line-height: 24px;}
+.content.menu .items .properties {left: 1em; bottom: 1em; line-height: 24px;}
 
 .dailymenu .today .soup p.properties,
 .dailymenu .today .main-dish p.properties {bottom: 0.5em;}
