@@ -54,7 +54,7 @@ $(function() {
         // modify cards when items are not available
         $( ".today" ).each(function( index ) {
           console.log(this);
-          if( $('.main-dish', this).html() == '' ||  $('.main-dish', this).html() == 'Brunch nap' ||  $('.main-dish', this).html() == 'Brunch day') {
+          if( $('.main-dish .description', this).html() == '' ||  $('.main-dish .description', this).html() == 'Brunch nap' ||  $('.main-dish .description', this).html() == 'Brunch day') {
             console.log($('.main-dish', this).html());
             $('.main-dish', this).setAttributes('style','display:none;');
             $('.soup-and-maindish', this).setAttributes('style','display:none;');
