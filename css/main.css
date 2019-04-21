@@ -1659,7 +1659,7 @@ button:hover, .button:hover {
 .content.menu .items .properties {left: 1em; bottom: 1em; line-height: 24px;}
 
 .dailymenu .today .soup p.properties,
-.dailymenu .today .main-dish p.properties {bottom: 0.5em;}
+.dailymenu .today .main-dish p.properties {bottom: 0.0em;}
 
 .dailymenu .today .soup:after,
 .dailymenu .today .main-dish:after,
