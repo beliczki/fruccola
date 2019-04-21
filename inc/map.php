@@ -55,7 +55,8 @@
   iconOptions = {
     url: 'img/marker.png',
     size: new google.maps.Size(52, 80),
-    scaledSize: new google.maps.Size(26, 40),
+
+    origin: new google.maps.Point(0, 0),
     anchor: new google.maps.Point(26, 80)
   };
 
