@@ -54,9 +54,9 @@
 
   iconOptions = {
     url: 'img/marker.png',
-    size: new google.maps.Size(50, 80),
-    scaledSize: new google.maps.Size(25, 40),
-    anchor: new google.maps.Point(13, 40)
+    size: new google.maps.Size(52, 80),
+    scaledSize: new google.maps.Size(26, 40),
+    anchor: new google.maps.Point(26, 80)
   };
 
   [{lat: 47.502534, lng: 19.053386}, {lat: 47.495476, lng: 19.0520404}, {lat:47.490478, lng:19.022280}].forEach(function(poi){
