@@ -53,9 +53,12 @@ $(function() {
         }
         // modify cards when items are not available
         $( ".today" ).each(function( index ) {
-          console.log(this);
-          if( $('.main-dish .description', this).html() == '' ||  $('.main-dish .description', this).html() == 'Brunch nap' ||  $('.main-dish .description', this).html() == 'Brunch day') {
-            console.log($('.main-dish', this).html());
+          if( 
+              $('.main-dish .description', this).html() == '' ||  
+              $('.main-dish .description', this).html() == ' ' || 
+              $('.main-dish .description', this).html() == 'Brunch nap' ||  
+              $('.main-dish .description', this).html() == 'Brunch day'
+            ) {
             $('.main-dish', this).css("display", "none");
             $('.soup-and-maindish', this).css("display", "none");
           }
