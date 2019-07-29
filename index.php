@@ -1,4 +1,10 @@
 <?php
+
+if($_SERVER["HTTPS"] != "on"){
+header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
+exit();
+}
+
 $config = parse_ini_file("config.ini", true);
 $url = parse_url ($_SERVER['REQUEST_URI']);
 
