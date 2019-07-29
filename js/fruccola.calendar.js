@@ -135,7 +135,7 @@ $(function() {
 
 
   function loadAndRenderSpecialCalendarData (year, month) {
-    var fruccolaAPI = "http://fruccola.hu/admin/api/calendar/"+year+"/"+month;
+    var fruccolaAPI = "//fruccola.hu/admin/api/calendar/"+year+"/"+month;
 
     // load special days        
     $.getJSON( fruccolaAPI ).done(function( data ) {
@@ -210,7 +210,7 @@ $(function() {
     var ty = t.getFullYear();
     var tyn = t.getFullYear();
     
-    var fruccolaAPI = "http://fruccola.hu/admin/api/open";
+    var fruccolaAPI = "//fruccola.hu/admin/api/open";
 
     // load normal opening hours       
     $.getJSON( fruccolaAPI ).done(function( data ) {
