@@ -2,7 +2,7 @@ $(function() {
 
   /// Build Navigation
   function showNavigation () {
-      var fruccolaAPI = "http://fruccola.hu/admin/api/menu/categories";
+      var fruccolaAPI = "//fruccola.hu/admin/api/menu/categories";
       var url = window.location.pathname;
       var urlsplit = url.split("/");
       var category = urlsplit[urlsplit.length-1];
@@ -36,7 +36,7 @@ $(function() {
   }
   
   function showMenuItems(slug) {
-      var fruccolaAPI = "http://fruccola.hu/admin/api/menu/"+slug;
+      var fruccolaAPI = "//fruccola.hu/admin/api/menu/"+slug;
 
       $.getJSON( fruccolaAPI ).done(function( data ) {
           $.each(data, function(index, value){
@@ -160,7 +160,7 @@ $(function() {
   
 
   function showDailyPasta() {
-      var fruccolaAPI = "http://fruccola.hu/admin/api/daily_pasta";
+      var fruccolaAPI = "//fruccola.hu/admin/api/daily_pasta";
       $.getJSON( fruccolaAPI ).done(function( data ) {
           /// var nData = new Date() ;
           /// $('.date').html(nData.getDate() + " "  + monthNames[nData.getMonth()] + ", " + dayNames[nData.getDay()]);   

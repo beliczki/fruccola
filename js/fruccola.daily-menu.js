@@ -2,7 +2,7 @@ $(function() {
 
 
   function showDailyMenu() {
-    var fruccolaAPI = "http://fruccola.hu/admin/api/daily_menu";
+    var fruccolaAPI = "//fruccola.hu/admin/api/daily_menu";
     $.getJSON( fruccolaAPI ).done(function( data ) {
 
         var nData = new Date() ;

@@ -3,7 +3,7 @@
     <ul class="menu-categories">
       <script>
         (function() {
-            var fruccolaAPI = "http://fruccola.hu/admin/api/menu/categories";
+            var fruccolaAPI = "//fruccola.hu/admin/api/menu/categories";
             $.getJSON( fruccolaAPI ).done(function( data ) {
                 $.each(data, function(index, value){
 

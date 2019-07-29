@@ -14,7 +14,7 @@ $(function() {
 
 
   function loadAndRenderData () {
-    var fruccolaAPI = "http://fruccola.hu/admin/api/open";
+    var fruccolaAPI = "//fruccola.hu/admin/api/open";
 
     // load special days        
     $.getJSON( fruccolaAPI ).done(function( data ) {

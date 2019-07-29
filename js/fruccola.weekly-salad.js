@@ -2,7 +2,7 @@ $(function() {
 
 
 function showWeeklySalad () {
-  var fruccolaAPI = "http://fruccola.hu/admin/api/weekly_salad";
+  var fruccolaAPI = "//fruccola.hu/admin/api/weekly_salad";
   $.getJSON( fruccolaAPI ).done(function( data ) {
 
       if(typeof data[2] != 'undefined') {
