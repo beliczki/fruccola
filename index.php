@@ -9,7 +9,7 @@ if (isset($config['GET '.$url['path']]['version_hu'])) $version_hu = $config['GE
 if (isset($config['GET '.$url['path']]['version_en'])) $version_en = $config['GET '.$url['path']]['version_en'];
 
 
-$language = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2); //első látogatás browser beállítás lapján
+$language = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2); //első látogatás browser beállítás alapján
 if ($language != 'hu' || $language != 'en' || !isset($language)) $language = 'en'; //első látogatás se nem angol se nem magyar browser
 if (isset($_COOKIE["language"])) $language = $_COOKIE["language"]; //ha van cookie
 if (isset($params["language"])) $language = $params["language"]; //ha van parameter
@@ -44,14 +44,14 @@ setcookie("language", $language, time() + (86400 * 365), "/");
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&subset=latin,latin-ext" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:400,800&subset=latin,latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="/css/vendor/normalize.css">
   <link rel="stylesheet" href="/css/main.css?version=<?php echo filemtime ('css/main.css')?>">
 
   <script>
     var language = '<?php echo $language?>';
   </script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="//code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
   <script src="/js/fruccola.locales.<?php echo $language?>.js"></script>
   <script src="/js/fruccola.email.js"></script>
 
