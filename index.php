@@ -51,7 +51,10 @@ setcookie("language", $language, time() + (86400 * 365), "/");
   <script>
     var language = '<?php echo $language?>';
   </script>
-  <script src="//code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   <script src="/js/fruccola.locales.<?php echo $language?>.js"></script>
   <script src="/js/fruccola.email.js"></script>
 
